@@ -1,0 +1,15 @@
+dist/
+node_modules/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.p8
+*.p12
+*.mobileprovision
+*.log
+.sites-runtime/
+.local/
+.gallery-build-*/
+

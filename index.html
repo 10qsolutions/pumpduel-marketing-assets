@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="PumpDuel photos, story sets and captions. Choose your assets and save them for your next post.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PumpDuel · Social assets</title>
+  <link rel="icon" href="instagram/profile.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#instagram"><img src="instagram/profile.png" width="40" height="40" alt=""><span>PUMPDUEL</span></a>
+    <span class="eyebrow">SOCIAL ASSETS</span>
+  </header>
+  <main>
+    <div class="intro"><div><h1>Ready to post.</h1><p>Save your photos. Copy the caption.</p></div><button class="text-button" id="help">Saving on iPhone ↗</button></div>
+    <nav id="platforms" aria-label="Social platform"></nav>
+    <div class="section-heading"><div><h2 id="platform-title">Your assets</h2><p id="asset-count" class="muted">Loading your photos…</p></div><button id="select-platform" class="secondary" disabled>Select all</button></div>
+    <div id="gallery" class="gallery" aria-busy="true"></div>
+    <details class="profile-copy" id="profile-copy" hidden><summary>Profile name &amp; bio</summary><div id="profile-content"></div></details>
+    <noscript><p>Enable JavaScript to select and save your photos.</p></noscript>
+  </main>
+  <div id="selection-bar" class="selection-bar" hidden>
+    <div><strong id="selection-count">0 selected</strong><span id="selection-status" class="muted"></span></div>
+    <button class="text-button" id="clear-selection">Clear</button>
+    <button class="primary" id="save-selection">Save selected</button>
+  </div>
+  <p id="status" class="toast" role="status" aria-live="polite"></p>
+  <dialog id="save-dialog" aria-labelledby="save-title">
+    <div class="dialog-heading"><h2 id="save-title">Save to Photos</h2><button class="close" id="close-dialog" aria-label="Close">×</button></div>
+    <p id="save-message"></p><div id="save-items" class="save-items"></div>
+    <button id="confirm-save" class="primary" hidden>Save to Photos</button>
+  </dialog>
+</body>
+</html>

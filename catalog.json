@@ -1,0 +1,784 @@
+{
+  "platforms": [
+    {
+      "id": "instagram",
+      "title": "Instagram",
+      "displayName": "PumpDuel | Train with friends",
+      "bio": "Build a habit. Together.\nDaily group workouts. Friendly competition.\nExplore PumpDuel for iPhone."
+    },
+    {
+      "id": "facebook",
+      "title": "Facebook",
+      "displayName": "PumpDuel",
+      "bio": "Build a habit. Together. Daily group workouts and friendly fitness competition."
+    },
+    {
+      "id": "tiktok",
+      "title": "TikTok",
+      "displayName": "PumpDuel | Train with friends",
+      "bio": "Build a habit. Together.\nGroup workouts. Friendly rivalry.\npumpduel.com"
+    },
+    {
+      "id": "youtube",
+      "title": "YouTube",
+      "displayName": "PumpDuel",
+      "bio": "Build a habit. Together.\n\nPumpDuel turns everyday workouts into something you can share. Create or join a private group, show up for daily workouts, and keep each other going. Challenge a friend when it suits you, or meet them in a live fitness duel.\n\nCount push-ups, pull-ups and squats with your iPhone camera. Track your repetitions and recent activity as you build your routine.\n\nGroups and some competition features require PumpDuel Pro.\n\nExplore PumpDuel: https://pumpduel.com\nSupport: https://pumpduel.com/support"
+    },
+    {
+      "id": "x",
+      "title": "X",
+      "displayName": "PumpDuel",
+      "bio": "Build a habit. Together. Daily group workouts, live duels and friend challenges. Fitness with friends, on iPhone."
+    }
+  ],
+  "assets": [
+    {
+      "id": "instagram-stories-start-01",
+      "file": "instagram/stories/start-01.png",
+      "title": "Instagram · Start with your people · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 116418,
+      "sha256": "ac53b05e28af579e6f939b8ec23a46ecacc4ddca0121a8e05a8b8e558c994d2b"
+    },
+    {
+      "id": "instagram-stories-start-02",
+      "file": "instagram/stories/start-02.png",
+      "title": "Instagram · Start with your people · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 62024,
+      "sha256": "4ff5742bb3e3ba41df0e718fdca43fcd6301450de9d9ed81850673a3dc4f1636"
+    },
+    {
+      "id": "instagram-stories-crew-01",
+      "file": "instagram/stories/crew-01.png",
+      "title": "Instagram · Build a habit together · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 168562,
+      "sha256": "10927c04a2f009741265119fefcb4d68002597d0d852a4d4d52572fe9654ffb8"
+    },
+    {
+      "id": "instagram-stories-crew-02",
+      "file": "instagram/stories/crew-02.png",
+      "title": "Instagram · Build a habit together · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 61007,
+      "sha256": "b79fa0a6866a78976d069d7174545c13b1a48001ef397eead93d502b0fae5526"
+    },
+    {
+      "id": "instagram-stories-duels-01",
+      "file": "instagram/stories/duels-01.png",
+      "title": "Instagram · Turn reps into rivalry · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 506994,
+      "sha256": "f82708b11ad7429e004d01010fd0b79ff26fa16481b0fd8016388346f49a8c20"
+    },
+    {
+      "id": "instagram-stories-duels-02",
+      "file": "instagram/stories/duels-02.png",
+      "title": "Instagram · Turn reps into rivalry · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 54826,
+      "sha256": "7a1654c6e90b7009ece55a193e44e481065d920e73a5d4ea20b641cf6f68f408"
+    },
+    {
+      "id": "instagram-stories-challenge-01",
+      "file": "instagram/stories/challenge-01.png",
+      "title": "Instagram · Set a score. Dare them. · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 580669,
+      "sha256": "d7a615d85352753413c32ba0851e072482d6001d53b9e66ad2bb84179f6e4be4"
+    },
+    {
+      "id": "instagram-stories-challenge-02",
+      "file": "instagram/stories/challenge-02.png",
+      "title": "Instagram · Set a score. Dare them. · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 54486,
+      "sha256": "2b5b228a1e999f2cef6c76995c18337f3ee8a593ed37b66f9be4a77840efe23f"
+    },
+    {
+      "id": "instagram-stories-progress-01",
+      "file": "instagram/stories/progress-01.png",
+      "title": "Instagram · Small wins. Real progress. · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 122039,
+      "sha256": "ce97227590454b5ac23600b0f45e25462a63ce0f87429a02e17ca9598b406a86"
+    },
+    {
+      "id": "instagram-stories-progress-02",
+      "file": "instagram/stories/progress-02.png",
+      "title": "Instagram · Small wins. Real progress. · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 59340,
+      "sha256": "bd6cd9711a145d1559ca115319ec970b31eeb6393c3849b7a25f71a52218b73b"
+    },
+    {
+      "id": "instagram-stories-how-to-01",
+      "file": "instagram/stories/how-to-01.png",
+      "title": "Instagram · Phone ready. You ready? · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 122439,
+      "sha256": "813f93f5b97594b7dbe8ac53017b6f12f1c910329b5e85dd64f27a0a7ba32496"
+    },
+    {
+      "id": "instagram-stories-how-to-02",
+      "file": "instagram/stories/how-to-02.png",
+      "title": "Instagram · Phone ready. You ready? · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 58747,
+      "sha256": "cf4addb8eaa06f137398ad8fb98ef9539d54a3afae1d293109be713298d94a95"
+    },
+    {
+      "id": "instagram-feed-01-crew",
+      "file": "instagram/feed/01-crew.png",
+      "title": "Instagram · Build a habit together",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 145633,
+      "sha256": "550a3fdc282973a4a4aba45d0130830647d1528e4767f508cf18deecfbb69458"
+    },
+    {
+      "id": "instagram-feed-02-duels",
+      "file": "instagram/feed/02-duels.png",
+      "title": "Instagram · A friend worth beating",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 415140,
+      "sha256": "9dbeb558a11fb75c2e47a7cd3f5b5148f9d802d8a87f8765846c4b902f4af348"
+    },
+    {
+      "id": "instagram-feed-03-challenge",
+      "file": "instagram/feed/03-challenge.png",
+      "title": "Instagram · Set a score. Dare them.",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 471202,
+      "sha256": "f40f1bed1fb4eaa40a282112c6eb36b115e1ef7497236e42146baece8be39e90"
+    },
+    {
+      "id": "instagram-highlights-start",
+      "file": "instagram/highlights/start.png",
+      "title": "Instagram · Highlight covers · 1",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 7015,
+      "sha256": "aba5e59ee800fddc8d0f0cace782cab1899607e2fda8b2163446a0e4a124718a"
+    },
+    {
+      "id": "instagram-highlights-crew",
+      "file": "instagram/highlights/crew.png",
+      "title": "Instagram · Highlight covers · 2",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 7377,
+      "sha256": "f08eda3943dff3cbec2eb38685d25d60f6984e4e679270686c06c8fe60a90382"
+    },
+    {
+      "id": "instagram-highlights-duels",
+      "file": "instagram/highlights/duels.png",
+      "title": "Instagram · Highlight covers · 3",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 7581,
+      "sha256": "77759e04576a1eeb7af87e9f46e33dd7eb4be8d3867e73d03bab72b293bf3510"
+    },
+    {
+      "id": "instagram-highlights-challenge",
+      "file": "instagram/highlights/challenge.png",
+      "title": "Instagram · Highlight covers · 4",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 8694,
+      "sha256": "83534ac332aeba492847c387a3c27604e2b4522103ea9d5fa3dc6daa04373688"
+    },
+    {
+      "id": "instagram-highlights-progress",
+      "file": "instagram/highlights/progress.png",
+      "title": "Instagram · Highlight covers · 5",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 6530,
+      "sha256": "375852c541d478263c8cf380e2dc58040d95e33e67119376234f5e55fa740625"
+    },
+    {
+      "id": "instagram-highlights-how-to",
+      "file": "instagram/highlights/how-to.png",
+      "title": "Instagram · Highlight covers · 6",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 6723,
+      "sha256": "6df4d5c24354fd105e0363ddb755de8840328df70436eb55a3ba98ac60b0c154"
+    },
+    {
+      "id": "instagram-profile",
+      "file": "instagram/profile.png",
+      "title": "Instagram · Profile picture",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 47429,
+      "sha256": "f419d8cfbb22f7d142188a5868284bfd44b392d9eef022c64e11b27268a76e97"
+    },
+    {
+      "id": "facebook-welcome-post",
+      "file": "facebook/welcome-post.png",
+      "title": "Facebook · Welcome to PumpDuel",
+      "type": "image/png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 75847,
+      "sha256": "512e16ceeff2c36419021971fc8b889beb60538a95ad7022ad7790f6a88dc09f"
+    },
+    {
+      "id": "facebook-cover",
+      "file": "facebook/cover.png",
+      "title": "Facebook · Build a habit together",
+      "type": "image/png",
+      "width": 1702,
+      "height": 630,
+      "bytes": 28058,
+      "sha256": "8b8a2394236d0a4e6503685a73075835e1abdf5b03568e728e8929bb7d332c61"
+    },
+    {
+      "id": "facebook-profile",
+      "file": "facebook/profile.png",
+      "title": "Facebook · Profile picture",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 47429,
+      "sha256": "f419d8cfbb22f7d142188a5868284bfd44b392d9eef022c64e11b27268a76e97"
+    },
+    {
+      "id": "tiktok-covers-01-habit",
+      "file": "tiktok/covers/01-habit.png",
+      "title": "TikTok · Build a habit together",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 123146,
+      "sha256": "7e6beccf38c5ee40d5e7c2f98551a2694d3c684e987d51a59985822980bc8939"
+    },
+    {
+      "id": "tiktok-covers-02-duel",
+      "file": "tiktok/covers/02-duel.png",
+      "title": "TikTok · 60 seconds. Game on.",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 571545,
+      "sha256": "e2447979cc7e7f1212952e9bfed8f67f83ee6d0754fdebccd4ab3adcf75b04c7"
+    },
+    {
+      "id": "tiktok-covers-03-challenge",
+      "file": "tiktok/covers/03-challenge.png",
+      "title": "TikTok · Set a score. Dare them.",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 621540,
+      "sha256": "f973472aedba7095401f71dc5543f0176f5aeeab1c44c1adb360977f6b77ba28"
+    },
+    {
+      "id": "tiktok-profile",
+      "file": "tiktok/profile.png",
+      "title": "TikTok · Profile picture",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 47429,
+      "sha256": "f419d8cfbb22f7d142188a5868284bfd44b392d9eef022c64e11b27268a76e97"
+    },
+    {
+      "id": "youtube-shorts-01-habit",
+      "file": "youtube/shorts/01-habit.png",
+      "title": "YouTube · Build a habit together",
+      "type": "image/png",
+      "width": 2160,
+      "height": 3840,
+      "bytes": 249160,
+      "sha256": "f7b80444b27393c75caa824a95ac132d45599f633b24ec8cd424731d7eb18bb9"
+    },
+    {
+      "id": "youtube-shorts-02-duel",
+      "file": "youtube/shorts/02-duel.png",
+      "title": "YouTube · 60 seconds. Game on.",
+      "type": "image/png",
+      "width": 2160,
+      "height": 3840,
+      "bytes": 1588713,
+      "sha256": "374184ec8a994ad59832e1a6fd68f3491bf36b8616ddc5abdcbd6b1a70800a31"
+    },
+    {
+      "id": "youtube-shorts-03-challenge",
+      "file": "youtube/shorts/03-challenge.png",
+      "title": "YouTube · Set a score. Dare them.",
+      "type": "image/png",
+      "width": 2160,
+      "height": 3840,
+      "bytes": 1869741,
+      "sha256": "30cc430eeb40f0d3b9bc9d6add4e0fe478e628372fdc28ad252a032daa44ae01"
+    },
+    {
+      "id": "youtube-thumbnails-desktop-4k-01-habit",
+      "file": "youtube/thumbnails/desktop-4k/01-habit.png",
+      "title": "YouTube · Build a habit together",
+      "type": "image/png",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 297297,
+      "sha256": "f3ded4f1f5a3f6827fbc44c0f3f825aa53f2a0d3932016a032df82e80a031c84"
+    },
+    {
+      "id": "youtube-thumbnails-desktop-4k-02-duel",
+      "file": "youtube/thumbnails/desktop-4k/02-duel.png",
+      "title": "YouTube · 60 seconds. Game on.",
+      "type": "image/png",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 1932636,
+      "sha256": "42774cb7b1024f955c5b6b1020761a9f41beef5ab4230e4f9c4f75d58647cdcb"
+    },
+    {
+      "id": "youtube-thumbnails-desktop-4k-03-challenge",
+      "file": "youtube/thumbnails/desktop-4k/03-challenge.png",
+      "title": "YouTube · Set a score. Dare them.",
+      "type": "image/png",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 2402278,
+      "sha256": "52084a7dc142e7d66cedada236c9357b2f4b21a452f40a5c896bcb229c0c4fa4"
+    },
+    {
+      "id": "youtube-thumbnails-01-habit",
+      "file": "youtube/thumbnails/01-habit.png",
+      "title": "YouTube · Build a habit together",
+      "type": "image/png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 96037,
+      "sha256": "9aabc9dbf7d05d7c207a3e58b35f0b0d9a0c95b4cd2dd6415dd8f97d3fb94724"
+    },
+    {
+      "id": "youtube-thumbnails-02-duel",
+      "file": "youtube/thumbnails/02-duel.png",
+      "title": "YouTube · 60 seconds. Game on.",
+      "type": "image/png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 386418,
+      "sha256": "e3cfda14735a70765ab59e5a77549bc30593e7793955ea81c84b30b5851434bf"
+    },
+    {
+      "id": "youtube-thumbnails-03-challenge",
+      "file": "youtube/thumbnails/03-challenge.png",
+      "title": "YouTube · Set a score. Dare them.",
+      "type": "image/png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 431394,
+      "sha256": "fb0f21122ed9ee924479a5265e061df3afc6925eaab3e8da7360b34fe231591a"
+    },
+    {
+      "id": "youtube-banner",
+      "file": "youtube/banner.png",
+      "title": "YouTube · Build a habit together",
+      "type": "image/png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 46016,
+      "sha256": "6c4742e8abbc742f605d4406d1ce75da40c6738649e666ba5cbc875161af2ba8"
+    },
+    {
+      "id": "youtube-profile",
+      "file": "youtube/profile.png",
+      "title": "YouTube · Profile picture",
+      "type": "image/png",
+      "width": 800,
+      "height": 800,
+      "bytes": 35529,
+      "sha256": "4f34b5c53cd61f09491ab69854dad76277edc1de336bde86a5efee275614a5b7"
+    },
+    {
+      "id": "x-pinned-post",
+      "file": "x/pinned-post.png",
+      "title": "X · Build a habit together",
+      "type": "image/png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 75847,
+      "sha256": "512e16ceeff2c36419021971fc8b889beb60538a95ad7022ad7790f6a88dc09f"
+    },
+    {
+      "id": "x-header",
+      "file": "x/header.png",
+      "title": "X · Build a habit together",
+      "type": "image/png",
+      "width": 1500,
+      "height": 500,
+      "bytes": 27172,
+      "sha256": "3b0427e645c72fefeef977ee70d4c79564886f678c0ac5c3e4e883167c0e7940"
+    },
+    {
+      "id": "x-profile",
+      "file": "x/profile.png",
+      "title": "X · Profile picture",
+      "type": "image/png",
+      "width": 400,
+      "height": 400,
+      "bytes": 15347,
+      "sha256": "c6b5492bb5b0ad39b1624057e2ba34bc8b2ad30c30561de250929b03962ab94f"
+    }
+  ],
+  "posts": [
+    {
+      "id": "instagram-story-start",
+      "platform": "instagram",
+      "title": "Start with your people",
+      "kind": "Story · 2 photos",
+      "assets": [
+        "instagram-stories-start-01",
+        "instagram-stories-start-02"
+      ]
+    },
+    {
+      "id": "instagram-story-crew",
+      "platform": "instagram",
+      "title": "Build a habit together",
+      "kind": "Story · 2 photos",
+      "assets": [
+        "instagram-stories-crew-01",
+        "instagram-stories-crew-02"
+      ]
+    },
+    {
+      "id": "instagram-story-duels",
+      "platform": "instagram",
+      "title": "Turn reps into rivalry",
+      "kind": "Story · 2 photos",
+      "assets": [
+        "instagram-stories-duels-01",
+        "instagram-stories-duels-02"
+      ]
+    },
+    {
+      "id": "instagram-story-challenge",
+      "platform": "instagram",
+      "title": "Set a score. Dare them.",
+      "kind": "Story · 2 photos",
+      "assets": [
+        "instagram-stories-challenge-01",
+        "instagram-stories-challenge-02"
+      ]
+    },
+    {
+      "id": "instagram-story-progress",
+      "platform": "instagram",
+      "title": "Small wins. Real progress.",
+      "kind": "Story · 2 photos",
+      "assets": [
+        "instagram-stories-progress-01",
+        "instagram-stories-progress-02"
+      ]
+    },
+    {
+      "id": "instagram-story-how-to",
+      "platform": "instagram",
+      "title": "Phone ready. You ready?",
+      "kind": "Story · 2 photos",
+      "assets": [
+        "instagram-stories-how-to-01",
+        "instagram-stories-how-to-02"
+      ]
+    },
+    {
+      "id": "instagram-01-crew",
+      "platform": "instagram",
+      "title": "Build a habit together",
+      "kind": "Feed post",
+      "assets": [
+        "instagram-feed-01-crew"
+      ],
+      "caption": "Build a habit. Together. Daily group workouts give your crew a reason to keep showing up. Explore PumpDuel at the link in our bio. Groups require PumpDuel Pro.\n\n#PumpDuel #FitnessWithFriends #WorkoutConsistency"
+    },
+    {
+      "id": "instagram-02-duels",
+      "platform": "instagram",
+      "title": "A friend worth beating",
+      "kind": "Feed post",
+      "assets": [
+        "instagram-feed-02-duels"
+      ],
+      "caption": "A friend worth beating. 60 seconds to make your reps count. Who would you invite to a live duel? Some competition features require Pro.\n\n#PumpDuel #FitnessWithFriends #WorkoutConsistency"
+    },
+    {
+      "id": "instagram-03-challenge",
+      "platform": "instagram",
+      "title": "Set a score. Dare them.",
+      "kind": "Feed post",
+      "assets": [
+        "instagram-feed-03-challenge"
+      ],
+      "caption": "Set a score. Dare them. Send a friend a challenge they can take on when they’re ready. Push-ups, pull-ups or squats? Some competition features require Pro.\n\n#PumpDuel #FitnessWithFriends #WorkoutConsistency"
+    },
+    {
+      "id": "instagram-highlights",
+      "platform": "instagram",
+      "title": "Highlight covers",
+      "kind": "Profile · 6 photos",
+      "assets": [
+        "instagram-highlights-start",
+        "instagram-highlights-crew",
+        "instagram-highlights-duels",
+        "instagram-highlights-challenge",
+        "instagram-highlights-progress",
+        "instagram-highlights-how-to"
+      ]
+    },
+    {
+      "id": "instagram-profile",
+      "platform": "instagram",
+      "title": "Profile picture",
+      "kind": "Profile",
+      "assets": [
+        "instagram-profile"
+      ]
+    },
+    {
+      "id": "facebook-welcome",
+      "platform": "facebook",
+      "title": "Welcome to PumpDuel",
+      "kind": "Feed post",
+      "assets": [
+        "facebook-welcome-post"
+      ],
+      "caption": "Welcome to PumpDuel. Build a habit with your crew, challenge a friend, and turn reps into friendly rivalry. Explore what’s possible at https://pumpduel.com. Groups and some competition features require Pro."
+    },
+    {
+      "id": "facebook-cover",
+      "platform": "facebook",
+      "title": "Build a habit together",
+      "kind": "Page cover",
+      "assets": [
+        "facebook-cover"
+      ]
+    },
+    {
+      "id": "facebook-profile",
+      "platform": "facebook",
+      "title": "Profile picture",
+      "kind": "Profile",
+      "assets": [
+        "facebook-profile"
+      ]
+    },
+    {
+      "id": "tiktok-01-habit",
+      "platform": "tiktok",
+      "title": "Build a habit together",
+      "kind": "Video cover · photo",
+      "assets": [
+        "tiktok-covers-01-habit"
+      ],
+      "caption": "Your crew is your reason to show up. Build a habit. Together. Groups require PumpDuel Pro. #PumpDuel #FitnessWithFriends"
+    },
+    {
+      "id": "tiktok-02-duel",
+      "platform": "tiktok",
+      "title": "60 seconds. Game on.",
+      "kind": "Video cover · photo",
+      "assets": [
+        "tiktok-covers-02-duel"
+      ],
+      "caption": "60 seconds. A friend worth beating. Some competition features require Pro. #PumpDuel"
+    },
+    {
+      "id": "tiktok-03-challenge",
+      "platform": "tiktok",
+      "title": "Set a score. Dare them.",
+      "kind": "Video cover · photo",
+      "assets": [
+        "tiktok-covers-03-challenge"
+      ],
+      "caption": "Set a score. Let your friend take their turn. Some competition features require Pro. #PumpDuel"
+    },
+    {
+      "id": "tiktok-profile",
+      "platform": "tiktok",
+      "title": "Profile picture",
+      "kind": "Profile",
+      "assets": [
+        "tiktok-profile"
+      ]
+    },
+    {
+      "id": "youtube-shorts-01-habit",
+      "platform": "youtube",
+      "title": "Build a habit together",
+      "kind": "Shorts cover · photo",
+      "assets": [
+        "youtube-shorts-01-habit"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-shorts-02-duel",
+      "platform": "youtube",
+      "title": "60 seconds. Game on.",
+      "kind": "Shorts cover · photo",
+      "assets": [
+        "youtube-shorts-02-duel"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-shorts-03-challenge",
+      "platform": "youtube",
+      "title": "Set a score. Dare them.",
+      "kind": "Shorts cover · photo",
+      "assets": [
+        "youtube-shorts-03-challenge"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-thumbnails-desktop-4k-01-habit",
+      "platform": "youtube",
+      "title": "Build a habit together",
+      "kind": "Thumbnail · 4K",
+      "assets": [
+        "youtube-thumbnails-desktop-4k-01-habit"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-thumbnails-desktop-4k-02-duel",
+      "platform": "youtube",
+      "title": "60 seconds. Game on.",
+      "kind": "Thumbnail · 4K",
+      "assets": [
+        "youtube-thumbnails-desktop-4k-02-duel"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-thumbnails-desktop-4k-03-challenge",
+      "platform": "youtube",
+      "title": "Set a score. Dare them.",
+      "kind": "Thumbnail · 4K",
+      "assets": [
+        "youtube-thumbnails-desktop-4k-03-challenge"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-thumbnails-01-habit",
+      "platform": "youtube",
+      "title": "Build a habit together",
+      "kind": "Thumbnail · 720p",
+      "assets": [
+        "youtube-thumbnails-01-habit"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-thumbnails-02-duel",
+      "platform": "youtube",
+      "title": "60 seconds. Game on.",
+      "kind": "Thumbnail · 720p",
+      "assets": [
+        "youtube-thumbnails-02-duel"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-thumbnails-03-challenge",
+      "platform": "youtube",
+      "title": "Set a score. Dare them.",
+      "kind": "Thumbnail · 720p",
+      "assets": [
+        "youtube-thumbnails-03-challenge"
+      ],
+      "caption": "Build a habit. Together. Explore daily group workouts, live duels and friend challenges in PumpDuel for iPhone. Groups and some competition features require PumpDuel Pro. Learn more: https://pumpduel.com"
+    },
+    {
+      "id": "youtube-banner",
+      "platform": "youtube",
+      "title": "Build a habit together",
+      "kind": "Channel banner",
+      "assets": [
+        "youtube-banner"
+      ]
+    },
+    {
+      "id": "youtube-profile",
+      "platform": "youtube",
+      "title": "Profile picture",
+      "kind": "Profile",
+      "assets": [
+        "youtube-profile"
+      ]
+    },
+    {
+      "id": "x-pinned",
+      "platform": "x",
+      "title": "Build a habit together",
+      "kind": "Pinned post",
+      "assets": [
+        "x-pinned-post"
+      ],
+      "caption": "Build a habit. Together.\nDaily group workouts. Live duels. Challenges with friends.\nExplore PumpDuel for iPhone: https://pumpduel.com\nGroups and some competition features require Pro."
+    },
+    {
+      "id": "x-header",
+      "platform": "x",
+      "title": "Build a habit together",
+      "kind": "Profile header",
+      "assets": [
+        "x-header"
+      ]
+    },
+    {
+      "id": "x-profile",
+      "platform": "x",
+      "title": "Profile picture",
+      "kind": "Profile",
+      "assets": [
+        "x-profile"
+      ]
+    }
+  ]
+}

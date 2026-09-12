@@ -1,0 +1,489 @@
+{
+  "scope": "Finished social brand kit PNG exports and the display font only. Original files retained.",
+  "provenance": "App-rendered marketing fixtures, not customer results. Images copied byte-for-byte; no image metadata or provenance was removed.",
+  "files": [
+    {
+      "file": "instagram/stories/start-01.png",
+      "bytes": 116418,
+      "sha256": "ac53b05e28af579e6f939b8ec23a46ecacc4ddca0121a8e05a8b8e558c994d2b",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/start-02.png",
+      "bytes": 62024,
+      "sha256": "4ff5742bb3e3ba41df0e718fdca43fcd6301450de9d9ed81850673a3dc4f1636",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/crew-01.png",
+      "bytes": 168562,
+      "sha256": "10927c04a2f009741265119fefcb4d68002597d0d852a4d4d52572fe9654ffb8",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/crew-02.png",
+      "bytes": 61007,
+      "sha256": "b79fa0a6866a78976d069d7174545c13b1a48001ef397eead93d502b0fae5526",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/duels-01.png",
+      "bytes": 506994,
+      "sha256": "f82708b11ad7429e004d01010fd0b79ff26fa16481b0fd8016388346f49a8c20",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/duels-02.png",
+      "bytes": 54826,
+      "sha256": "7a1654c6e90b7009ece55a193e44e481065d920e73a5d4ea20b641cf6f68f408",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/challenge-01.png",
+      "bytes": 580669,
+      "sha256": "d7a615d85352753413c32ba0851e072482d6001d53b9e66ad2bb84179f6e4be4",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/challenge-02.png",
+      "bytes": 54486,
+      "sha256": "2b5b228a1e999f2cef6c76995c18337f3ee8a593ed37b66f9be4a77840efe23f",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/progress-01.png",
+      "bytes": 122039,
+      "sha256": "ce97227590454b5ac23600b0f45e25462a63ce0f87429a02e17ca9598b406a86",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/progress-02.png",
+      "bytes": 59340,
+      "sha256": "bd6cd9711a145d1559ca115319ec970b31eeb6393c3849b7a25f71a52218b73b",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/how-to-01.png",
+      "bytes": 122439,
+      "sha256": "813f93f5b97594b7dbe8ac53017b6f12f1c910329b5e85dd64f27a0a7ba32496",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/stories/how-to-02.png",
+      "bytes": 58747,
+      "sha256": "cf4addb8eaa06f137398ad8fb98ef9539d54a3afae1d293109be713298d94a95",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/feed/01-crew.png",
+      "bytes": 145633,
+      "sha256": "550a3fdc282973a4a4aba45d0130830647d1528e4767f508cf18deecfbb69458",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/feed/02-duels.png",
+      "bytes": 415140,
+      "sha256": "9dbeb558a11fb75c2e47a7cd3f5b5148f9d802d8a87f8765846c4b902f4af348",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/feed/03-challenge.png",
+      "bytes": 471202,
+      "sha256": "f40f1bed1fb4eaa40a282112c6eb36b115e1ef7497236e42146baece8be39e90",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/highlights/start.png",
+      "bytes": 7015,
+      "sha256": "aba5e59ee800fddc8d0f0cace782cab1899607e2fda8b2163446a0e4a124718a",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/highlights/crew.png",
+      "bytes": 7377,
+      "sha256": "f08eda3943dff3cbec2eb38685d25d60f6984e4e679270686c06c8fe60a90382",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/highlights/duels.png",
+      "bytes": 7581,
+      "sha256": "77759e04576a1eeb7af87e9f46e33dd7eb4be8d3867e73d03bab72b293bf3510",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/highlights/challenge.png",
+      "bytes": 8694,
+      "sha256": "83534ac332aeba492847c387a3c27604e2b4522103ea9d5fa3dc6daa04373688",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/highlights/progress.png",
+      "bytes": 6530,
+      "sha256": "375852c541d478263c8cf380e2dc58040d95e33e67119376234f5e55fa740625",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/highlights/how-to.png",
+      "bytes": 6723,
+      "sha256": "6df4d5c24354fd105e0363ddb755de8840328df70436eb55a3ba98ac60b0c154",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "instagram/profile.png",
+      "bytes": 47429,
+      "sha256": "f419d8cfbb22f7d142188a5868284bfd44b392d9eef022c64e11b27268a76e97",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "facebook/welcome-post.png",
+      "bytes": 75847,
+      "sha256": "512e16ceeff2c36419021971fc8b889beb60538a95ad7022ad7790f6a88dc09f",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "facebook/cover.png",
+      "bytes": 28058,
+      "sha256": "8b8a2394236d0a4e6503685a73075835e1abdf5b03568e728e8929bb7d332c61",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "facebook/profile.png",
+      "bytes": 47429,
+      "sha256": "f419d8cfbb22f7d142188a5868284bfd44b392d9eef022c64e11b27268a76e97",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "tiktok/covers/01-habit.png",
+      "bytes": 123146,
+      "sha256": "7e6beccf38c5ee40d5e7c2f98551a2694d3c684e987d51a59985822980bc8939",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "tiktok/covers/02-duel.png",
+      "bytes": 571545,
+      "sha256": "e2447979cc7e7f1212952e9bfed8f67f83ee6d0754fdebccd4ab3adcf75b04c7",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "tiktok/covers/03-challenge.png",
+      "bytes": 621540,
+      "sha256": "f973472aedba7095401f71dc5543f0176f5aeeab1c44c1adb360977f6b77ba28",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "tiktok/profile.png",
+      "bytes": 47429,
+      "sha256": "f419d8cfbb22f7d142188a5868284bfd44b392d9eef022c64e11b27268a76e97",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/shorts/01-habit.png",
+      "bytes": 249160,
+      "sha256": "f7b80444b27393c75caa824a95ac132d45599f633b24ec8cd424731d7eb18bb9",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/shorts/02-duel.png",
+      "bytes": 1588713,
+      "sha256": "374184ec8a994ad59832e1a6fd68f3491bf36b8616ddc5abdcbd6b1a70800a31",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/shorts/03-challenge.png",
+      "bytes": 1869741,
+      "sha256": "30cc430eeb40f0d3b9bc9d6add4e0fe478e628372fdc28ad252a032daa44ae01",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/thumbnails/desktop-4k/01-habit.png",
+      "bytes": 297297,
+      "sha256": "f3ded4f1f5a3f6827fbc44c0f3f825aa53f2a0d3932016a032df82e80a031c84",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/thumbnails/desktop-4k/02-duel.png",
+      "bytes": 1932636,
+      "sha256": "42774cb7b1024f955c5b6b1020761a9f41beef5ab4230e4f9c4f75d58647cdcb",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/thumbnails/desktop-4k/03-challenge.png",
+      "bytes": 2402278,
+      "sha256": "52084a7dc142e7d66cedada236c9357b2f4b21a452f40a5c896bcb229c0c4fa4",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/thumbnails/01-habit.png",
+      "bytes": 96037,
+      "sha256": "9aabc9dbf7d05d7c207a3e58b35f0b0d9a0c95b4cd2dd6415dd8f97d3fb94724",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/thumbnails/02-duel.png",
+      "bytes": 386418,
+      "sha256": "e3cfda14735a70765ab59e5a77549bc30593e7793955ea81c84b30b5851434bf",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/thumbnails/03-challenge.png",
+      "bytes": 431394,
+      "sha256": "fb0f21122ed9ee924479a5265e061df3afc6925eaab3e8da7360b34fe231591a",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/banner.png",
+      "bytes": 46016,
+      "sha256": "6c4742e8abbc742f605d4406d1ce75da40c6738649e666ba5cbc875161af2ba8",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "youtube/profile.png",
+      "bytes": 35529,
+      "sha256": "4f34b5c53cd61f09491ab69854dad76277edc1de336bde86a5efee275614a5b7",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "x/pinned-post.png",
+      "bytes": 75847,
+      "sha256": "512e16ceeff2c36419021971fc8b889beb60538a95ad7022ad7790f6a88dc09f",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "x/header.png",
+      "bytes": 27172,
+      "sha256": "3b0427e645c72fefeef977ee70d4c79564886f678c0ac5c3e4e883167c0e7940",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "x/profile.png",
+      "bytes": 15347,
+      "sha256": "c6b5492bb5b0ad39b1624057e2ba34bc8b2ad30c30561de250929b03962ab94f",
+      "pngChunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "iCCP"
+      ]
+    },
+    {
+      "file": "fonts/BarlowCondensed-Black.ttf",
+      "bytes": 110828,
+      "sha256": "e74b750df582c608f35db467b711b2b60d2217618e85e60b72b42dfd00446cab"
+    },
+    {
+      "file": "fonts/OFL.txt",
+      "bytes": 4376,
+      "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817"
+    }
+  ]
+}
