@@ -101,6 +101,55 @@ function copyText(text) {
   if (!navigator.clipboard?.writeText) { toast('Select and copy the caption text below.'); return; }
   navigator.clipboard.writeText(text).then(() => toast('Copied to clipboard.'), () => toast('Couldn’t copy. Select and copy the text below.'));
 }
+function renderSetupGuide() {
+  const template = document.querySelector(`#guide-${platform}`);
+  const guide = $('#setup-guide');
+  guide.hidden = !template;
+  guide.open = false;
+  if (!template) return;
+  const info = catalog.platforms.find(item => item.id === platform);
+  $('#setup-guide-title').textContent = `${info.title} brand setup guide`;
+  const content = $('#setup-guide-content');
+  content.replaceChildren(template.content.cloneNode(true));
+  const profile = content.querySelector('[data-brand-profile]');
+  if (profile) {
+    profile.append(el('div', {className:'guide-profile-heading'}, el('img', {src:`${platform}/profile.png`, alt:'PumpDuel profile picture', width:56, height:56}),
+      el('div', {}, el('strong', {text:info.displayName}), el('p', {className:'muted',text:'Use the same PD mark across your accounts.'}))),
+      el('p', {className:'guide-bio',text:info.bio}),
+      el('div', {className:'guide-actions'},
+        button('Save profile photo','secondary',() => requestSave([`${platform}-profile`]),`Save ${info.title} profile photo`),
+        button('Copy name','secondary',() => copyText(info.displayName),`Copy ${info.title} display name`),
+        button('Copy bio','secondary',() => copyText(info.bio),`Copy ${info.title} bio`)));
+  }
+  const highlights = content.querySelector('[data-highlight-map]');
+  if (highlights) {
+    for (const [key,name,purpose] of [
+      ['start','Start','Meet PumpDuel and find your people.'],
+      ['crew','Crew','Explain groups and daily workouts.'],
+      ['duels','Duels','Show how live competition works.'],
+      ['challenge','Challenge','Explain taking turns with a friend.'],
+      ['progress','Progress','Show rep totals and recent activity.'],
+      ['how-to','How to','Help someone begin their first set.']
+    ]) {
+      highlights.append(el('div',{className:'highlight-row'},
+        el('img',{src:`instagram/highlights/${key}.png`,alt:`${name} Highlight cover`,width:48,height:48,loading:'lazy'}),
+        el('div',{className:'highlight-description'},el('strong',{text:name}),el('p',{text:purpose})),
+        el('div',{className:'guide-actions'},
+          button('Save Stories','secondary',() => requestSave(catalog.posts.find(post => post.id === `instagram-story-${key}`).assets),`Save ${name} Highlight Stories`),
+          button('Save cover','secondary',() => requestSave([`instagram-highlights-${key}`]),`Save ${name} Highlight cover`))));
+    }
+  }
+  content.querySelectorAll('[data-save-post]').forEach(control => {
+    const post = catalog.posts.find(item => item.id === control.dataset.savePost);
+    control.addEventListener('click',() => requestSave(post.assets));
+  });
+  content.querySelectorAll('[data-copy-post]').forEach(control => {
+    const post = catalog.posts.find(item => item.id === control.dataset.copyPost);
+    control.addEventListener('click',() => copyText(post.caption));
+  });
+  content.querySelectorAll('[data-copy-website]').forEach(control => control.addEventListener('click',() => copyText('https://pumpduel.com')));
+}
+
 function renderPlatform() {
   observer.disconnect();
   const info = catalog.platforms.find(item => item.id === platform);
@@ -126,6 +175,7 @@ function renderPlatform() {
     el('h3', {text:'Bio'}), el('p', {text:info.bio}), button('Copy bio','secondary',() => copyText(info.bio)));
   $('#profile-copy').hidden = false;
   $('#profile-copy').open = false;
+  renderSetupGuide();
   updateSelection();
 }
 function showDialog(title, message, ids = []) {

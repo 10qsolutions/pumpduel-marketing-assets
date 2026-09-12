@@ -20,6 +20,7 @@
     <div class="intro"><div><h1>Ready to post.</h1><p>Save your photos. Copy the caption.</p></div><button class="text-button" id="help">Saving on iPhone ↗</button></div>
     <nav id="platforms" aria-label="Social platform"></nav>
     <div class="section-heading"><div><h2 id="platform-title">Your assets</h2><p id="asset-count" class="muted">Loading your photos…</p></div><button id="select-platform" class="secondary" disabled>Select all</button></div>
+    <details class="setup-guide" id="setup-guide" hidden><summary id="setup-guide-title">Brand setup guide</summary><div class="setup-guide-content" id="setup-guide-content"></div></details>
     <div id="gallery" class="gallery" aria-busy="true"></div>
     <details class="profile-copy" id="profile-copy" hidden><summary>Profile name &amp; bio</summary><div id="profile-content"></div></details>
     <noscript><p>Enable JavaScript to select and save your photos.</p></noscript>
@@ -35,5 +36,100 @@
     <p id="save-message"></p><div id="save-items" class="save-items"></div>
     <button id="confirm-save" class="primary" hidden>Save to Photos</button>
   </dialog>
+  <template id="guide-instagram">
+    <p class="guide-lead">Use a <strong>Business professional account</strong> for PumpDuel. Build a clear introduction with your profile, six Highlights and three feed posts.</p>
+    <ol class="guide-steps">
+      <li><h3>Set up the brand profile</h3>
+        <p>Create the Instagram account with an email the business controls. In the profile menu, find <strong>Switch to professional account</strong> and choose <strong>Business</strong>. Pick an app or software category if offered. Keep the account public.</p>
+        <p>Try <strong>@pumpduel</strong>, then <strong>@pumpduelapp</strong> or <strong>@getpumpduel</strong>. Check availability and use the same handle across all three platforms. Turn on two-factor authentication and store recovery details with the business.</p>
+        <div class="guide-profile" data-brand-profile></div>
+        <p>Add <strong>pumpduel.com</strong> in the profile’s website/link field. Show only contact details you want customers to see. Connect the Instagram account to the PumpDuel Facebook Page so you can manage both in Meta Business Suite.</p>
+        <p class="guide-source"><a href="https://www.facebookblueprint.com/student/activity/260492-bring-your-business-online-with-instagram-overview" target="_blank" rel="noopener noreferrer">Meta’s Instagram business setup guide ↗</a></p>
+      </li>
+      <li><h3>Turn the Story sets into Highlights</h3>
+        <div class="guide-flow" aria-label="Save two photos, publish them as Stories, then add them to a named Highlight"><span>Save 2 photos</span><b aria-hidden="true">→</b><span>Post as Stories</span><b aria-hidden="true">→</b><span>Add to Highlight</span></div>
+        <p>Check that <strong>Save story to archive</strong> is on. For each set below, save both portrait images, then post image <strong>1 followed by 2</strong> to your public Story. Add both to one Highlight with the matching short name. Stories can stay on your profile as Highlights after the normal 24 hours.</p>
+        <p>Open the first published Story and choose <strong>Highlight</strong> (check <strong>More</strong> if it is not visible). Create a new Highlight named <strong>Start</strong>, then add the second Story to that same Highlight. Repeat for the other names below. You can also select both Stories together from the Story Archive when creating a Highlight.</p>
+        <p>Use the matching square icon in <strong>Edit Highlight → Edit cover</strong>, choosing it from Photos when that option appears. The icon is the cover; the two portrait images are the content people watch. Keep the icon centred and let the Stories expire into the archive rather than deleting them early.</p>
+        <div class="highlight-map" data-highlight-map></div>
+        <p class="guide-note">Use these six names consistently. Highlight position and ordering controls can vary; check the finished profile instead of relying on a fixed left-to-right order.</p>
+        <p class="guide-source"><a href="https://about.fb.com/ja/news/2017/12/instagram_highlight_archive/" target="_blank" rel="noopener noreferrer">Meta: how Highlights and Story Archive work ↗</a></p>
+      </li>
+      <li><h3>Add a link people can tap</h3>
+        <p>On the second Story in each set, add Instagram’s <strong>Link sticker</strong> to <strong>pumpduel.com</strong>, labelled <strong>Explore PumpDuel</strong>. Place it in clear space below the copy, keeping the app screen visible. The link is added inside Instagram; saving the image alone does not make it clickable.</p>
+        <button class="secondary" type="button" data-copy-website>Copy website link</button>
+        <p class="guide-note">New or restricted accounts may not have Link stickers yet. Keep the website in the profile’s link field and point people there while the option is unavailable.</p>
+        <p class="guide-source"><a href="https://about.fb.com/ja/news/2021/10/linkaccessstickers/" target="_blank" rel="noopener noreferrer">Meta: adding links to Stories ↗</a></p>
+      </li>
+      <li><h3>Give the feed a useful introduction</h3>
+        <p>Use <strong>Crew → Duels → Challenge</strong> as your three introductory topics. Each image is a complete standalone post. Save each one below and use its <strong>Copy caption</strong> button in the gallery. Keep the Pro information in the captions.</p>
+        <div class="guide-actions"><button class="secondary" type="button" data-save-post="instagram-01-crew">Save Crew post</button><button class="secondary" type="button" data-save-post="instagram-02-duels">Save Duels post</button><button class="secondary" type="button" data-save-post="instagram-03-challenge">Save Challenge post</button></div>
+        <p>If <strong>Pin to your profile</strong> is available in a post’s menu, pin these introductions and inspect the resulting order. Then add demonstrations, actual challenge invitations and community content over time.</p>
+      </li>
+    </ol>
+    <aside class="guide-note"><strong>For daily worldwide challenges:</strong> the existing “Set a score. Dare them.” cards explain friend challenges. Use a fresh worldwide challenge card and its current join link for a daily event. Check the dates and replace expired invitations in Stories and Highlights.</aside>
+  </template>
+
+  <template id="guide-facebook">
+    <p class="guide-lead">Create a <strong>Facebook Page</strong> for PumpDuel, managed through your real Facebook account. The Page is the public brand presence.</p>
+    <ol class="guide-steps">
+      <li><h3>Create the Page and connect the team</h3>
+        <p>In Facebook’s <strong>Pages</strong> area, choose <strong>Create new Page</strong>. Name it <strong>PumpDuel</strong>, choose the closest app or software category, and add the bio below. Use the same available username as Instagram and TikTok.</p>
+        <p>Connect the Page and the PumpDuel Instagram Business account in <strong>Meta Business Suite</strong>. Invite teammates through Page or business access, with the permissions they need. Each person should use their own login with two-factor authentication.</p>
+        <p class="guide-source"><a href="https://www.facebookblueprint.com/student/page/259567-how-to-create-a-facebook-page" target="_blank" rel="noopener noreferrer">Meta: create a Facebook Page ↗</a> · <a href="https://www.facebook.com/help/289207354498410/" target="_blank" rel="noopener noreferrer">Page access ↗</a></p>
+      </li>
+      <li><h3>Use the profile image and Page cover</h3>
+        <div class="guide-profile" data-brand-profile></div>
+        <p>Upload the square <strong>PD</strong> image as the profile photo. Use the wide <strong>Build a habit together</strong> image as the Page cover. Keep the complete headline visible when checking the mobile crop.</p>
+        <div class="guide-actions"><button class="secondary" type="button" data-save-post="facebook-cover">Save Page cover</button></div>
+        <p>Add <strong>pumpduel.com</strong> to the website field. Choose an action button that opens the site, such as <strong>Learn More</strong>, if offered. Test the button from the public Page view.</p>
+        <button class="secondary" type="button" data-copy-website>Copy website link</button>
+        <p class="guide-source"><a href="https://www.facebook.com/help/messenger-app/1638565256396310?locale=en_GB" target="_blank" rel="noopener noreferrer">Meta: change your Page’s action button ↗</a></p>
+      </li>
+      <li><h3>Make the welcome post easy to find</h3>
+        <p>Publish <strong>Welcome to PumpDuel</strong> with its matching caption. Use the Page’s <strong>Pin</strong> or <strong>Featured</strong> option if it appears, so visitors can quickly understand the app and find the website.</p>
+        <div class="guide-actions"><button class="secondary" type="button" data-save-post="facebook-welcome">Save welcome post</button><button class="secondary" type="button" data-copy-post="facebook-welcome">Copy welcome caption</button></div>
+      </li>
+      <li><h3>Reuse the portrait sets as Page Stories</h3>
+        <p>The two-image Instagram Story sets also give you ready-made introductions for Facebook Stories. Publish each pair in order, check the crop, and confirm you are posting as <strong>PumpDuel</strong>. Start with the introduction below.</p>
+        <button class="secondary" type="button" data-save-post="instagram-story-start">Save introduction Stories</button>
+        <p>Keep the welcome post as the Page’s permanent introduction. Instagram Highlights do not become Facebook Highlights automatically; check which Story and Featured options your Page offers. Review cross-posted text and links in each app before publishing.</p>
+      </li>
+    </ol>
+  </template>
+
+  <template id="guide-tiktok">
+    <p class="guide-lead">Use a <strong>Business Account</strong> for the PumpDuel brand. Build the profile around useful videos that show the app and a clear next step.</p>
+    <ol class="guide-steps">
+      <li><h3>Choose Business and add your identity</h3>
+        <p>In TikTok, open <strong>Profile → ☰ → Settings and privacy → Account → Switch to Business Account</strong>. Choose the closest category offered. Use an email the business controls, turn on two-step verification, and keep the same available handle as your other brand accounts.</p>
+        <div class="guide-profile" data-brand-profile></div>
+        <p class="guide-source"><a href="https://support.tiktok.com/en/using-tiktok/growing-your-audience/switching-to-a-creator-or-business-account?lang=et" target="_blank" rel="noopener noreferrer">TikTok: account types and switching to Business ↗</a></p>
+      </li>
+      <li><h3>Add the website when eligible</h3>
+        <p>In <strong>Edit profile</strong>, look for <strong>Links</strong> or <strong>Website</strong> and add <strong>pumpduel.com</strong>. TikTok’s link-specific help lists <strong>1,000 followers or a Registered Business Account</strong> as the requirement. Switching to Business alone should not be treated as a guarantee that the field will appear.</p>
+        <p>Keep <strong>pumpduel.com</strong> written in the bio while you complete the available registration steps or grow the account. Only say “link in bio” once the clickable website link is actually there and tested.</p>
+        <button class="secondary" type="button" data-copy-website>Copy website link</button>
+        <p class="guide-source"><a href="https://support.tiktok.com/en/getting-started/setting-up-your-profile/linking-another-social-media-account?lang=hi" target="_blank" rel="noopener noreferrer">TikTok: profile website eligibility ↗</a></p>
+      </li>
+      <li><h3>Use the three covers with matching videos</h3>
+        <p>The TikTok assets in this kit are <strong>cover images</strong>. Pair each with a finished video that shows the corresponding experience:</p>
+        <div class="guide-video-map">
+          <div><strong>01 · Habit</strong><p>Show a group, its daily workout and the app counting a set.</p><button class="secondary" type="button" data-save-post="tiktok-01-habit">Save Habit cover</button></div>
+          <div><strong>02 · Duel</strong><p>Show a live invitation, the workout and the result.</p><button class="secondary" type="button" data-save-post="tiktok-02-duel">Save Duel cover</button></div>
+          <div><strong>03 · Challenge</strong><p>Show a friend challenge and how the other person takes their turn.</p><button class="secondary" type="button" data-save-post="tiktok-03-challenge">Save Challenge cover</button></div>
+        </div>
+        <p>Include the matching cover as a brief readable frame in the edited video. Before publishing, use <strong>Select cover</strong> and choose that frame. Start the video itself with the action or challenge hook. Use the matching gallery caption, then check that it describes the footage you are posting.</p>
+        <p>Feature these three videos with <strong>Pin</strong> if your post menu offers it. Use playlists to group later videos when that option is available; the initial setup does not depend on playlists or Story Highlights.</p>
+        <p class="guide-source"><a href="https://support.tiktok.com/en/using-tiktok/creating-videos/editing-posting-and-deleting?lang=id" target="_blank" rel="noopener noreferrer">TikTok: choosing a video cover ↗</a></p>
+      </li>
+      <li><h3>Publish with the brand settings</h3>
+        <p>For posts promoting PumpDuel, open <strong>Content disclosure and ads</strong>, enable disclosure and select <strong>Your brand</strong>. TikTok labels these posts <strong>Promotional content</strong>.</p>
+        <p>Choose music from TikTok’s <strong>Commercial Music Library</strong>, or use original audio you have permission to use commercially. Add the music in TikTok so you can select an available commercial sound for that post.</p>
+        <p class="guide-source"><a href="https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/promoting-a-brand-product-or-service?Sid=1" target="_blank" rel="noopener noreferrer">TikTok: promoting your own brand ↗</a> · <a href="https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/commercial-use-of-music-on-tiktok?lang=en" target="_blank" rel="noopener noreferrer">Commercial music ↗</a></p>
+      </li>
+    </ol>
+  </template>
+
 </body>
 </html>

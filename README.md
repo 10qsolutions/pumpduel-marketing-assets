@@ -15,6 +15,10 @@ Visible images are prepared for file sharing in advance. A selection that is sti
 
 Actual iPhone Photos imports, batch limits and mixed image/video behaviour must be checked on the target device over HTTPS. Desktop preview testing cannot verify these OS actions. Localhost on a phone refers to the phone itself; the Mac preview URL is not a hosted phone URL.
 
+## Brand account setup guide
+
+The Instagram, Facebook and TikTok tabs include an expandable brand setup guide with direct profile, Story, Highlight-cover and first-post save controls. It explains the recommended account type, profile copy, Instagram Story-to-Highlight workflow, Facebook Page setup and TikTok cover, website, music and disclosure options. Platform help links are included in the guide; menu labels and account availability can vary. No accounts are created or changed by the guide.
+
 ## Hosting
 
 Run `npm run build` and publish only the generated `dist` folder with an HTTPS static host. Keep the project root as the build/source folder. Do not serve the Git checkout itself.
@@ -28,3 +32,7 @@ The build copies only the page files, reviewed catalogue assets and required fon
 To add a finished asset, inspect its visible content and metadata, copy that specific file into a platform folder, and add its size, SHA-256 hash, dimensions and media type to `catalog.json`. Add it to a post's ordered asset list. Do not copy an entire generation/output folder. Preserve any AI provenance; if the validator encounters new metadata, review it explicitly before adding support.
 
 `npm test` checks the public file boundary, asset integrity and traversal rejection. Use the gallery to verify selection, post order and captions before publishing new material.
+
+## Generated video and media archive
+
+[The media archive](media-archive/README.md) holds the generated videos, source clips, supporting images/audio and captions separately from the public gallery. Archive media are tracked with Git LFS; install it and run `git lfs pull` after cloning to retrieve the full files. See the archive manifest for exact filenames and integrity hashes. The public site build does not include this archive.

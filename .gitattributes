@@ -1,0 +1,8 @@
+# Archive media use Git LFS; the reviewed website assets remain ordinary Git files.
+media-archive/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+media-archive/**/*.m4a filter=lfs diff=lfs merge=lfs -text
+media-archive/**/*.mp3 filter=lfs diff=lfs merge=lfs -text
+media-archive/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+media-archive/**/*.png filter=lfs diff=lfs merge=lfs -text
+media-archive/**/*.wav filter=lfs diff=lfs merge=lfs -text
+media-archive/**/*.webm filter=lfs diff=lfs merge=lfs -text
