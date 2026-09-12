@@ -1,206 +1,262 @@
-import {mkdtemp, readFile, rm, stat, writeFile} from 'node:fs/promises';
-import {spawn} from 'node:child_process';
+import {readFileSync} from 'node:fs';
+import {readFile, writeFile, mkdir, mkdtemp, copyFile, rm} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {dirname, resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {tmpdir} from 'node:os';
+import opentype from 'opentype.js';
+import {Resvg} from '@resvg/resvg-js';
+import {validatePNG} from './files.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const temp = await mkdtemp(resolve(tmpdir(), 'pumpduel-redesign-'));
-const fontUrl = resolve(root, 'fonts/BarlowCondensed-Black.ttf');
-const masters = {
-  community: resolve(root, 'campaign/masters/community-landscape.png'),
-  rivalry: resolve(root, 'campaign/masters/rivalry-portrait.png'),
-  challenge: resolve(root, 'campaign/masters/challenge-portrait.png'),
+const fonts = Object.fromEntries(Object.entries({
+  display:'BarlowCondensed-Black.ttf', body:'Barlow-SemiBold.ttf',
+}).map(([key, file]) => {
+  const data = readFileSync(resolve(root,'fonts',file));
+  return [key,opentype.parse(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength))];
+}));
+const colors = {ink:'#0c100d', lime:'#b7ff2a', paper:'#f5f3ea', muted:'#c4cbbc'};
+const masterFiles = {
+  community:'community-landscape.png', rivalry:'rivalry-portrait.png', challenge:'challenge-portrait.png',
 };
+const masterImages = new Map();
 
+export function svgPath(path) {
+  // Explicit separators also handle tiny negative coordinates rounded to zero.
+  // opentype's packed serializer can join that zero onto the preceding number.
+  const coordinates={M:['x','y'],L:['x','y'],Q:['x1','y1','x','y'],C:['x1','y1','x2','y2','x','y'],Z:[]};
+  return path.commands.map(command=>`${command.type} ${coordinates[command.type].map(key=>Number(command[key].toFixed(3))).join(' ')}`).join(' ');
+}
 const themes = {
-  start: {master:'rivalry', eyebrow:'PRIVATE CREWS', lines:['START WITH','YOUR PEOPLE.'], sub:'Show up together. Keep each other moving.', stat:'DAILY CREW'},
-  crew: {master:'community', eyebrow:'CONSISTENCY, TOGETHER', lines:['BUILD A HABIT.','TOGETHER.'], sub:'The workout is easier to start when your crew is waiting.', stat:'GROUP WORKOUTS'},
-  habit: {master:'community', eyebrow:'FITNESS WITH FRIENDS', lines:['BUILD A HABIT.','TOGETHER.'], sub:'Daily workouts. Real accountability. Friendly competition.', stat:'SHOW UP DAILY'},
-  duels: {master:'rivalry', eyebrow:'LIVE COMPETITION', lines:['TURN REPS','INTO RIVALRY.'], sub:'Same movement. Same clock. One score to beat.', stat:'LIVE DUELS'},
-  duel: {master:'rivalry', eyebrow:'LIVE COMPETITION', lines:['60 SECONDS.','GAME ON.'], sub:'Face a friend live and make every rep count.', stat:'HEAD TO HEAD'},
-  challenge: {master:'challenge', eyebrow:'YOUR MOVE', lines:['SET A SCORE.','DARE THEM.'], sub:'Train now. Send the challenge. Let them answer.', stat:'FRIEND CHALLENGE'},
-  progress: {master:'challenge', eyebrow:'PROGRESS THAT ADDS UP', lines:['SMALL WINS.','REAL PROGRESS.'], sub:'See your reps, streaks and momentum build over time.', stat:'TRACK EVERY REP'},
-  howto: {master:'rivalry', eyebrow:'CAMERA-COUNTED REPS', lines:['PHONE READY.','YOU READY?'], sub:'Set it down, frame the movement and start your set.', stat:'NO WEARABLE NEEDED'},
+  start:{photo:'community',label:'FITNESS WITH FRIENDS',lines:['START WITH','YOUR PEOPLE.'],copy:'Daily workouts. Friendly competition.',badge:'Find your crew',steps:['Find a friend on PumpDuel.','Invite them to a duel or challenge.','Give each other a reason to train.']},
+  habit:{photo:'community',label:'DAILY GROUP WORKOUTS',lines:['BUILD A HABIT.','TOGETHER.'],copy:'Your crew. Your daily reason to show up.',badge:'Train with friends',steps:['Create or join a private group.','Show up for the daily workout.','Keep each other coming back.']},
+  duels:{photo:'rivalry',label:'LIVE DUELS',lines:['TURN REPS','INTO RIVALRY.'],copy:'One friend. One minute. Every rep counts.',badge:'Challenge a friend',steps:['Invite a friend to a live duel.','Train together against the clock.','See who gets the higher score.']},
+  duel:{photo:'rivalry',label:'LIVE DUELS',lines:['60 SECONDS.','GAME ON.'],copy:'One friend. One minute. Every rep counts.',badge:'Challenge a friend',steps:['Invite a friend to a live duel.','Train together against the clock.','See who gets the higher score.']},
+  challenge:{photo:'challenge',label:'FRIEND CHALLENGES',lines:['SET A SCORE.','DARE THEM.'],copy:'Take your turn. Let a friend take theirs.',badge:'Set the challenge',steps:['Choose a movement and a friend.','Complete your set and send the score.','They take their turn when ready.']},
+  progress:{photo:'challenge',label:'YOUR REP HISTORY',lines:['SMALL WINS.','REAL PROGRESS.'],copy:'See your rep totals and recent activity.',badge:'Keep showing up',steps:['Complete a camera-counted set.','Check your rep totals and activity.','Come back and build on it.']},
+  howto:{photo:'rivalry',label:'CAMERA-COUNTED REPS',lines:['PHONE READY.','YOU READY?'],copy:'Push-ups. Pull-ups. Squats. On iPhone.',badge:'Start your next set',steps:['Choose your movement.','Place your phone with your body in view.','Start your set. The camera counts.']},
 };
 
-function esc(value) {
-  return String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-}
-
-function logo(x, y, scale = 1, wordmark = true) {
-  const size = 52 * scale;
-  return `<g transform="translate(${x} ${y})">
-    <rect width="${size}" height="${size}" rx="${10*scale}" fill="#B7FF2A"/>
-    <text x="${size/2}" y="${size*.72}" text-anchor="middle" class="brand" font-size="${31*scale}" fill="#0B0E0C">PD</text>
-    ${wordmark ? `<text x="${size + 17*scale}" y="${size*.72}" class="brand" font-size="${28*scale}" fill="#F5F3EA" letter-spacing="${.5*scale}">PUMPDUEL</text>` : ''}
-  </g>`;
-}
-
-function icon(kind, cx, cy, scale = 1) {
-  const s = scale;
-  const paths = {
-    start: `<path d="M ${cx-48*s} ${cy} H ${cx+36*s} M ${cx+5*s} ${cy-31*s} L ${cx+38*s} ${cy} L ${cx+5*s} ${cy+31*s}"/>`,
-    crew: `<circle cx="${cx}" cy="${cy-23*s}" r="${20*s}"/><circle cx="${cx-42*s}" cy="${cy-10*s}" r="${15*s}"/><circle cx="${cx+42*s}" cy="${cy-10*s}" r="${15*s}"/><path d="M ${cx-34*s} ${cy+48*s} Q ${cx} ${cy+14*s} ${cx+34*s} ${cy+48*s} M ${cx-71*s} ${cy+42*s} Q ${cx-43*s} ${cy+17*s} ${cx-17*s} ${cy+38*s} M ${cx+17*s} ${cy+38*s} Q ${cx+43*s} ${cy+17*s} ${cx+71*s} ${cy+42*s}"/>`,
-    duels: `<path d="M ${cx-52*s} ${cy-48*s} L ${cx+52*s} ${cy+48*s} M ${cx+52*s} ${cy-48*s} L ${cx-52*s} ${cy+48*s}"/><circle cx="${cx-57*s}" cy="${cy-53*s}" r="${12*s}"/><circle cx="${cx+57*s}" cy="${cy-53*s}" r="${12*s}"/>`,
-    challenge: `<path d="M ${cx-42*s} ${cy+58*s} V ${cy-58*s} M ${cx-40*s} ${cy-52*s} Q ${cx+5*s} ${cy-70*s} ${cx+50*s} ${cy-42*s} V ${cy+10*s} Q ${cx+5*s} ${cy-18*s} ${cx-40*s} ${cy}"/>`,
-    progress: `<path d="M ${cx-58*s} ${cy+50*s} V ${cy+5*s} H ${cx-28*s} V ${cy+50*s} M ${cx-15*s} ${cy+50*s} V ${cy-25*s} H ${cx+15*s} V ${cy+50*s} M ${cx+28*s} ${cy+50*s} V ${cy-58*s} H ${cx+58*s} V ${cy+50*s}"/>`,
-    howto: `<circle cx="${cx}" cy="${cy}" r="${70*s}"/><path d="M ${cx-20*s} ${cy-36*s} L ${cx+43*s} ${cy} L ${cx-20*s} ${cy+36*s} Z"/>`,
-  };
-  return `<g fill="none" stroke="#B7FF2A" stroke-width="${12*s}" stroke-linecap="round" stroke-linejoin="round">${paths[kind]}</g>`;
-}
-
-function profileSvg(width, height) {
-  const m = Math.min(width,height), cx = width/2, cy = height/2;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-    <defs>
-      <radialGradient id="bg" cx="38%" cy="30%"><stop stop-color="#26351B"/><stop offset=".48" stop-color="#121712"/><stop offset="1" stop-color="#070A08"/></radialGradient>
-      <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="17"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .09 0"/></filter>
-      <style>@font-face{font-family:Barlow;src:url('${fontUrl}')} .brand{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:900;font-style:italic}</style>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#bg)"/>
-    <circle cx="${cx}" cy="${cy}" r="${m*.39}" fill="none" stroke="#B7FF2A" stroke-opacity=".14" stroke-width="2"/>
-    <circle cx="${cx}" cy="${cy}" r="${m*.31}" fill="none" stroke="#F5F3EA" stroke-opacity=".08" stroke-width="2"/>
-    <path d="M ${cx-m*.55} ${cy+m*.22} Q ${cx} ${cy-m*.18} ${cx+m*.55} ${cy+m*.22}" fill="none" stroke="#B7FF2A" stroke-opacity=".11" stroke-width="3"/>
-    <rect x="${cx-m*.205}" y="${cy-m*.205}" width="${m*.41}" height="${m*.41}" rx="${m*.075}" fill="#B7FF2A"/>
-    <text x="${cx}" y="${cy+m*.105}" text-anchor="middle" class="brand" font-size="${m*.25}" fill="#0B0E0C">PD</text>
-    <rect width="100%" height="100%" filter="url(#grain)" opacity=".38"/>
-  </svg>`;
-}
-
-function highlightSvg(kind, width, height) {
-  const cx=width/2, cy=height/2;
-  const label = {start:'GO',crew:'CREW',duels:'VS',challenge:'DARE',progress:'+','how-to':'HOW'}[kind];
-  const size = label.length > 3 ? 122 : label.length > 2 ? 155 : 220;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-    <defs><radialGradient id="bg"><stop stop-color="#25351A"/><stop offset="1" stop-color="#090C09"/></radialGradient></defs>
-    <rect width="100%" height="100%" fill="url(#bg)"/>
-    <circle cx="${cx}" cy="${cy}" r="330" fill="#0D110E" stroke="#B7FF2A" stroke-opacity=".26" stroke-width="3"/>
-    <circle cx="${cx}" cy="${cy}" r="265" fill="#151C13" stroke="#F5F3EA" stroke-opacity=".1" stroke-width="2"/>
-    <text x="${cx}" y="${cy+size*.31}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="${size}" fill="#B7FF2A" letter-spacing="3">${label}</text>
-    <text x="${cx}" y="${cy+205}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="24" fill="#F5F3EA" fill-opacity=".7" letter-spacing="8">PUMPDUEL</text>
-  </svg>`;
-}
-
-function campaignSvg(asset, theme, secondary = false) {
-  const {width:w,height:h} = asset;
-  const landscape = w/h > 1.25;
-  const squareish = w/h >= .8 && w/h <= 1.25;
-  const safe = Math.round(Math.min(w,h)*.07);
-  const titleSize = Math.round((landscape ? h*.16 : squareish ? w*.105 : w*.112));
-  const lineGap = Math.round(titleSize*.84);
-  const titleX = landscape ? Math.round(w*.07) : safe;
-  const titleY = landscape ? Math.round(h*.34) : Math.round(h*.21);
-  const logoScale = Math.max(.9, Math.min(2.1, Math.min(w,h)/760));
-  const panelY = Math.round(h*.66);
-  const panelH = Math.round(h*.22);
-  const secondaryPanel = secondary ? `<g>
-    <rect x="${safe}" y="${panelY}" width="${w-safe*2}" height="${panelH}" rx="${Math.round(safe*.4)}" fill="#101510" fill-opacity=".94" stroke="#B7FF2A" stroke-opacity=".34" stroke-width="2"/>
-    <text x="${safe*1.55}" y="${panelY+panelH*.24}" class="small" font-size="${Math.round(Math.min(w,h)*.028)}" fill="#B7FF2A" letter-spacing="3">HOW IT WORKS</text>
-    <text x="${safe*1.55}" y="${panelY+panelH*.49}" class="copy" font-size="${Math.round(Math.min(w,h)*.034)}" fill="#F5F3EA">01  SET DOWN YOUR PHONE</text>
-    <text x="${safe*1.55}" y="${panelY+panelH*.68}" class="copy" font-size="${Math.round(Math.min(w,h)*.034)}" fill="#F5F3EA">02  COMPLETE YOUR SET</text>
-    <text x="${safe*1.55}" y="${panelY+panelH*.87}" class="copy" font-size="${Math.round(Math.min(w,h)*.034)}" fill="#F5F3EA">03  SEND THE SCORE</text>
-  </g>` : '';
-  const bannerSafe = asset.id === 'youtube-banner';
-  const groupTransform = bannerSafe ? `translate(${Math.round(w*.2)} ${Math.round(h*.31)}) scale(.6)` : '';
-  const titleGroup = bannerSafe ? `<g transform="${groupTransform}">
-      <text x="${titleX}" y="${titleY}" class="title" font-size="${titleSize}" fill="#F5F3EA">${esc(theme.lines[0])}</text>
-      <text x="${titleX}" y="${titleY+lineGap}" class="title" font-size="${titleSize}" fill="#B7FF2A">${esc(theme.lines[1])}</text>
-    </g>` : `<text x="${titleX}" y="${titleY}" class="title" font-size="${titleSize}" fill="#F5F3EA">${esc(theme.lines[0])}</text>
-      <text x="${titleX}" y="${titleY+lineGap}" class="title" font-size="${titleSize}" fill="#B7FF2A">${esc(theme.lines[1])}</text>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-    <defs>
-      <linearGradient id="shade" x1="${landscape?'0':'0'}" y1="0" x2="${landscape?'1':'0'}" y2="${landscape?'0':'1'}"><stop stop-color="#060806" stop-opacity="${landscape?'.96':'.93'}"/><stop offset="${landscape?'.58':'.42'}" stop-color="#090B09" stop-opacity="${landscape?'.46':'.16'}"/><stop offset="1" stop-color="#050705" stop-opacity="${landscape?'.16':'.82'}"/></linearGradient>
-      <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="#060806" stop-opacity="0"/><stop offset="1" stop-color="#060806" stop-opacity=".9"/></linearGradient>
-      <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="2" seed="11"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .08 0"/></filter>
-      <style>@font-face{font-family:Barlow;src:url('${fontUrl}')} .brand,.title{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:900} .small,.copy{font-family:Arial,Helvetica,sans-serif;font-weight:700}</style>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#shade)"/>
-    <rect width="100%" height="100%" fill="url(#bottom)"/>
-    <rect x="${Math.max(2,safe*.22)}" y="${Math.max(2,safe*.22)}" width="${w-Math.max(4,safe*.44)}" height="${h-Math.max(4,safe*.44)}" rx="${Math.round(safe*.35)}" fill="none" stroke="#B7FF2A" stroke-opacity=".2" stroke-width="${Math.max(2,Math.round(Math.min(w,h)/700))}"/>
-    ${logo(safe,safe,logoScale,!squareish)}
-    <text x="${titleX}" y="${titleY-titleSize*.72}" class="small" font-size="${Math.round(titleSize*.24)}" fill="#B7FF2A" letter-spacing="${Math.max(2,Math.round(titleSize*.045))}">${esc(theme.eyebrow)}</text>
-    ${titleGroup}
-    ${!secondary && !bannerSafe ? `<text x="${titleX}" y="${titleY+lineGap+titleSize*.55}" class="copy" font-size="${Math.round(titleSize*.25)}" fill="#F5F3EA" fill-opacity=".9">${esc(theme.sub)}</text>` : ''}
-    ${secondaryPanel}
-    <g transform="translate(${titleX} ${h-safe*1.15})">
-      <rect width="${Math.round(Math.min(w*.34, titleSize*3.4))}" height="${Math.round(titleSize*.42)}" rx="${Math.round(titleSize*.21)}" fill="#B7FF2A"/>
-      <text x="${Math.round(titleSize*.22)}" y="${Math.round(titleSize*.29)}" class="small" font-size="${Math.round(titleSize*.17)}" fill="#0B0E0C" letter-spacing="1.5">${esc(theme.stat)}</text>
-    </g>
-    <text x="${w-safe}" y="${h-safe*.93}" text-anchor="end" class="small" font-size="${Math.round(titleSize*.18)}" fill="#F5F3EA" letter-spacing="2">PUMPDUEL.COM →</text>
-  </svg>`;
-}
-
-function themeFor(asset) {
-  const id = asset.id;
+function themeFor(id) {
   if (id.includes('progress')) return themes.progress;
   if (id.includes('how-to')) return themes.howto;
   if (id.includes('challenge')) return themes.challenge;
-  if (id.includes('duel') && !id.includes('duels')) return themes.duel;
   if (id.includes('duels')) return themes.duels;
+  if (id.includes('duel')) return themes.duel;
   if (id.includes('start')) return themes.start;
-  if (id.includes('crew')) return themes.crew;
   return themes.habit;
 }
 
-function run(command, args) {
-  return new Promise((resolveRun, reject) => {
-    const child = spawn(command,args,{stdio:['ignore','pipe','pipe']});
-    let stderr=''; child.stderr.on('data', chunk => stderr += chunk);
-    child.on('error',reject);
-    child.on('close',code => code === 0 ? resolveRun() : reject(new Error(`${command} failed (${code}): ${stderr}`)));
-  });
-}
-
-async function sanitizePng(file) {
-  const input = await readFile(file);
-  const allowed = new Set(['IHDR','IDAT','IEND','iCCP','pHYs','sRGB','gAMA','cHRM','PLTE','tRNS']);
-  const chunks = [input.subarray(0,8)];
-  let offset = 8;
-  while (offset < input.length) {
-    const length = input.readUInt32BE(offset);
-    const end = offset + 12 + length;
-    const type = input.toString('ascii',offset+4,offset+8);
-    if (allowed.has(type)) chunks.push(input.subarray(offset,end));
-    offset = end;
+// Text becomes exact glyph outlines before rasterisation: no CSS fonts, fallback
+// fonts, browser-dependent tracking or ImageMagick font resolution.
+function outline(value, size, face='body', spacing=0) {
+  const font = fonts[face];
+  for (const character of value) {
+    if (!font.charToGlyphIndex(character)) throw new Error(`Missing ${face} glyph: ${character}`);
   }
-  await writeFile(file,Buffer.concat(chunks));
+  const path = font.getPath(value,0,0,size,{kerning:true,tracking:spacing/size*1000});
+  const b = path.getBoundingBox();
+  return {path,b,width:b.x2-b.x1,height:b.y2-b.y1};
 }
 
-async function render(asset, svg, master) {
-  const svgFile = resolve(temp,`${asset.id}.svg`);
-  const overlay = resolve(temp,`${asset.id}-overlay.png`);
-  const background = resolve(temp,`${asset.id}-background.png`);
-  const output = resolve(root,asset.file);
-  await writeFile(svgFile,svg);
-  if (master) {
-    await run('magick',[master,'-auto-orient','-resize',`${asset.width}x${asset.height}^`,'-gravity','center','-extent',`${asset.width}x${asset.height}`,'-modulate','64,92,100','-unsharp','0x0.7+0.7+0.006','-colorspace','sRGB',background]);
-    await run('magick',['-background','none',svgFile,'-resize',`${asset.width}x${asset.height}!`,'-colorspace','sRGB',`PNG32:${overlay}`]);
-    await run('magick',[background,overlay,'-compose','screen','-composite','-strip',`PNG24:${output}`]);
+export function buildAssetSvg(asset) {
+  const portrait = asset.height > asset.width;
+  const w = portrait || asset.width===asset.height ? 1080 : asset.width / asset.height * 720;
+  const h = portrait ? 1080*asset.height/asset.width : asset.width===asset.height ? 1080 : 720;
+  const parts=[], texts=[];
+  let safe={x:0,y:0,width:w,height:h};
+  function text(value,x,y,size,{face='body',fill=colors.paper,maxWidth=w-x-40,align='left',spacing=0}={}) {
+    let shape=outline(value,size,face,spacing);
+    if (shape.width > maxWidth) throw new Error(`${asset.id}: text too wide: ${value} (${shape.width} > ${maxWidth})`);
+    const left=align==='center' ? x-shape.width/2 : align==='right' ? x-shape.width : x;
+    parts.push(`<path fill="${fill}" transform="translate(${left-shape.b.x1} ${y-shape.b.y1})" d="${svgPath(shape.path)}"/>`);
+    texts.push({value,x:left,y,width:shape.width,height:shape.height,size,face});
+    return shape;
+  }
+  function rect(x,y,width,height,fill,rx=0) { parts.push(`<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${rx}" fill="${fill}"/>`); }
+  function brand(x,y,size=48) {
+    rect(x,y,size,size,colors.lime,size*.18);
+    const mark=outline('PD',size*.66,'display');
+    text('PD',x+size/2,y+(size-mark.height)/2,size*.66,{face:'display',fill:colors.ink,align:'center',maxWidth:size*.8});
+    const name=outline('PUMPDUEL',size*.64,'display');
+    text('PUMPDUEL',x+size+14,y+(size-name.height)/2,size*.64,{face:'display'});
+  }
+  function heading(lines,x,y,width,size,gap=14) {
+    // Fit all lines as a group, retaining a consistent cap height and line gap.
+    const widest=Math.max(...lines.map(line=>outline(line,size,'display').width));
+    const fitted=Math.min(size,size*width/widest);
+    for (let i=0;i<lines.length;i++) {
+      const shape=text(lines[i],x,y,fitted,{face:'display',fill:i===1?colors.lime:colors.paper,maxWidth:width+.01});
+      y+=shape.height+gap;
+    }
+    return y-gap;
+  }
+  function paragraph(value,x,y,width,size=34) {
+    let line='';
+    for (const word of value.split(' ')) {
+      const next=line ? `${line} ${word}` : word;
+      if (outline(next,size).width>width && line) {
+        text(line,x,y,size,{maxWidth:width,fill:colors.muted}); y+=size*1.35; line=word;
+      } else line=next;
+    }
+    if(line) { const shape=text(line,x,y,size,{maxWidth:width,fill:colors.muted}); y+=shape.height; }
+    return y;
+  }
+  function pill(value,x,y,size=27) {
+    const shape=outline(value,size);
+    const height=56, width=shape.width+46;
+    rect(x,y,width,height,colors.lime,28);
+    text(value,x+23,y+(height-shape.height)/2,size,{fill:colors.ink,maxWidth:shape.width+.01});
+    return width;
+  }
+  function photo(key,x,y,width,height,position='xMidYMid') {
+    if(!masterImages.has(key)) masterImages.set(key,readFileSync(resolve(root,'campaign/masters',masterFiles[key])).toString('base64'));
+    if(typeof position==='number') {
+      const sourceWidth=941, sourceHeight=1672, cropHeight=sourceWidth*height/width;
+      const cropTop=(sourceHeight-cropHeight)*position;
+      parts.push(`<svg x="${x}" y="${y}" width="${width}" height="${height}" viewBox="0 ${cropTop} ${sourceWidth} ${cropHeight}" overflow="hidden"><image href="data:image/png;base64,${masterImages.get(key)}" width="${sourceWidth}" height="${sourceHeight}"/></svg>`);
+      return;
+    }
+    parts.push(`<image href="data:image/png;base64,${masterImages.get(key)}" x="${x}" y="${y}" width="${width}" height="${height}" preserveAspectRatio="${position} slice"/>`);
+  }
+  function fade(x,y,width,height,id) { rect(x,y,width,height,`url(#${id})`); }
+
+  rect(0,0,w,h,colors.ink);
+  const highlight=asset.id.match(/^instagram-highlights-(.+)$/)?.[1];
+  if(asset.id.endsWith('-profile')) {
+    safe={x:220,y:220,width:640,height:640};
+    rect(0,0,w,h,'url(#radial)');
+    rect(250,250,580,580,colors.lime,112);
+    const mark=outline('PD',425,'display');
+    text('PD',540,540-mark.height/2,425,{face:'display',fill:colors.ink,align:'center',maxWidth:440});
+  } else if(highlight) {
+    rect(0,0,w,h,'url(#radial)');
+    parts.push('<circle cx="540" cy="540" r="330" fill="#182114" stroke="#b7ff2a" stroke-opacity=".35" stroke-width="3"/>');
+    const value={start:'START',crew:'CREW',duels:'DUELS',challenge:'DARE',progress:'REPS','how-to':'HOW TO'}[highlight];
+    const shape=outline(value,180,'display');
+    safe={x:230,y:330,width:620,height:420};
+    text(value,540,515-shape.height/2,180,{face:'display',fill:colors.lime,align:'center',maxWidth:580});
+    text('PUMPDUEL',540,660,29,{face:'body',align:'center',maxWidth:420,spacing:1.5});
+  } else if(asset.id==='youtube-banner') {
+    // Normalized from 2560 x 1440: all lettering stays inside central 1546 x 423.
+    safe={x:253.5,y:254.25,width:773,height:211.5};
+    photo('community',0,0,w,h);
+    fade(0,0,w,h,'left');
+    rect(0,0,w,h,'#080d08aa');
+    brand(285,273,27);
+    const bottom=heading(['BUILD A HABIT.','TOGETHER.'],285,312,680,66,8);
+    paragraph('Daily workouts. Friendly competition.',285,bottom+18,600,19);
+  } else if(asset.id==='facebook-cover' || asset.id==='x-header') {
+    const x=asset.id==='facebook-cover' ? w*.22 : w*.26;
+    safe={x:x-5,y:80,width:w*.54,height:520};
+    photo('community',0,0,w,h);
+    fade(0,0,w,h,'left');
+    brand(x,102,46);
+    const bottom=heading(themes.habit.lines,x,211,w*.4,139,16);
+    paragraph('Daily workouts. Friendly competition.',x,bottom+37,w*.42,33);
+    text('pumpduel.com',x,555,27,{maxWidth:400});
+  } else if(portrait) {
+    const theme=themeFor(asset.id);
+    const tall=h>1500;
+    const secondary=asset.id.includes('-stories-') && asset.id.endsWith('-02');
+    const x=76, top=tall?200:62, photoY=tall?650:480;
+    safe={x:64,y:tall?180:48,width:880,height:(tall?h-270:h-58)-(tall?180:48)};
+    const photoPosition=theme.photo==='community' ? 'xMaxYMid' : theme.photo==='challenge' && !tall ? .18 : theme.photo==='rivalry' && secondary ? .82 : 'xMidYMid';
+    photo(theme.photo,0,photoY,w,h-photoY,photoPosition);
+    fade(0,photoY,w,180,'photoTop');
+    const bottomFade=tall?440:300;
+    fade(0,h-bottomFade,w,bottomFade,'bottom');
+    brand(x,top,44);
+    text(theme.label,x,top+85,25,{fill:colors.lime,maxWidth:830,spacing:1});
+    const bottom=heading(theme.lines,x,top+134,850,tall?132:119,14);
+    paragraph(theme.copy,x,bottom+27,800,tall?34:30);
+    if(secondary) {
+      const panelTop=h-610;
+      rect(58,panelTop,890,326,'#0b100bf2',22);
+      text('YOUR NEXT MOVE',x+15,panelTop+30,23,{fill:colors.lime,spacing:1,maxWidth:800});
+      theme.steps.forEach((line,i)=>{
+        text(String(i+1).padStart(2,'0'),x+15,panelTop+88+i*68,33,{face:'display',fill:colors.lime,maxWidth:60});
+        paragraph(line,x+74,panelTop+89+i*68,735,28);
+      });
+    } else {
+      const y=tall?h-405:h-170;
+      pill(theme.badge,x,y,28);
+      text('pumpduel.com',x,y+84,28,{maxWidth:450});
+    }
   } else {
-    await run('magick',['-background','none',svgFile,'-resize',`${asset.width}x${asset.height}!`,'-colorspace','sRGB','-strip',`PNG24:${output}`]);
+    const theme=themeFor(asset.id);
+    const thumbnail=asset.id.includes('thumbnails');
+    safe={x:52,y:50,width:w-112,height:h-100};
+    photo(theme.photo,w*.43,0,w*.57,h,theme.photo==='community'?'xMaxYMid':theme.photo==='challenge'?.18:'xMidYMid');
+    fade(w*.4,0,w*.25,h,'photoLeft');
+    brand(64,64,46);
+    text(theme.label,64,185,24,{fill:colors.lime,spacing:1,maxWidth:w*.48});
+    const bottom=heading(theme.lines,64,245,w*.48,145,17);
+    if(!thumbnail) paragraph(theme.copy,64,bottom+30,w*.43,31);
+    pill(theme.badge,64,592,26);
   }
-  await sanitizePng(output);
-  const buffer = await readFile(output);
-  asset.bytes = (await stat(output)).size;
-  asset.sha256 = createHash('sha256').update(buffer).digest('hex');
+
+  validateTextLayout(asset.id,texts,safe);
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${asset.width}" height="${asset.height}" viewBox="0 0 ${w} ${h}">
+    <defs>
+      <linearGradient id="left"><stop stop-color="#0a0e0a"/><stop offset=".42" stop-color="#0a0e0a" stop-opacity=".92"/><stop offset=".78" stop-color="#0a0e0a" stop-opacity=".3"/><stop offset="1" stop-color="#0a0e0a" stop-opacity=".06"/></linearGradient>
+      <linearGradient id="photoLeft"><stop stop-color="#0c100d"/><stop offset="1" stop-color="#0c100d" stop-opacity="0"/></linearGradient>
+      <linearGradient id="photoTop" x2="0" y2="1"><stop stop-color="#0c100d"/><stop offset="1" stop-color="#0c100d" stop-opacity="0"/></linearGradient>
+      <linearGradient id="bottom" x2="0" y2="1"><stop stop-color="#0c100d" stop-opacity="0"/><stop offset=".45" stop-color="#0c100d" stop-opacity=".85"/><stop offset="1" stop-color="#0c100d"/></linearGradient>
+      <radialGradient id="radial" cx=".35" cy=".3"><stop stop-color="#22351b"/><stop offset="1" stop-color="#0c100d"/></radialGradient>
+    </defs>${parts.join('')}</svg>`;
+  return {svg,texts,safe};
 }
 
-try {
-  const catalogPath = resolve(root,'catalog.json');
-  const catalog = JSON.parse(await readFile(catalogPath,'utf8'));
-  for (const asset of catalog.assets) {
-    const highlight = asset.id.match(/^instagram-highlights-(.+)$/)?.[1];
-    const isProfile = asset.id.endsWith('-profile');
-    const theme = themeFor(asset);
-    const svg = isProfile ? profileSvg(asset.width,asset.height)
-      : highlight ? highlightSvg(highlight,asset.width,asset.height)
-      : campaignSvg(asset,theme,asset.id.endsWith('-02'));
-    await render(asset,svg,isProfile || highlight ? null : masters[theme.master]);
-    console.log(`${asset.file}\t${asset.width}x${asset.height}\t${asset.bytes} bytes`);
+export function validateTextLayout(id,texts,safe) {
+  for(const t of texts) {
+    if(t.x<safe.x-.05 || t.y<safe.y-.05 || t.x+t.width>safe.x+safe.width+.05 || t.y+t.height>safe.y+safe.height+.05) {
+      throw new Error(`${id}: text outside safe crop: ${t.value}`);
+    }
   }
-  await writeFile(catalogPath,`${JSON.stringify(catalog,null,2)}\n`);
-} finally {
-  await rm(temp,{recursive:true,force:true});
+  for(let i=0;i<texts.length;i++) for(let j=i+1;j<texts.length;j++) {
+    const a=texts[i], b=texts[j];
+    if(a.x < b.x+b.width && a.x+a.width > b.x && a.y < b.y+b.height && a.y+a.height > b.y) {
+      throw new Error(`${id}: overlapping text: ${a.value} / ${b.value}`);
+    }
+  }
 }
+
+export async function renderAsset(asset) {
+  const layout=buildAssetSvg(asset);
+  const renderer=new Resvg(layout.svg,{font:{loadSystemFonts:false},imageRendering:0});
+  if(renderer.imagesToResolve().length) throw new Error(`${asset.id}: unresolved photograph`);
+  const buffer=renderer.render().asPng();
+  validatePNG(buffer,asset.file);
+  return {...layout,buffer};
+}
+
+async function main() {
+  const catalog=JSON.parse(await readFile(resolve(root,'catalog.json'),'utf8'));
+  const preview=process.argv.includes('--preview');
+  const ids=process.argv.slice(2).filter(arg=>!arg.startsWith('--'));
+  const assets=catalog.assets.filter(asset=>!ids.length || ids.includes(asset.id));
+  if(!preview && ids.length) throw new Error('Partial renders require --preview');
+  await mkdir(resolve(root,'.local'),{recursive:true});
+  const stage=await mkdtemp(resolve(root,'.local/typography-'));
+  const report=[];
+  try {
+    for(const asset of assets) {
+      const result=await renderAsset(asset);
+      await writeFile(resolve(stage,`${asset.id}.png`),result.buffer);
+      await writeFile(resolve(stage,`${asset.id}.svg`),result.svg);
+      report.push({id:asset.id,safe:result.safe,texts:result.texts});
+      asset.bytes=result.buffer.length;
+      asset.sha256=createHash('sha256').update(result.buffer).digest('hex');
+      console.log(`${asset.id}: ${asset.width} x ${asset.height}, ${result.texts.length} checked text blocks`);
+    }
+    await writeFile(resolve(stage,'layout-report.json'),JSON.stringify(report,null,2));
+    if(!preview) {
+      // Validate the entire pack before replacing any public asset or catalogue.
+      for(const asset of assets) await copyFile(resolve(stage,`${asset.id}.png`),resolve(root,asset.file));
+      await writeFile(resolve(root,'catalog.json'),JSON.stringify(catalog,null,2)+'\n');
+      await copyFile(resolve(stage,'layout-report.json'),resolve(root,'.local/typography-layout.json'));
+    }
+    console.log(preview?`Preview: ${stage}`:`Updated ${assets.length} assets; all text bounds and safe crops checked.`);
+  } finally { if(!preview) await rm(stage,{recursive:true,force:true}); }
+}
+if(process.argv[1] && resolve(process.argv[1])===fileURLToPath(import.meta.url)) await main();

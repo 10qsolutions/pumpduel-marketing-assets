@@ -35,6 +35,8 @@ function toast(message) {
   toastTimer = setTimeout(() => { $('#status').textContent = ''; }, 6000);
 }
 function photoWord(ids) { return ids.every(id => assetMap.get(id).type.startsWith('image/')) ? 'photos' : 'items'; }
+// Use the same content-versioned URL for previews, direct opens and downloads.
+function assetUrl(asset) { return `${asset.file}?v=${asset.sha256.slice(0,12)}`; }
 function shareSupported(payload) {
   try { return window.isSecureContext && typeof navigator.share === 'function' && typeof navigator.canShare === 'function' && navigator.canShare(payload); }
   catch { return false; }
@@ -45,7 +47,7 @@ async function prepare(id) {
   failures.delete(id);
   const task = (async () => {
     const asset = assetMap.get(id);
-    const response = await fetch(asset.file, {credentials:'omit', signal:AbortSignal.timeout(30000)});
+    const response = await fetch(assetUrl(asset), {credentials:'omit', signal:AbortSignal.timeout(30000)});
     if (!response.ok) throw new Error('Could not load file');
     const blob = await response.blob();
     if (blob.size !== asset.bytes || blob.type.split(';')[0] !== asset.type) throw new Error('Unexpected file');
@@ -76,10 +78,10 @@ function updateSelection() {
 }
 function preview(asset, className = '') {
   const media = asset.type.startsWith('video/')
-    ? el('video', {src:asset.file, controls:'', playsinline:'', preload:'metadata', 'aria-label':asset.title})
-    : el('img', {src:asset.file, alt:asset.title, loading:'lazy', width:asset.width, height:asset.height});
+    ? el('video', {src:assetUrl(asset), controls:'', playsinline:'', preload:'metadata', 'aria-label':asset.title})
+    : el('img', {src:assetUrl(asset), alt:asset.title, loading:'lazy', width:asset.width, height:asset.height});
   if (asset.type.startsWith('video/')) return el('div', {className}, media);
-  return el('a', {href:asset.file, className, 'aria-label':`Open ${asset.title}`}, media);
+  return el('a', {href:assetUrl(asset), className, 'aria-label':`Open ${asset.title}`}, media);
 }
 function renderAsset(id, index, total) {
   const asset = assetMap.get(id);
@@ -113,7 +115,7 @@ function renderSetupGuide() {
   content.replaceChildren(template.content.cloneNode(true));
   const profile = content.querySelector('[data-brand-profile]');
   if (profile) {
-    profile.append(el('div', {className:'guide-profile-heading'}, el('img', {src:`${platform}/profile.png`, alt:'PumpDuel profile picture', width:56, height:56}),
+    profile.append(el('div', {className:'guide-profile-heading'}, el('img', {src:assetUrl(assetMap.get(`${platform}-profile`)), alt:'PumpDuel profile picture', width:56, height:56}),
       el('div', {}, el('strong', {text:info.displayName}), el('p', {className:'muted',text:'Use the same PD mark across your accounts.'}))),
       el('p', {className:'guide-bio',text:info.bio}),
       el('div', {className:'guide-actions'},
@@ -132,7 +134,7 @@ function renderSetupGuide() {
       ['how-to','How to','Help someone begin their first set.']
     ]) {
       highlights.append(el('div',{className:'highlight-row'},
-        el('img',{src:`instagram/highlights/${key}.png`,alt:`${name} Highlight cover`,width:48,height:48,loading:'lazy'}),
+        el('img',{src:assetUrl(assetMap.get(`instagram-highlights-${key}`)),alt:`${name} Highlight cover`,width:48,height:48,loading:'lazy'}),
         el('div',{className:'highlight-description'},el('strong',{text:name}),el('p',{text:purpose})),
         el('div',{className:'guide-actions'},
           button('Save Stories','secondary',() => requestSave(catalog.posts.find(post => post.id === `instagram-story-${key}`).assets),`Save ${name} Highlight Stories`),
@@ -254,10 +256,12 @@ window.addEventListener('hashchange', () => {
   if (catalog.platforms.some(item => item.id === next) && next !== platform) { platform = next; renderPlatform(); }
 });
 try {
-  const response = await fetch('catalog.json', {credentials:'omit'});
+  const response = await fetch('catalog.json', {credentials:'omit', cache:'no-cache'});
   if (!response.ok) throw new Error('Catalog failed');
   catalog = await response.json();
   assetMap = new Map(catalog.assets.map(asset => [asset.id,asset]));
+  $('.brand img').src = assetUrl(assetMap.get('instagram-profile'));
+  $('link[rel="icon"]').href = assetUrl(assetMap.get('instagram-profile'));
   platform = catalog.platforms.some(item => item.id === location.hash.slice(1)) ? location.hash.slice(1) : catalog.platforms[0].id;
   renderPlatform();
 } catch {

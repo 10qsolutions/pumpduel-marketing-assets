@@ -27,13 +27,15 @@ The build copies only the page files, reviewed catalogue assets and required fon
 
 ## Imported material
 
-The 43 public PNGs are production exports from a shared premium campaign system: three high-detail photographic masters, platform-specific safe-zone layouts, consistent PumpDuel typography, profile marks and Highlight covers. The app screens and campaign people depict marketing fixtures, not customer results. `IMPORT-AUDIT.json` records the retired first-generation exports and remains excluded from the public build.
+The 43 public PNGs use three photographic masters, format-specific layouts, outlined PumpDuel typography, profile marks and Highlight covers. Campaign people depict marketing fixtures, not customer results. Photographic master resolution is 1672 × 941 or 941 × 1672; larger output dimensions do not add photographic detail. `IMPORT-AUDIT.json` records the retired first-generation exports and remains excluded from the public build.
 
-Run `npm run redesign` to regenerate every platform export and refresh its byte count and SHA-256 integrity record in `catalog.json`. The photographic masters live in `campaign/masters`; the script preserves every platform's reviewed native dimensions.
+Run `npm ci` once, then `npm run redesign` to regenerate every platform export and refresh its byte count and SHA-256 integrity record in `catalog.json`. The photographic masters live in `campaign/masters`; output dimensions are preserved. The bundled Barlow Condensed Black and Barlow SemiBold fonts are converted to glyph paths before PNG rendering, so missing system fonts cannot change the design. Both fonts are from [Google Fonts' Barlow family](https://github.com/google/fonts/tree/main/ofl/barlow) under the bundled SIL Open Font License.
+
+For a non-publishing preview, run `npm run redesign -- --preview facebook-cover instagram-stories-start-02 youtube-banner`. Images, self-contained SVGs and a text-layout report are written to an ignored `.local/typography-*` directory. The renderer checks actual glyph bounds for clipping, overlap and format-specific text-safe areas, including the central YouTube banner crop. Inspect the PNGs and mobile-size crops visually as well: bounds checks alone do not verify legibility or photo placement. Public previews and downloads use content-versioned URLs to avoid stale artwork after an update.
 
 To add a finished asset, inspect its visible content and metadata, copy that specific file into a platform folder, and add its size, SHA-256 hash, dimensions and media type to `catalog.json`. Add it to a post's ordered asset list. Do not copy an entire generation/output folder. Preserve any AI provenance; if the validator encounters new metadata, review it explicitly before adding support.
 
-`npm test` checks the public file boundary, asset integrity and traversal rejection. Use the gallery to verify selection, post order and captions before publishing new material.
+`npm test` checks text rendering, safe areas, the public file boundary, asset integrity and traversal rejection. Use the gallery to verify selection, post order and captions before publishing new material.
 
 ## Generated video and media archive
 
