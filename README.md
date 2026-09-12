@@ -27,7 +27,9 @@ The build copies only the page files, reviewed catalogue assets and required fon
 
 ## Imported material
 
-43 finished PNGs, one display font and its license were copied byte-for-byte from the existing social brand kit. The app screens depict marketing fixtures, not customer results. No original files were moved or deleted. No app source, raw captures, editable SVGs, generation scripts, credentials, environment files, archives, internal notes or source provenance documents were copied. `IMPORT-AUDIT.json` records relative filenames, sizes and hashes; it is excluded from the public build.
+The 43 public PNGs are production exports from a shared premium campaign system: three high-detail photographic masters, platform-specific safe-zone layouts, consistent PumpDuel typography, profile marks and Highlight covers. The app screens and campaign people depict marketing fixtures, not customer results. `IMPORT-AUDIT.json` records the retired first-generation exports and remains excluded from the public build.
+
+Run `npm run redesign` to regenerate every platform export and refresh its byte count and SHA-256 integrity record in `catalog.json`. The photographic masters live in `campaign/masters`; the script preserves every platform's reviewed native dimensions.
 
 To add a finished asset, inspect its visible content and metadata, copy that specific file into a platform folder, and add its size, SHA-256 hash, dimensions and media type to `catalog.json`. Add it to a post's ordered asset list. Do not copy an entire generation/output folder. Preserve any AI provenance; if the validator encounters new metadata, review it explicitly before adding support.
 
