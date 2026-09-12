@@ -27,7 +27,9 @@ The build copies only the page files, reviewed catalogue assets and required fon
 
 ## Imported material
 
-The 43 public PNGs use three photographic masters, format-specific layouts, outlined PumpDuel typography, profile marks and Highlight covers. Campaign people depict marketing fixtures, not customer results. Photographic master resolution is 1672 × 941 or 941 × 1672; larger output dimensions do not add photographic detail. `IMPORT-AUDIT.json` records the retired first-generation exports and remains excluded from the public build.
+The 43 public PNGs use format-specific layouts, outlined PumpDuel typography, profile marks and Highlight covers. Each of the 12 Instagram Story slides has its own independently generated photograph in `campaign/masters/stories`: different people, settings, actions and camera compositions, including both slides of every pair. The scene assignments, exact generation prompts, dimensions and source hashes are recorded in [campaign/story-scenes.json](campaign/story-scenes.json). These images were made with the built-in image-generation tool. Tests reject missing assignments and repeated source photographs.
+
+The other formats use the three original photographic masters. Story master resolution is 1122 × 1402; the original masters are 1672 × 941 or 941 × 1672. Larger output dimensions do not add photographic detail. Campaign people are AI-generated marketing illustrations, not customers or testimonials. `IMPORT-AUDIT.json` records the retired first-generation exports and remains excluded from the public build.
 
 Run `npm ci` once, then `npm run redesign` to regenerate every platform export and refresh its byte count and SHA-256 integrity record in `catalog.json`. The photographic masters live in `campaign/masters`; output dimensions are preserved. The bundled Barlow Condensed Black and Barlow SemiBold fonts are converted to glyph paths before PNG rendering, so missing system fonts cannot change the design. Both fonts are from [Google Fonts' Barlow family](https://github.com/google/fonts/tree/main/ofl/barlow) under the bundled SIL Open Font License.
 

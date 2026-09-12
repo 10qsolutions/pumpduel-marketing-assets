@@ -15,8 +15,10 @@ const fonts = Object.fromEntries(Object.entries({
   return [key,opentype.parse(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength))];
 }));
 const colors = {ink:'#0c100d', lime:'#b7ff2a', paper:'#f5f3ea', muted:'#c4cbbc'};
+export const storyScenes = new Map(JSON.parse(readFileSync(resolve(root,'campaign/story-scenes.json'),'utf8')).scenes.map(scene=>[scene.assetId,scene]));
 const masterFiles = {
   community:'community-landscape.png', rivalry:'rivalry-portrait.png', challenge:'challenge-portrait.png',
+  ...Object.fromEntries([...storyScenes].map(([id,scene])=>[id,scene.master])),
 };
 const masterImages = new Map();
 
@@ -62,7 +64,7 @@ export function buildAssetSvg(asset) {
   const portrait = asset.height > asset.width;
   const w = portrait || asset.width===asset.height ? 1080 : asset.width / asset.height * 720;
   const h = portrait ? 1080*asset.height/asset.width : asset.width===asset.height ? 1080 : 720;
-  const parts=[], texts=[];
+  const parts=[], texts=[], photographs=[];
   let safe={x:0,y:0,width:w,height:h};
   function text(value,x,y,size,{face='body',fill=colors.paper,maxWidth=w-x-40,align='left',spacing=0}={}) {
     let shape=outline(value,size,face,spacing);
@@ -109,6 +111,8 @@ export function buildAssetSvg(asset) {
     return width;
   }
   function photo(key,x,y,width,height,position='xMidYMid') {
+    if(!masterFiles[key]) throw new Error(`${asset.id}: missing photograph assignment ${key}`);
+    photographs.push(masterFiles[key]);
     if(!masterImages.has(key)) masterImages.set(key,readFileSync(resolve(root,'campaign/masters',masterFiles[key])).toString('base64'));
     if(typeof position==='number') {
       const sourceWidth=941, sourceHeight=1672, cropHeight=sourceWidth*height/width;
@@ -158,10 +162,13 @@ export function buildAssetSvg(asset) {
     const theme=themeFor(asset.id);
     const tall=h>1500;
     const secondary=asset.id.includes('-stories-') && asset.id.endsWith('-02');
+    const story=asset.id.startsWith('instagram-stories-');
+    if(story && !storyScenes.has(asset.id)) throw new Error(`${asset.id}: Story needs its own photograph`);
+    const photoKey=story ? asset.id : theme.photo;
     const x=76, top=tall?200:62, photoY=tall?650:480;
     safe={x:64,y:tall?180:48,width:880,height:(tall?h-270:h-58)-(tall?180:48)};
-    const photoPosition=theme.photo==='community' ? 'xMaxYMid' : theme.photo==='challenge' && !tall ? .18 : theme.photo==='rivalry' && secondary ? .82 : 'xMidYMid';
-    photo(theme.photo,0,photoY,w,h-photoY,photoPosition);
+    const photoPosition=story ? 'xMidYMid' : theme.photo==='community' ? 'xMaxYMid' : theme.photo==='challenge' && !tall ? .18 : 'xMidYMid';
+    photo(photoKey,0,photoY,w,h-photoY,photoPosition);
     fade(0,photoY,w,180,'photoTop');
     const bottomFade=tall?440:300;
     fade(0,h-bottomFade,w,bottomFade,'bottom');
@@ -204,7 +211,7 @@ export function buildAssetSvg(asset) {
       <linearGradient id="bottom" x2="0" y2="1"><stop stop-color="#0c100d" stop-opacity="0"/><stop offset=".45" stop-color="#0c100d" stop-opacity=".85"/><stop offset="1" stop-color="#0c100d"/></linearGradient>
       <radialGradient id="radial" cx=".35" cy=".3"><stop stop-color="#22351b"/><stop offset="1" stop-color="#0c100d"/></radialGradient>
     </defs>${parts.join('')}</svg>`;
-  return {svg,texts,safe};
+  return {svg,texts,safe,photographs};
 }
 
 export function validateTextLayout(id,texts,safe) {
@@ -244,7 +251,7 @@ async function main() {
       const result=await renderAsset(asset);
       await writeFile(resolve(stage,`${asset.id}.png`),result.buffer);
       await writeFile(resolve(stage,`${asset.id}.svg`),result.svg);
-      report.push({id:asset.id,safe:result.safe,texts:result.texts});
+      report.push({id:asset.id,safe:result.safe,texts:result.texts,photographs:result.photographs});
       asset.bytes=result.buffer.length;
       asset.sha256=createHash('sha256').update(result.buffer).digest('hex');
       console.log(`${asset.id}: ${asset.width} x ${asset.height}, ${result.texts.length} checked text blocks`);

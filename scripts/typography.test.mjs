@@ -1,11 +1,33 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {Resvg} from '@resvg/resvg-js';
-import {buildAssetSvg, svgPath, validateTextLayout} from './redesign-assets.mjs';
+import {buildAssetSvg, svgPath, validateTextLayout, storyScenes} from './redesign-assets.mjs';
 
 const catalog=JSON.parse(readFileSync(new URL('../catalog.json',import.meta.url)));
 const options={font:{loadSystemFonts:false}};
+
+test('all twelve Story slides render independently assigned, unique source photographs',()=>{
+  const stories=catalog.assets.filter(asset=>asset.id.startsWith('instagram-stories-'));
+  assert.equal(stories.length,12);
+  assert.equal(storyScenes.size,stories.length);
+  const hashes=new Set(), paths=new Set();
+  for(const asset of stories) {
+    const scene=storyScenes.get(asset.id);
+    assert.ok(scene,`${asset.id}: missing scene assignment`);
+    assert.match(scene.master,/^stories\/[a-z0-9-]+\.png$/);
+    const buffer=readFileSync(new URL(`../campaign/masters/${scene.master}`,import.meta.url));
+    const hash=createHash('sha256').update(buffer).digest('hex');
+    assert.equal(hash,scene.sha256,`${asset.id}: unreviewed photograph`);
+    assert.equal(buffer.readUInt32BE(16),scene.width);
+    assert.equal(buffer.readUInt32BE(20),scene.height);
+    assert.ok(scene.width>=1080 && scene.height>=1270,`${asset.id}: undersized Story master`);
+    assert.ok(!paths.has(scene.master) && !hashes.has(hash),`${asset.id}: repeated Story background`);
+    hashes.add(hash); paths.add(scene.master);
+    assert.deepEqual(buildAssetSvg(asset).photographs,[scene.master],`${asset.id}: renderer used a fallback photo`);
+  }
+});
 
 test('every asset has complete outlined text inside its safe area, without overlaps',()=>{
   for(const asset of catalog.assets) {

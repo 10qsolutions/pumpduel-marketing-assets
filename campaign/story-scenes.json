@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "generationMode": "built-in image_gen",
+  "description": "One independently generated photograph per Story slide; no reused background photographs.",
+  "scenes": [
+    {
+      "assetId": "instagram-stories-start-01",
+      "title": "Meet at the park",
+      "master": "stories/start-01.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "66aa9c8ab0c841e011b2e14cc3d60c5b22a60faae5d1c5ff7a3d1cc079451210",
+      "generatedFile": "exec-b65f307c-4d50-4b0b-8be3-e7d337ccff6e.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A candid medium-wide photograph of two adult friends greeting each other at the entrance to an outdoor calisthenics park, a Black woman with short natural curls and a South Asian man with closely cropped hair, smiling and bumping fists before training. Deep-green trees and steel exercise bars, cool early-morning light with warm sun edging their faces. Eye-level 35mm lens, both framed from head to thigh, park path receding through lower third. Welcoming spontaneous energy, no posed group lineup."
+    },
+    {
+      "assetId": "instagram-stories-start-02",
+      "title": "Send the invite",
+      "master": "stories/start-02.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "d7207cc671c17f272020c5c78e3dfa6615ceff6c015a2ca4d4932ae647bf628c",
+      "generatedFile": "exec-01209ceb-e1bd-4710-93e4-4ccf0b702e0f.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A close, over-the-shoulder photograph of an adult East Asian woman holding a phone toward a white female friend with auburn tied-back hair, both smiling at a friendly workout invitation. Sitting on a pale wooden bench in a bright neighborhood fitness studio with large side windows. The phone is seen from its matte-black back or an oblique unlit angle: no visible app interface, no letters. Faces in upper half, relaxed hands in center, bench and soft athletic bag in lower third. Warm natural daylight and shallow depth of field; an intimate human moment rather than an exercise action shot."
+    },
+    {
+      "assetId": "instagram-stories-crew-01",
+      "title": "Daily rooftop set",
+      "master": "stories/crew-01.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "30d809f1cccb3c3e2f03e0be4a3436a70fbb6f32f8a72d74ba8b227ab6e86a42",
+      "generatedFile": "exec-2aa01be2-bf8e-41da-97ee-341e9781cabe.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A dynamic wide photograph of three adult friends doing bodyweight squats together on a simple rooftop training area, city rooftops in the distance at late afternoon. A woman with dark braided hair, a stocky white man with very short hair, and a lean East Asian man, each in a natural squat with knees tracking toes, heels down, hands forward, all three heads fully visible. Horizontal row of people within the portrait frame, camera slightly below waist height and far enough back to show full bodies. Sun-warmed terracotta and concrete, strong diagonal shadows; no gym machines, no weights. People occupy upper two-thirds, quiet textured rooftop foreground below."
+    },
+    {
+      "assetId": "instagram-stories-crew-02",
+      "title": "The crew fist bump",
+      "master": "stories/crew-02.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "81e29834240b8ddb07f1b4fc9eaf907a0e1495238c10e8291c3d1d2d3fe7282c",
+      "generatedFile": "exec-4c092248-ec10-4109-8e4f-962a14f8af73.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A striking true overhead detail photograph of four adult friends bringing their fists together after a workout, four distinct forearms entering naturally from the frame edges, each with one closed fist, exactly four normal human fists meeting at the upper-middle. Different natural skin tones, one small acid-lime sports wristband, no watches with readable displays. Charcoal rubber gym floor, edges of unbranded trainers and a soft towel at corners. Crisp direct-flash editorial look, restrained warm skin tones against dark ground. Crop intentionally focused on the hands and connection, no faces, no excessive props. Lower third is textured gym floor."
+    },
+    {
+      "assetId": "instagram-stories-duels-01",
+      "title": "Side-by-side push-up duel",
+      "master": "stories/duels-01.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "fe9f72f1cedf8c6966e586d400b223ecc04ffafc437f94ee413491c2b13689ba",
+      "generatedFile": "exec-db8d6811-23e4-4e4c-b6f0-df6ad31ba085.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A low, energetic side-three-quarter photograph of two athletic adult friends competing in a push-up set side by side on a dark training floor in an industrial studio: a muscular Black man with shaved head and a lighter-built white man with short brown hair. Both bodies in straight plank alignment, elbows bent naturally, hands flat beneath shoulders, feet grounded, faces showing effort. Wide enough lens to include both full bodies and all hands, no distorted anatomy. Cool daylight through tall warehouse windows with subtle steel-blue shadows and a slim lime floor stripe. Faces and arms occupy upper-middle, clear dark floor in lower third. No crowds, phone, charts or equipment clutter."
+    },
+    {
+      "assetId": "instagram-stories-duels-02",
+      "title": "The post-duel high five",
+      "master": "stories/duels-02.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "94aafba3f93fc28561575c707d2011970b0350a706949a40dc9b2c71d3ff72c3",
+      "generatedFile": "exec-299d0197-bd84-4cfb-af7b-c2cec80213a4.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A candid medium photograph of two adult women celebrating a hard bodyweight workout with a laughing high five in a warm brick-walled neighborhood gym. One woman with dark skin and a braided ponytail, one fair-skinned woman with short dark hair. Both have realistic sweat, ordinary athletic builds, charcoal t-shirts, full faces and one joined pair of raised hands fully visible in the upper half. Frame from head to waist with relaxed gym bench and defocused floor below. Warm late-day side light, captured fleeting expression, genuine friendly rivalry. No mirrors, no signs, no barbell, no text."
+    },
+    {
+      "assetId": "instagram-stories-challenge-01",
+      "title": "Set the outdoor pull-up score",
+      "master": "stories/challenge-01.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "08280658627c596ec54a84c103a81e44ad098b09ecdb6c36aac50b549b473d21",
+      "generatedFile": "exec-c4911bee-18af-4004-9e61-27fab5614f33.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A confident adult woman with an athletic realistic build and dark curly hair tied back is at the top of a pull-up on a simple outdoor calisthenics bar. Both hands wrap naturally around the horizontal steel bar in an overhand grip, elbows bent, chin just above the bar. Low three-quarter camera viewpoint, upper-body action, entire head, hands and bar contact visible in the upper half; legs extend into the lower frame. Clean bright blue late-morning sky, pale concrete court and soft distant green trees; black sleeveless athletic top with subtle lime seam, matte textures, honest exertion. No additional people, no gym indoors, no phone display."
+    },
+    {
+      "assetId": "instagram-stories-challenge-02",
+      "title": "Take your turn at home",
+      "master": "stories/challenge-02.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "701dffbeba8ec8d2e12d2e3c12d9e8bf350754ce18ce84d6a347f92316268842",
+      "generatedFile": "exec-fa4847a3-60c2-41ef-bbed-265777299c12.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A candid wide photograph of an adult South Asian man with a short beard doing a controlled bodyweight squat in a modest sunlit apartment living room. Bare wooden floor, a charcoal training mat, pale curtains, one houseplant; no luxury-showroom look. He wears a plain dark t-shirt and shorts, feet flat, knees bent, hands reaching forward; his entire body and head in the upper two-thirds. A small matte-black phone on a low support at the side, seen from the back, records the set without a readable screen. Soft cream morning light and warm oak tones, eye-level camera from the room corner. Quiet floor foreground at bottom."
+    },
+    {
+      "assetId": "instagram-stories-progress-01",
+      "title": "The feeling after a set",
+      "master": "stories/progress-01.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "03450589be9e39088765b281467459906b2a7cc78cbe78501c425d18d2805108",
+      "generatedFile": "exec-4c1edd2b-1b8d-4281-8b81-0959e8a13f88.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: An intimate editorial close-up portrait of a fit everyday adult woman in her thirties with freckles and dark brown hair loosely tied back, catching her breath after bodyweight training. Honest sweat on temples, a small relieved half-smile, looking slightly away from camera, no glamour makeup or airbrushing. One hand rests naturally on a towel over her shoulder, framed from top of head to upper torso, face in upper third. Cool gray gym wall and a soft shaft of window light, rich natural skin texture, charcoal shirt and off-white towel, no props or readable graphics. Bottom third falls into softly focused dark fabric."
+    },
+    {
+      "assetId": "instagram-stories-progress-02",
+      "title": "Come back tomorrow",
+      "master": "stories/progress-02.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "eaa5cc57ac6e26f9a43101ab51d6c72b78e497a364e796a450721a3b8bc58246",
+      "generatedFile": "exec-259b353d-ab6c-48e4-9b5a-9fa1e07d4b2e.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A cinematic close-up photograph of an adult athlete seated on concrete outdoor steps tying the laces of a worn but clean charcoal training shoe with acid-lime laces. Only lower legs and two anatomically correct hands are visible; hands naturally pull one lace each, no face. The shoe and hands are in the upper-middle of the portrait frame, a second shoe naturally nearby, textured steps and diagonal late-afternoon sunlight descend into the lower third. Warm skin tones, tactile fabric weave and concrete grain, understated everyday training ritual, shallow depth of field. No logos, labels, watches or extra equipment."
+    },
+    {
+      "assetId": "instagram-stories-how-to-01",
+      "title": "Frame your whole set",
+      "master": "stories/how-to-01.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "251b4020405031f5c75cbcdb1c5d0e57d8ea515641cb52d1420ad5a7a5ae9946",
+      "generatedFile": "exec-df02b78f-3da3-4220-8060-8b60a74e3700.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A clear editorial photograph showing the practical setup for camera-counted push-ups at home: a matte-black phone upright in a small stable floor stand in the near-left foreground, its back facing us and its camera aimed toward an adult East Asian woman doing a correctly aligned push-up on a dark mat several feet away. Frame wide enough that her head, body, hands and feet are all visible, body across upper-middle; phone below and to the side, not blocking her. Pale plaster walls, oak floor, soft overcast window light, simple honest apartment setting. No floating interface, no skeleton tracking graphics, no readable screens, no text. Tactile details and natural depth."
+    },
+    {
+      "assetId": "instagram-stories-how-to-02",
+      "title": "Set the camera angle",
+      "master": "stories/how-to-02.png",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "debf8efcef7cca2f317f8be088e1e34a5cd17398805091127cf2434bf5525038",
+      "generatedFile": "exec-2e3b3954-ae05-4e26-8fe8-46c0d093fcb8.png",
+      "prompt": "Use case: ads-marketing. Asset type: photographic background for one PumpDuel fitness social Story. Make one premium photorealistic editorial sports photograph, portrait 4:5 composition, highest available detail. This is a raw photograph, NOT a poster: absolutely no text, lettering, logos, badges, numbers, watermarks, collage panels or drawn interface. PumpDuel is friendly bodyweight fitness with friends: real everyday athletic adults, varied natural body types, not bodybuilders. Real pores, perspiration, fabric texture, anatomically plausible hands and bodies, believable exercise form. Tasteful charcoal athletic clothing with one subtle acid-lime detail, muted natural colors and crisp subject detail; no fake film scratches. Composition: the key faces and main action are in the upper-middle half (roughly 20–50% of the image); leave quieter photographic foreground in the bottom third for a later text panel, but do not draw a blank panel or add a gradient. All heads and important hands fully in frame.\nScene: A sharply detailed close-up editorial photograph of a person adjusting the tilt joint of a compact black phone tripod on a park workout bench. Two natural human hands operate the tripod knob and hold the back of the phone, the phone back and small support fully visible in upper-middle. In the softly blurred background an adult man in charcoal workout clothes stands a few paces away inside an open-air concrete calisthenics pavilion, checking his distance before the set. Warm orange evening side light, moss-green accents, strong architectural diagonals; no app screen visible, no text or diagrams. Lower third is quiet dark bench surface, no gym crowd."
+    }
+  ]
+}
