@@ -132,6 +132,12 @@ export function buildAssetSvg(asset) {
     rect(250,250,580,580,colors.lime,112);
     const mark=outline('PD',425,'display');
     text('PD',540,540-mark.height/2,425,{face:'display',fill:colors.ink,align:'center',maxWidth:440});
+  } else if(highlight==='global') {
+    safe={x:210,y:220,width:660,height:600};
+    parts.push('<circle cx="540" cy="540" r="330" fill="#182114" stroke="#b7ff2a" stroke-opacity=".35" stroke-width="3"/>');
+    parts.push('<g fill="none" stroke="#b7ff2a" stroke-width="4" opacity=".75"><circle cx="540" cy="395" r="88"/><ellipse cx="540" cy="395" rx="37.84" ry="88"/><ellipse cx="540" cy="395" rx="69.52" ry="88"/><ellipse cx="540" cy="395" rx="88" ry="31.68"/><line x1="452" y1="395" x2="628" y2="395"/><line x1="540" y1="307" x2="540" y2="483"/></g>');
+    text('GLOBAL',540,515,170,{face:'display',fill:colors.lime,align:'center',maxWidth:580});
+    text('PUMPDUEL',540,700,29,{align:'center',maxWidth:400});
   } else if(highlight) {
     rect(0,0,w,h,'url(#radial)');
     parts.push('<circle cx="540" cy="540" r="330" fill="#182114" stroke="#b7ff2a" stroke-opacity=".35" stroke-width="3"/>');

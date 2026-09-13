@@ -243,6 +243,16 @@
       "sha256": "cfbb8011efa96ccad37880d25de2a9ec4a905ce2e9b93486574bc56f5f6af4dc"
     },
     {
+      "id": "instagram-highlights-global",
+      "file": "instagram/highlights/global.png",
+      "title": "Instagram · GLOBAL Highlight cover",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 53165,
+      "sha256": "7680561bdfcf9b2f749987311cd5df465f026331fa53d96584aa40f433d702b3"
+    },
+    {
       "id": "instagram-profile",
       "file": "instagram/profile.png",
       "title": "Instagram · Profile picture",
@@ -558,14 +568,15 @@
       "id": "instagram-highlights",
       "platform": "instagram",
       "title": "Highlight covers",
-      "kind": "Profile · 6 photos",
+      "kind": "Profile · 7 photos",
       "assets": [
         "instagram-highlights-start",
         "instagram-highlights-crew",
         "instagram-highlights-duels",
         "instagram-highlights-challenge",
         "instagram-highlights-progress",
-        "instagram-highlights-how-to"
+        "instagram-highlights-how-to",
+        "instagram-highlights-global"
       ]
     },
     {
