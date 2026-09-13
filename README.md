@@ -6,6 +6,8 @@ Run `npm run preview` with Node 22 or later. No dependency installation, credent
 
 ## Phone workflow
 
+The separate [GLOBAL launch pack](global.html) includes a four-frame introduction and nine permanent-code cards for Instagram, TikTok and Facebook. It is explicitly held for working challenge links and verified app entry; these drafts are not mixed into the ready-to-post catalogue. See [the public posting guide](global-guide.md). Run `npm run global-pack` to regenerate its 39 original PNGs and integrity manifest. The build validates this pack separately and serves only its explicit allowlist.
+
 - Open the hosted HTTPS page in iPhone Safari.
 - Save one photo, save a story set with **Save post**, or choose a custom selection with the checkboxes.
 - Choose **Save Image**, **Save Images** or **Save Video** in the iOS share sheet. iOS owns this final action.

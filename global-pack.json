@@ -1,0 +1,5308 @@
+{
+  "version": 1,
+  "status": "HOLD_FOR_WORKING_LINKS",
+  "namesApproved": true,
+  "postingApproved": false,
+  "title": "GLOBAL · initial launch pack",
+  "hub": "https://pumpduel.com/global",
+  "series": [
+    {
+      "workout": "push-ups",
+      "label": "Push-ups",
+      "cadence": "daily",
+      "code": "PUSHDAY",
+      "index": 0,
+      "key": "push-ups-daily",
+      "url": "https://pumpduel.com/c/PUSHDAY",
+      "seriesUrl": "https://pumpduel.com/global/push-ups/daily"
+    },
+    {
+      "workout": "push-ups",
+      "label": "Push-ups",
+      "cadence": "weekly",
+      "code": "PUSHWK",
+      "index": 1,
+      "key": "push-ups-weekly",
+      "url": "https://pumpduel.com/c/PUSHWK",
+      "seriesUrl": "https://pumpduel.com/global/push-ups/weekly"
+    },
+    {
+      "workout": "push-ups",
+      "label": "Push-ups",
+      "cadence": "monthly",
+      "code": "PUSHMO",
+      "index": 2,
+      "key": "push-ups-monthly",
+      "url": "https://pumpduel.com/c/PUSHMO",
+      "seriesUrl": "https://pumpduel.com/global/push-ups/monthly"
+    },
+    {
+      "workout": "pull-ups",
+      "label": "Pull-ups",
+      "cadence": "daily",
+      "code": "PULLDAY",
+      "index": 3,
+      "key": "pull-ups-daily",
+      "url": "https://pumpduel.com/c/PULLDAY",
+      "seriesUrl": "https://pumpduel.com/global/pull-ups/daily"
+    },
+    {
+      "workout": "pull-ups",
+      "label": "Pull-ups",
+      "cadence": "weekly",
+      "code": "PULLWK",
+      "index": 4,
+      "key": "pull-ups-weekly",
+      "url": "https://pumpduel.com/c/PULLWK",
+      "seriesUrl": "https://pumpduel.com/global/pull-ups/weekly"
+    },
+    {
+      "workout": "pull-ups",
+      "label": "Pull-ups",
+      "cadence": "monthly",
+      "code": "PULLMO",
+      "index": 5,
+      "key": "pull-ups-monthly",
+      "url": "https://pumpduel.com/c/PULLMO",
+      "seriesUrl": "https://pumpduel.com/global/pull-ups/monthly"
+    },
+    {
+      "workout": "squats",
+      "label": "Squats",
+      "cadence": "daily",
+      "code": "SQUATDAY",
+      "index": 6,
+      "key": "squats-daily",
+      "url": "https://pumpduel.com/c/SQUATDAY",
+      "seriesUrl": "https://pumpduel.com/global/squats/daily"
+    },
+    {
+      "workout": "squats",
+      "label": "Squats",
+      "cadence": "weekly",
+      "code": "SQUATWK",
+      "index": 7,
+      "key": "squats-weekly",
+      "url": "https://pumpduel.com/c/SQUATWK",
+      "seriesUrl": "https://pumpduel.com/global/squats/weekly"
+    },
+    {
+      "workout": "squats",
+      "label": "Squats",
+      "cadence": "monthly",
+      "code": "SQUATMO",
+      "index": 8,
+      "key": "squats-monthly",
+      "url": "https://pumpduel.com/c/SQUATMO",
+      "seriesUrl": "https://pumpduel.com/global/squats/monthly"
+    }
+  ],
+  "tiktok": {
+    "username": "@pumpduel",
+    "websiteLinkAvailable": false
+  },
+  "guidance": {
+    "highlight": "One GLOBAL Highlight; start with four introduction frames. Add selected real results later.",
+    "results": "Permanent entry codes are for current challenges, never historical results. Keep exact round links for results.",
+    "release": "Verify every code resolves to its matching live competition and supported iPhone entry before posting."
+  },
+  "assets": [
+    {
+      "id": "global-instagram-01-worldwide",
+      "file": "instagram/global/01-worldwide.png",
+      "title": "Your reps. Worldwide.",
+      "platform": "instagram",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 77197,
+      "sha256": "a107eb1b823ba98480af802a6af540c7ae4338ae37a4977864e1cd1a23319acc",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "YOUR REPS.",
+          "x": 76,
+          "y": 365,
+          "width": 522.04,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "WORLDWIDE.",
+          "x": 76,
+          "y": 480,
+          "width": 577.8399999999999,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "Push-ups. Pull-ups. Squats.",
+          "x": 76,
+          "y": 625,
+          "width": 429.94800000000004,
+          "height": 32.292,
+          "size": 36,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1330,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-02-movements",
+      "file": "instagram/global/02-movements.png",
+      "title": "Three ways to show up.",
+      "platform": "instagram",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 66311,
+      "sha256": "ac721af6d059560d4da7220004590d522a7af3b1c8fcaf5fe50a4f945a32cf5f",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "THREE WAYS",
+          "x": 76,
+          "y": 365,
+          "width": 564.696,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "TO SHOW UP.",
+          "x": 76,
+          "y": 480,
+          "width": 581.0640000000001,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "01",
+          "x": 76,
+          "y": 684,
+          "width": 27.265000000000004,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "PUSH-UPS",
+          "x": 180,
+          "y": 675,
+          "width": 309.485,
+          "height": 60.86000000000001,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "02",
+          "x": 76,
+          "y": 841,
+          "width": 35.595000000000006,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "PULL-UPS",
+          "x": 180,
+          "y": 832,
+          "width": 304.64,
+          "height": 60.86000000000001,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "03",
+          "x": 76,
+          "y": 998,
+          "width": 34.75500000000001,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "SQUATS",
+          "x": 180,
+          "y": 989,
+          "width": 237.91500000000005,
+          "height": 67.575,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "Pick your strong suit.",
+          "x": 76,
+          "y": 1160,
+          "width": 319.13000000000005,
+          "height": 32.27,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1330,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-03-timeframes",
+      "file": "instagram/global/03-timeframes.png",
+      "title": "Pick your timeframe.",
+      "platform": "instagram",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 63639,
+      "sha256": "10da03546bb888003ed1a16d01237b1b0ed43240eceb05a9322fe3cd6d99dfe9",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "PICK YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 472.19200000000006,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "TIMEFRAME.",
+          "x": 76,
+          "y": 480,
+          "width": 546.964,
+          "height": 87.792,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "DAILY",
+          "x": 101,
+          "y": 680,
+          "width": 166.35819999623297,
+          "height": 55.3,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "WEEKLY",
+          "x": 101,
+          "y": 828,
+          "width": 237.53719999999998,
+          "height": 55.3,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "MONTHLY",
+          "x": 101,
+          "y": 976,
+          "width": 271.6652,
+          "height": 56.564,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "Separate entries. Separate leaderboards.",
+          "x": 76,
+          "y": 1152,
+          "width": 593.604,
+          "height": 30.096000000000004,
+          "size": 33,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1330,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-04-entry",
+      "file": "instagram/global/04-entry.png",
+      "title": "One code. Your round.",
+      "platform": "instagram",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 72996,
+      "sha256": "dc9b0aa89cba5e105ed6d4a0b82cd86d24a6ddccc3fe82d4ef4d3a93b78803c9",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "ONE CODE.",
+          "x": 76,
+          "y": 365,
+          "width": 463.76,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "YOUR ROUND.",
+          "x": 76,
+          "y": 480,
+          "width": 594.9520000000001,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "01  CHOOSE YOUR CHALLENGE",
+          "x": 76,
+          "y": 675,
+          "width": 423.03999999999996,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Pick a movement and a timeframe.",
+          "x": 76,
+          "y": 735,
+          "width": 478.7840000000001,
+          "height": 23.424,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "02  OPEN ITS LINK",
+          "x": 76,
+          "y": 846,
+          "width": 262.56,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Check the current round and rules.",
+          "x": 76,
+          "y": 906,
+          "width": 479.4240000000001,
+          "height": 22.944,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "03  TAKE YOUR TURN",
+          "x": 76,
+          "y": 1017,
+          "width": 300.92,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Enter in PumpDuel on iPhone.",
+          "x": 76,
+          "y": 1077,
+          "width": 406.7520000000001,
+          "height": 29.183999999999997,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1330,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-push-ups-daily",
+      "file": "instagram/global/push-ups-daily.png",
+      "title": "Push-ups · daily · PUSHDAY",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "daily",
+      "code": "PUSHDAY",
+      "link": "https://pumpduel.com/c/PUSHDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 75671,
+      "sha256": "ffa54803466a12a441b73a30081714ba9670f631e994360cbfa2a024f763ae08",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 365,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 475,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · DAILY",
+          "x": 76,
+          "y": 610,
+          "width": 329.13872727227215,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHDAY",
+          "x": 76,
+          "y": 884,
+          "width": 468.9976,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHDAY",
+          "x": 76,
+          "y": 1383,
+          "width": 456.5561818181817,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-push-ups-weekly",
+      "file": "instagram/global/push-ups-weekly.png",
+      "title": "Push-ups · weekly · PUSHWK",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "weekly",
+      "code": "PUSHWK",
+      "link": "https://pumpduel.com/c/PUSHWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 75303,
+      "sha256": "4b9db95c4749b305ce087db5ab429a7e2a768b76c851f215e58e4e897d0c9b1d",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 365,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 475,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · WEEKLY",
+          "x": 76,
+          "y": 610,
+          "width": 378.6147272722722,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHWK",
+          "x": 76,
+          "y": 884,
+          "width": 441.904,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHWK",
+          "x": 76,
+          "y": 1383,
+          "width": 446.72799999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-push-ups-monthly",
+      "file": "instagram/global/push-ups-monthly.png",
+      "title": "Push-ups · monthly · PUSHMO",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "monthly",
+      "code": "PUSHMO",
+      "link": "https://pumpduel.com/c/PUSHMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 74146,
+      "sha256": "b27fcea820f63c261aee56d9dfcb556d0b27046e2e0677abe6f1697a343bef8b",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 475,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · MONTHLY",
+          "x": 76,
+          "y": 610,
+          "width": 401.63072727272726,
+          "height": 30.156000000000002,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHMO",
+          "x": 76,
+          "y": 884,
+          "width": 414.21400000000006,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHMO",
+          "x": 76,
+          "y": 1383,
+          "width": 439.888,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-pull-ups-daily",
+      "file": "instagram/global/pull-ups-daily.png",
+      "title": "Pull-ups · daily · PULLDAY",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "daily",
+      "code": "PULLDAY",
+      "link": "https://pumpduel.com/c/PULLDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 75173,
+      "sha256": "48ee534a8be211fcd1a7a5ef92b2bab10ed478c4f71b4019ffda953a0c46ce9f",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 365,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 475,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · DAILY",
+          "x": 76,
+          "y": 610,
+          "width": 325.5267272722722,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLDAY",
+          "x": 76,
+          "y": 884,
+          "width": 460.903599993229,
+          "height": 100.536,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLDAY",
+          "x": 76,
+          "y": 1383,
+          "width": 453.28818181818167,
+          "height": 33.82,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-pull-ups-weekly",
+      "file": "instagram/global/pull-ups-weekly.png",
+      "title": "Pull-ups · weekly · PULLWK",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "weekly",
+      "code": "PULLWK",
+      "link": "https://pumpduel.com/c/PULLWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 75062,
+      "sha256": "5a600bf5a8a64d9e36b770a4cfb391e4d3d0d2953081b739759572e95716d248",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 365,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 475,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · WEEKLY",
+          "x": 76,
+          "y": 610,
+          "width": 375.0027272727272,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLWK",
+          "x": 76,
+          "y": 884,
+          "width": 433.81000000000006,
+          "height": 100.536,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLWK",
+          "x": 76,
+          "y": 1383,
+          "width": 442.0159999999999,
+          "height": 33.82,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-pull-ups-monthly",
+      "file": "instagram/global/pull-ups-monthly.png",
+      "title": "Pull-ups · monthly · PULLMO",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "monthly",
+      "code": "PULLMO",
+      "link": "https://pumpduel.com/c/PULLMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 73763,
+      "sha256": "24affbaa01379a6c105a4a76a51601ae368c82a720788ded8a283b0d7afc2de0",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 475,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · MONTHLY",
+          "x": 76,
+          "y": 610,
+          "width": 398.01872727227214,
+          "height": 30.156000000000002,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLMO",
+          "x": 76,
+          "y": 884,
+          "width": 406.12,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLMO",
+          "x": 76,
+          "y": 1383,
+          "width": 436.61999999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-squats-daily",
+      "file": "instagram/global/squats-daily.png",
+      "title": "Squats · daily · SQUATDAY",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "daily",
+      "code": "SQUATDAY",
+      "link": "https://pumpduel.com/c/SQUATDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 78934,
+      "sha256": "66eb98d7934d3397abda45a37a646c2c3b44fbeb967039d0cb9f62781f423976",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 365,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 475,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · DAILY",
+          "x": 76,
+          "y": 610,
+          "width": 281.8467272722721,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATDAY",
+          "x": 76,
+          "y": 884,
+          "width": 534.7435999847652,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATDAY",
+          "x": 76,
+          "y": 1383,
+          "width": 475.13818181818175,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-squats-weekly",
+      "file": "instagram/global/squats-weekly.png",
+      "title": "Squats · weekly · SQUATWK",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "weekly",
+      "code": "SQUATWK",
+      "link": "https://pumpduel.com/c/SQUATWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 79315,
+      "sha256": "b9dadd44bb7189b597de235d838539e65a3fd6bd71df3486f9044ce9c02d653e",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 365,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 475,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · WEEKLY",
+          "x": 76,
+          "y": 610,
+          "width": 331.3227272722722,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATWK",
+          "x": 76,
+          "y": 884,
+          "width": 507.65000000000015,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATWK",
+          "x": 76,
+          "y": 1383,
+          "width": 465.30999999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-instagram-squats-monthly",
+      "file": "instagram/global/squats-monthly.png",
+      "title": "Squats · monthly · SQUATMO",
+      "platform": "instagram",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "monthly",
+      "code": "SQUATMO",
+      "link": "https://pumpduel.com/c/SQUATMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 78339,
+      "sha256": "08265e279bfb4c93c124dab553c88fa98b45e8d5ecd3105fcc9f735f8d149e97",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 928,
+        "height": 1280
+      },
+      "stickerArea": {
+        "x": 180,
+        "y": 1550,
+        "width": 660,
+        "height": 110
+      },
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 475,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · MONTHLY",
+          "x": 76,
+          "y": 610,
+          "width": 354.33872727227214,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATMO",
+          "x": 76,
+          "y": 884,
+          "width": 479.9600000000001,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1330,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATMO",
+          "x": 76,
+          "y": 1383,
+          "width": 458.46999999999997,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-01-worldwide",
+      "file": "tiktok/global/01-worldwide.png",
+      "title": "Your reps. Worldwide.",
+      "platform": "tiktok",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 77434,
+      "sha256": "8471dd7f4d3dd5a82eae00e55a4cf78a1bfd6f0cf921809405d342713e711144",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "YOUR REPS.",
+          "x": 76,
+          "y": 365,
+          "width": 522.04,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "WORLDWIDE.",
+          "x": 76,
+          "y": 480,
+          "width": 577.8399999999999,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "Push-ups. Pull-ups. Squats.",
+          "x": 76,
+          "y": 625,
+          "width": 429.94800000000004,
+          "height": 32.292,
+          "size": 36,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-02-movements",
+      "file": "tiktok/global/02-movements.png",
+      "title": "Three ways to show up.",
+      "platform": "tiktok",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 66567,
+      "sha256": "00efd8cbcfb57073d80f9d653963c52f4bb400dc7a1f92f2c877a3ea27fd3a56",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "THREE WAYS",
+          "x": 76,
+          "y": 365,
+          "width": 564.696,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "TO SHOW UP.",
+          "x": 76,
+          "y": 480,
+          "width": 581.0640000000001,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "01",
+          "x": 76,
+          "y": 684,
+          "width": 27.265000000000004,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "PUSH-UPS",
+          "x": 180,
+          "y": 675,
+          "width": 309.485,
+          "height": 60.86000000000001,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "02",
+          "x": 76,
+          "y": 841,
+          "width": 35.595000000000006,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "PULL-UPS",
+          "x": 180,
+          "y": 832,
+          "width": 304.64,
+          "height": 60.86000000000001,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "03",
+          "x": 76,
+          "y": 998,
+          "width": 34.75500000000001,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "SQUATS",
+          "x": 180,
+          "y": 989,
+          "width": 237.91500000000005,
+          "height": 67.575,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "Pick your strong suit.",
+          "x": 76,
+          "y": 1160,
+          "width": 319.13000000000005,
+          "height": 32.27,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-03-timeframes",
+      "file": "tiktok/global/03-timeframes.png",
+      "title": "Pick your timeframe.",
+      "platform": "tiktok",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 63980,
+      "sha256": "a95968b0e62120dc87318710c80d61b045519379c30d69a88768fab050bccfb6",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "PICK YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 472.19200000000006,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "TIMEFRAME.",
+          "x": 76,
+          "y": 480,
+          "width": 546.964,
+          "height": 87.792,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "DAILY",
+          "x": 101,
+          "y": 680,
+          "width": 166.35819999623297,
+          "height": 55.3,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "WEEKLY",
+          "x": 101,
+          "y": 828,
+          "width": 237.53719999999998,
+          "height": 55.3,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "MONTHLY",
+          "x": 101,
+          "y": 976,
+          "width": 271.6652,
+          "height": 56.564,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "Separate entries. Separate leaderboards.",
+          "x": 76,
+          "y": 1152,
+          "width": 593.604,
+          "height": 30.096000000000004,
+          "size": 33,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-04-entry",
+      "file": "tiktok/global/04-entry.png",
+      "title": "One code. Your round.",
+      "platform": "tiktok",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 73236,
+      "sha256": "48b91f2c37011c3817e6c8f88eca57a616c34e1b9067305fe02e8aca3d0582e1",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "ONE CODE.",
+          "x": 76,
+          "y": 365,
+          "width": 463.76,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "YOUR ROUND.",
+          "x": 76,
+          "y": 480,
+          "width": 594.9520000000001,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "01  CHOOSE YOUR CHALLENGE",
+          "x": 76,
+          "y": 675,
+          "width": 423.03999999999996,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Pick a movement and a timeframe.",
+          "x": 76,
+          "y": 735,
+          "width": 478.7840000000001,
+          "height": 23.424,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "02  OPEN ITS LINK",
+          "x": 76,
+          "y": 846,
+          "width": 262.56,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Check the current round and rules.",
+          "x": 76,
+          "y": 906,
+          "width": 479.4240000000001,
+          "height": 22.944,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "03  TAKE YOUR TURN",
+          "x": 76,
+          "y": 1017,
+          "width": 300.92,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Enter in PumpDuel on iPhone.",
+          "x": 76,
+          "y": 1077,
+          "width": 406.7520000000001,
+          "height": 29.183999999999997,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1383,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-push-ups-daily",
+      "file": "tiktok/global/push-ups-daily.png",
+      "title": "Push-ups · daily · PUSHDAY",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "daily",
+      "code": "PUSHDAY",
+      "link": "https://pumpduel.com/c/PUSHDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 75262,
+      "sha256": "8fab14723a71cfefdc441f08e1c4898c79cc9c874369d174e32323b849aa2ec4",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 365,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 475,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · DAILY",
+          "x": 76,
+          "y": 610,
+          "width": 329.13872727227215,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHDAY",
+          "x": 76,
+          "y": 884,
+          "width": 468.9976,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHDAY",
+          "x": 76,
+          "y": 1383,
+          "width": 456.5561818181817,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-push-ups-weekly",
+      "file": "tiktok/global/push-ups-weekly.png",
+      "title": "Push-ups · weekly · PUSHWK",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "weekly",
+      "code": "PUSHWK",
+      "link": "https://pumpduel.com/c/PUSHWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 74919,
+      "sha256": "768c44f8bc529d76c31b186511be5b86bb32ef4c91341a56384ac1519ad87258",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 365,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 475,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · WEEKLY",
+          "x": 76,
+          "y": 610,
+          "width": 378.6147272722722,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHWK",
+          "x": 76,
+          "y": 884,
+          "width": 441.904,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHWK",
+          "x": 76,
+          "y": 1383,
+          "width": 446.72799999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-push-ups-monthly",
+      "file": "tiktok/global/push-ups-monthly.png",
+      "title": "Push-ups · monthly · PUSHMO",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "monthly",
+      "code": "PUSHMO",
+      "link": "https://pumpduel.com/c/PUSHMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 73738,
+      "sha256": "c0205b664162bd6059faf258df0a7a9db6b62256f27fa5543f5c964a09432d1e",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 475,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · MONTHLY",
+          "x": 76,
+          "y": 610,
+          "width": 401.63072727272726,
+          "height": 30.156000000000002,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHMO",
+          "x": 76,
+          "y": 884,
+          "width": 414.21400000000006,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHMO",
+          "x": 76,
+          "y": 1383,
+          "width": 439.888,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-pull-ups-daily",
+      "file": "tiktok/global/pull-ups-daily.png",
+      "title": "Pull-ups · daily · PULLDAY",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "daily",
+      "code": "PULLDAY",
+      "link": "https://pumpduel.com/c/PULLDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 74763,
+      "sha256": "9eb4c51f0d05be16dbc49ad1879b8ba57addf5359cb7145403c05e08920c4f70",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 365,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 475,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · DAILY",
+          "x": 76,
+          "y": 610,
+          "width": 325.5267272722722,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLDAY",
+          "x": 76,
+          "y": 884,
+          "width": 460.903599993229,
+          "height": 100.536,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLDAY",
+          "x": 76,
+          "y": 1383,
+          "width": 453.28818181818167,
+          "height": 33.82,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-pull-ups-weekly",
+      "file": "tiktok/global/pull-ups-weekly.png",
+      "title": "Pull-ups · weekly · PULLWK",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "weekly",
+      "code": "PULLWK",
+      "link": "https://pumpduel.com/c/PULLWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 74677,
+      "sha256": "68c71f1c942fe177b35da8a18e22d7663818fcc52ebfc10ba8bbbeda628ce077",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 365,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 475,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · WEEKLY",
+          "x": 76,
+          "y": 610,
+          "width": 375.0027272727272,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLWK",
+          "x": 76,
+          "y": 884,
+          "width": 433.81000000000006,
+          "height": 100.536,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLWK",
+          "x": 76,
+          "y": 1383,
+          "width": 442.0159999999999,
+          "height": 33.82,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-pull-ups-monthly",
+      "file": "tiktok/global/pull-ups-monthly.png",
+      "title": "Pull-ups · monthly · PULLMO",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "monthly",
+      "code": "PULLMO",
+      "link": "https://pumpduel.com/c/PULLMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 73355,
+      "sha256": "998eeed39cc3056f7a0e16c0e1dc5c0b7de528a6e69ed029355147c9e7d7e93c",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 475,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · MONTHLY",
+          "x": 76,
+          "y": 610,
+          "width": 398.01872727227214,
+          "height": 30.156000000000002,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLMO",
+          "x": 76,
+          "y": 884,
+          "width": 406.12,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLMO",
+          "x": 76,
+          "y": 1383,
+          "width": 436.61999999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-squats-daily",
+      "file": "tiktok/global/squats-daily.png",
+      "title": "Squats · daily · SQUATDAY",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "daily",
+      "code": "SQUATDAY",
+      "link": "https://pumpduel.com/c/SQUATDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 78527,
+      "sha256": "b2cd2de7c7bd9c1acb63c5d5ba4d05601b0030f79bc7897b1f96731f30c703fe",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 365,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 475,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · DAILY",
+          "x": 76,
+          "y": 610,
+          "width": 281.8467272722721,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATDAY",
+          "x": 76,
+          "y": 884,
+          "width": 534.7435999847652,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATDAY",
+          "x": 76,
+          "y": 1383,
+          "width": 475.13818181818175,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-squats-weekly",
+      "file": "tiktok/global/squats-weekly.png",
+      "title": "Squats · weekly · SQUATWK",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "weekly",
+      "code": "SQUATWK",
+      "link": "https://pumpduel.com/c/SQUATWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 78940,
+      "sha256": "0b4530b11a01ffab8eef4176669d1d315dcd8e3e216a3d2d6079d49df6dfce33",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 365,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 475,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · WEEKLY",
+          "x": 76,
+          "y": 610,
+          "width": 331.3227272722722,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATWK",
+          "x": 76,
+          "y": 884,
+          "width": 507.65000000000015,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATWK",
+          "x": 76,
+          "y": 1383,
+          "width": 465.30999999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-tiktok-squats-monthly",
+      "file": "tiktok/global/squats-monthly.png",
+      "title": "Squats · monthly · SQUATMO",
+      "platform": "tiktok",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "monthly",
+      "code": "SQUATMO",
+      "link": "https://pumpduel.com/c/SQUATMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 77930,
+      "sha256": "1eaeb7412d18738da99083d50bb872e8b05ab5b0c9deb2d4854d7141be52923b",
+      "safe": {
+        "x": 76,
+        "y": 200,
+        "width": 824,
+        "height": 1280
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 220,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 304,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 365,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 475,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · MONTHLY",
+          "x": 76,
+          "y": 610,
+          "width": 354.33872727227214,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 829,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATMO",
+          "x": 76,
+          "y": 884,
+          "width": 479.9600000000001,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 1074,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 1125,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "TYPE IN YOUR BROWSER",
+          "x": 76,
+          "y": 1330,
+          "width": 290.27699999999993,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATMO",
+          "x": 76,
+          "y": 1383,
+          "width": 458.46999999999997,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-01-worldwide",
+      "file": "facebook/global/01-worldwide.png",
+      "title": "Your reps. Worldwide.",
+      "platform": "facebook",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 70458,
+      "sha256": "28666afe87325377e320010569fddf2d78687fe5bca5f0800603ed491288c2ca",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "YOUR REPS.",
+          "x": 76,
+          "y": 215,
+          "width": 522.04,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "WORLDWIDE.",
+          "x": 76,
+          "y": 330,
+          "width": 577.8399999999999,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "Push-ups. Pull-ups. Squats.",
+          "x": 76,
+          "y": 475,
+          "width": 429.94800000000004,
+          "height": 32.292,
+          "size": 36,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1160,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1213,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-02-movements",
+      "file": "facebook/global/02-movements.png",
+      "title": "Three ways to show up.",
+      "platform": "facebook",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 62216,
+      "sha256": "0ba408870959c47a94107c1384807d464fc58e0a16c2076328d84a17ff08d8fe",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "THREE WAYS",
+          "x": 76,
+          "y": 215,
+          "width": 564.696,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "TO SHOW UP.",
+          "x": 76,
+          "y": 330,
+          "width": 581.0640000000001,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "01",
+          "x": 76,
+          "y": 534,
+          "width": 27.265000000000004,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "PUSH-UPS",
+          "x": 180,
+          "y": 525,
+          "width": 309.485,
+          "height": 60.86000000000001,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "02",
+          "x": 76,
+          "y": 691,
+          "width": 35.595000000000006,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "PULL-UPS",
+          "x": 180,
+          "y": 682,
+          "width": 304.64,
+          "height": 60.86000000000001,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "03",
+          "x": 76,
+          "y": 848,
+          "width": 34.75500000000001,
+          "height": 25.165000000000003,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "SQUATS",
+          "x": 180,
+          "y": 839,
+          "width": 237.91500000000005,
+          "height": 67.575,
+          "size": 85,
+          "face": "display"
+        },
+        {
+          "value": "Pick your strong suit.",
+          "x": 76,
+          "y": 1010,
+          "width": 319.13000000000005,
+          "height": 32.27,
+          "size": 35,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1160,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1213,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-03-timeframes",
+      "file": "facebook/global/03-timeframes.png",
+      "title": "Pick your timeframe.",
+      "platform": "facebook",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 59437,
+      "sha256": "be5625e91b459cf43784b61ee8e441437fba44fa767592618484afa9a29d9040",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "PICK YOUR",
+          "x": 76,
+          "y": 215,
+          "width": 472.19200000000006,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "TIMEFRAME.",
+          "x": 76,
+          "y": 330,
+          "width": 546.964,
+          "height": 87.792,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "DAILY",
+          "x": 101,
+          "y": 530,
+          "width": 166.35819999623297,
+          "height": 55.3,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "WEEKLY",
+          "x": 101,
+          "y": 678,
+          "width": 237.53719999999998,
+          "height": 55.3,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "MONTHLY",
+          "x": 101,
+          "y": 826,
+          "width": 271.6652,
+          "height": 56.564,
+          "size": 79,
+          "face": "display"
+        },
+        {
+          "value": "Separate entries. Separate leaderboards.",
+          "x": 76,
+          "y": 1002,
+          "width": 593.604,
+          "height": 30.096000000000004,
+          "size": 33,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1160,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1213,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-04-entry",
+      "file": "facebook/global/04-entry.png",
+      "title": "One code. Your round.",
+      "platform": "facebook",
+      "group": "intro",
+      "workout": null,
+      "cadence": null,
+      "code": null,
+      "link": "https://pumpduel.com/global",
+      "stickerLabel": "Explore challenges",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 68736,
+      "sha256": "9a680cd6c13acab4a3a1a36abb8f33e031a774b89c61c9c41691f3ee8a83043b",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "ONE CODE.",
+          "x": 76,
+          "y": 215,
+          "width": 463.76,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "YOUR ROUND.",
+          "x": 76,
+          "y": 330,
+          "width": 594.9520000000001,
+          "height": 88.784,
+          "size": 124,
+          "face": "display"
+        },
+        {
+          "value": "01  CHOOSE YOUR CHALLENGE",
+          "x": 76,
+          "y": 525,
+          "width": 423.03999999999996,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Pick a movement and a timeframe.",
+          "x": 76,
+          "y": 585,
+          "width": 478.7840000000001,
+          "height": 23.424,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "02  OPEN ITS LINK",
+          "x": 76,
+          "y": 696,
+          "width": 262.56,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Check the current round and rules.",
+          "x": 76,
+          "y": 756,
+          "width": 479.4240000000001,
+          "height": 22.944,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "03  TAKE YOUR TURN",
+          "x": 76,
+          "y": 867,
+          "width": 300.92,
+          "height": 28.96,
+          "size": 40,
+          "face": "display"
+        },
+        {
+          "value": "Enter in PumpDuel on iPhone.",
+          "x": 76,
+          "y": 927,
+          "width": 406.7520000000001,
+          "height": 29.183999999999997,
+          "size": 32,
+          "face": "body"
+        },
+        {
+          "value": "EXPLORE WORLDWIDE",
+          "x": 76,
+          "y": 1160,
+          "width": 266.49,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/global",
+          "x": 76,
+          "y": 1213,
+          "width": 359.55600000000004,
+          "height": 34.123999999999995,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-push-ups-daily",
+      "file": "facebook/global/push-ups-daily.png",
+      "title": "Push-ups · daily · PUSHDAY",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "daily",
+      "code": "PUSHDAY",
+      "link": "https://pumpduel.com/c/PUSHDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 71349,
+      "sha256": "24e2aae9e00acab28de6704f51aaabbe4e2eca9cd50de774a107b526a157577a",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 215,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 325,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · DAILY",
+          "x": 76,
+          "y": 460,
+          "width": 329.13872727227215,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHDAY",
+          "x": 76,
+          "y": 734,
+          "width": 468.9976,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHDAY",
+          "x": 76,
+          "y": 1213,
+          "width": 456.5561818181817,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-push-ups-weekly",
+      "file": "facebook/global/push-ups-weekly.png",
+      "title": "Push-ups · weekly · PUSHWK",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "weekly",
+      "code": "PUSHWK",
+      "link": "https://pumpduel.com/c/PUSHWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 70981,
+      "sha256": "dded179012296740d18325e4c8d95992dacba149ba78f1a11cfb7d7a102bbcc9",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 215,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 325,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · WEEKLY",
+          "x": 76,
+          "y": 460,
+          "width": 378.6147272722722,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHWK",
+          "x": 76,
+          "y": 734,
+          "width": 441.904,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHWK",
+          "x": 76,
+          "y": 1213,
+          "width": 446.72799999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-push-ups-monthly",
+      "file": "facebook/global/push-ups-monthly.png",
+      "title": "Push-ups · monthly · PUSHMO",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "push-ups",
+      "cadence": "monthly",
+      "code": "PUSHMO",
+      "link": "https://pumpduel.com/c/PUSHMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 69853,
+      "sha256": "eedc98808545c2d73a8c8686c1b02a359cec5859c4ec4c34edf07fa49e0b280d",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 215,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 325,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PUSH-UPS · MONTHLY",
+          "x": 76,
+          "y": 460,
+          "width": 401.63072727272726,
+          "height": 30.156000000000002,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PUSHMO",
+          "x": 76,
+          "y": 734,
+          "width": 414.21400000000006,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PUSHMO",
+          "x": 76,
+          "y": 1213,
+          "width": 439.888,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-pull-ups-daily",
+      "file": "facebook/global/pull-ups-daily.png",
+      "title": "Pull-ups · daily · PULLDAY",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "daily",
+      "code": "PULLDAY",
+      "link": "https://pumpduel.com/c/PULLDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 70864,
+      "sha256": "a8d3f818884453125e5ae80d1a9b91f65cfeed952e80a2ced375d3e7fda44b25",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 215,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 325,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · DAILY",
+          "x": 76,
+          "y": 460,
+          "width": 325.5267272722722,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLDAY",
+          "x": 76,
+          "y": 734,
+          "width": 460.903599993229,
+          "height": 100.536,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLDAY",
+          "x": 76,
+          "y": 1213,
+          "width": 453.28818181818167,
+          "height": 33.82,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-pull-ups-weekly",
+      "file": "facebook/global/pull-ups-weekly.png",
+      "title": "Pull-ups · weekly · PULLWK",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "weekly",
+      "code": "PULLWK",
+      "link": "https://pumpduel.com/c/PULLWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 70745,
+      "sha256": "cc2e5cd0031c8323137241a2b26a6f01839f411a398a5c0bee47fd44dea92b4c",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 215,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 325,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · WEEKLY",
+          "x": 76,
+          "y": 460,
+          "width": 375.0027272727272,
+          "height": 30.072,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLWK",
+          "x": 76,
+          "y": 734,
+          "width": 433.81000000000006,
+          "height": 100.536,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLWK",
+          "x": 76,
+          "y": 1213,
+          "width": 442.0159999999999,
+          "height": 33.82,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-pull-ups-monthly",
+      "file": "facebook/global/pull-ups-monthly.png",
+      "title": "Pull-ups · monthly · PULLMO",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "pull-ups",
+      "cadence": "monthly",
+      "code": "PULLMO",
+      "link": "https://pumpduel.com/c/PULLMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 69466,
+      "sha256": "5d746a5db84cb97f7564bb94192a4a1df1ad54355ff91c961b43dedd9aef8448",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 215,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 325,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "PULL-UPS · MONTHLY",
+          "x": 76,
+          "y": 460,
+          "width": 398.01872727227214,
+          "height": 30.156000000000002,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "PULLMO",
+          "x": 76,
+          "y": 734,
+          "width": 406.12,
+          "height": 101.67200000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/PULLMO",
+          "x": 76,
+          "y": 1213,
+          "width": 436.61999999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-squats-daily",
+      "file": "facebook/global/squats-daily.png",
+      "title": "Squats · daily · SQUATDAY",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "daily",
+      "code": "SQUATDAY",
+      "link": "https://pumpduel.com/c/SQUATDAY",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 74432,
+      "sha256": "adfad6fd06cd24ecd9b5c9937817c4d73db5cd83a97cbceb593813f607142929",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "NEW DAY.",
+          "x": 76,
+          "y": 215,
+          "width": 411.24000000000007,
+          "height": 84.96,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "NEW ROUND.",
+          "x": 76,
+          "y": 325,
+          "width": 545.88,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · DAILY",
+          "x": 76,
+          "y": 460,
+          "width": 281.8467272722721,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATDAY",
+          "x": 76,
+          "y": 734,
+          "width": 534.7435999847652,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATDAY",
+          "x": 76,
+          "y": 1213,
+          "width": 475.13818181818175,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-squats-weekly",
+      "file": "facebook/global/squats-weekly.png",
+      "title": "Squats · weekly · SQUATWK",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "weekly",
+      "code": "SQUATWK",
+      "link": "https://pumpduel.com/c/SQUATWK",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 74813,
+      "sha256": "ee2a48a619b7a361089946a1dfbddcd13527efb957f172a44daf4d6eaed87924",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "MAKE THIS",
+          "x": 76,
+          "y": 215,
+          "width": 469.32,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "YOUR WEEK.",
+          "x": 76,
+          "y": 325,
+          "width": 534.84,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · WEEKLY",
+          "x": 76,
+          "y": 460,
+          "width": 331.3227272722722,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATWK",
+          "x": 76,
+          "y": 734,
+          "width": 507.65000000000015,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATWK",
+          "x": 76,
+          "y": 1213,
+          "width": 465.30999999999995,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    },
+    {
+      "id": "global-facebook-squats-monthly",
+      "file": "facebook/global/squats-monthly.png",
+      "title": "Squats · monthly · SQUATMO",
+      "platform": "facebook",
+      "group": "series",
+      "workout": "squats",
+      "cadence": "monthly",
+      "code": "SQUATMO",
+      "link": "https://pumpduel.com/c/SQUATMO",
+      "stickerLabel": "View challenge",
+      "type": "image/png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 73923,
+      "sha256": "917a013722eab2d4a6c78c63822f22eb951517a8c7e23f183de806f7c94be89b",
+      "safe": {
+        "x": 76,
+        "y": 54,
+        "width": 928,
+        "height": 1230
+      },
+      "stickerArea": null,
+      "texts": [
+        {
+          "value": "PD  PUMPDUEL",
+          "x": 76,
+          "y": 70,
+          "width": 217.85399999999998,
+          "height": 29.736,
+          "size": 42,
+          "face": "display"
+        },
+        {
+          "value": "GLOBAL CHALLENGES",
+          "x": 76,
+          "y": 154,
+          "width": 274.484,
+          "height": 20.104000000000003,
+          "size": 28,
+          "face": "body"
+        },
+        {
+          "value": "OWN YOUR",
+          "x": 76,
+          "y": 215,
+          "width": 459.5999999999999,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "BEST SET.",
+          "x": 76,
+          "y": 325,
+          "width": 437.64,
+          "height": 85.91999999999999,
+          "size": 120,
+          "face": "display"
+        },
+        {
+          "value": "SQUATS · MONTHLY",
+          "x": 76,
+          "y": 460,
+          "width": 354.33872727227214,
+          "height": 34.104,
+          "size": 42,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CHALLENGE CODE",
+          "x": 76,
+          "y": 679,
+          "width": 289.008,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "SQUATMO",
+          "x": 76,
+          "y": 734,
+          "width": 479.9600000000001,
+          "height": 112.89000000000001,
+          "size": 142,
+          "face": "display"
+        },
+        {
+          "value": "Open the link. Check the current round.",
+          "x": 76,
+          "y": 924,
+          "width": 575.6540000000001,
+          "height": 31.008000000000003,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "Your best accepted attempt counts.",
+          "x": 76,
+          "y": 975,
+          "width": 532.4060000000002,
+          "height": 30.226,
+          "size": 34,
+          "face": "body"
+        },
+        {
+          "value": "YOUR CURRENT CHALLENGE",
+          "x": 76,
+          "y": 1160,
+          "width": 339.525,
+          "height": 19.386,
+          "size": 27,
+          "face": "body"
+        },
+        {
+          "value": "pumpduel.com/c/SQUATMO",
+          "x": 76,
+          "y": 1213,
+          "width": 458.46999999999997,
+          "height": 34.086,
+          "size": 38,
+          "face": "body"
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "global-instagram-intro",
+      "platform": "instagram",
+      "title": "GLOBAL introduction · four frames",
+      "assets": [
+        "global-instagram-01-worldwide",
+        "global-instagram-02-movements",
+        "global-instagram-03-timeframes",
+        "global-instagram-04-entry"
+      ],
+      "caption": "Your reps. Worldwide. Push-ups, pull-ups and squats across Daily, Weekly and Monthly challenges. Each competition has its own entry and leaderboard. Choose your challenge and check the current rules.\n\nOpen the Story link: https://pumpduel.com/global\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-push-ups-daily",
+      "platform": "instagram",
+      "title": "Push-ups · daily",
+      "assets": [
+        "global-instagram-push-ups-daily"
+      ],
+      "caption": "Push-ups · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHDAY.\n\nOpen the Story link: https://pumpduel.com/c/PUSHDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-push-ups-weekly",
+      "platform": "instagram",
+      "title": "Push-ups · weekly",
+      "assets": [
+        "global-instagram-push-ups-weekly"
+      ],
+      "caption": "Push-ups · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHWK.\n\nOpen the Story link: https://pumpduel.com/c/PUSHWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-push-ups-monthly",
+      "platform": "instagram",
+      "title": "Push-ups · monthly",
+      "assets": [
+        "global-instagram-push-ups-monthly"
+      ],
+      "caption": "Push-ups · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHMO.\n\nOpen the Story link: https://pumpduel.com/c/PUSHMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-pull-ups-daily",
+      "platform": "instagram",
+      "title": "Pull-ups · daily",
+      "assets": [
+        "global-instagram-pull-ups-daily"
+      ],
+      "caption": "Pull-ups · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLDAY.\n\nOpen the Story link: https://pumpduel.com/c/PULLDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-pull-ups-weekly",
+      "platform": "instagram",
+      "title": "Pull-ups · weekly",
+      "assets": [
+        "global-instagram-pull-ups-weekly"
+      ],
+      "caption": "Pull-ups · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLWK.\n\nOpen the Story link: https://pumpduel.com/c/PULLWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-pull-ups-monthly",
+      "platform": "instagram",
+      "title": "Pull-ups · monthly",
+      "assets": [
+        "global-instagram-pull-ups-monthly"
+      ],
+      "caption": "Pull-ups · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLMO.\n\nOpen the Story link: https://pumpduel.com/c/PULLMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-squats-daily",
+      "platform": "instagram",
+      "title": "Squats · daily",
+      "assets": [
+        "global-instagram-squats-daily"
+      ],
+      "caption": "Squats · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATDAY.\n\nOpen the Story link: https://pumpduel.com/c/SQUATDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-squats-weekly",
+      "platform": "instagram",
+      "title": "Squats · weekly",
+      "assets": [
+        "global-instagram-squats-weekly"
+      ],
+      "caption": "Squats · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATWK.\n\nOpen the Story link: https://pumpduel.com/c/SQUATWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-instagram-squats-monthly",
+      "platform": "instagram",
+      "title": "Squats · monthly",
+      "assets": [
+        "global-instagram-squats-monthly"
+      ],
+      "caption": "Squats · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATMO.\n\nOpen the Story link: https://pumpduel.com/c/SQUATMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-intro",
+      "platform": "tiktok",
+      "title": "GLOBAL introduction · four frames",
+      "assets": [
+        "global-tiktok-01-worldwide",
+        "global-tiktok-02-movements",
+        "global-tiktok-03-timeframes",
+        "global-tiktok-04-entry"
+      ],
+      "caption": "Your reps. Worldwide. Push-ups, pull-ups and squats across Daily, Weekly and Monthly challenges. Each competition has its own entry and leaderboard. Choose your challenge and check the current rules.\n\nType in your browser: pumpduel.com/global\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-push-ups-daily",
+      "platform": "tiktok",
+      "title": "Push-ups · daily",
+      "assets": [
+        "global-tiktok-push-ups-daily"
+      ],
+      "caption": "Push-ups · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHDAY.\n\nType in your browser: pumpduel.com/c/PUSHDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-push-ups-weekly",
+      "platform": "tiktok",
+      "title": "Push-ups · weekly",
+      "assets": [
+        "global-tiktok-push-ups-weekly"
+      ],
+      "caption": "Push-ups · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHWK.\n\nType in your browser: pumpduel.com/c/PUSHWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-push-ups-monthly",
+      "platform": "tiktok",
+      "title": "Push-ups · monthly",
+      "assets": [
+        "global-tiktok-push-ups-monthly"
+      ],
+      "caption": "Push-ups · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHMO.\n\nType in your browser: pumpduel.com/c/PUSHMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-pull-ups-daily",
+      "platform": "tiktok",
+      "title": "Pull-ups · daily",
+      "assets": [
+        "global-tiktok-pull-ups-daily"
+      ],
+      "caption": "Pull-ups · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLDAY.\n\nType in your browser: pumpduel.com/c/PULLDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-pull-ups-weekly",
+      "platform": "tiktok",
+      "title": "Pull-ups · weekly",
+      "assets": [
+        "global-tiktok-pull-ups-weekly"
+      ],
+      "caption": "Pull-ups · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLWK.\n\nType in your browser: pumpduel.com/c/PULLWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-pull-ups-monthly",
+      "platform": "tiktok",
+      "title": "Pull-ups · monthly",
+      "assets": [
+        "global-tiktok-pull-ups-monthly"
+      ],
+      "caption": "Pull-ups · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLMO.\n\nType in your browser: pumpduel.com/c/PULLMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-squats-daily",
+      "platform": "tiktok",
+      "title": "Squats · daily",
+      "assets": [
+        "global-tiktok-squats-daily"
+      ],
+      "caption": "Squats · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATDAY.\n\nType in your browser: pumpduel.com/c/SQUATDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-squats-weekly",
+      "platform": "tiktok",
+      "title": "Squats · weekly",
+      "assets": [
+        "global-tiktok-squats-weekly"
+      ],
+      "caption": "Squats · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATWK.\n\nType in your browser: pumpduel.com/c/SQUATWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-tiktok-squats-monthly",
+      "platform": "tiktok",
+      "title": "Squats · monthly",
+      "assets": [
+        "global-tiktok-squats-monthly"
+      ],
+      "caption": "Squats · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATMO.\n\nType in your browser: pumpduel.com/c/SQUATMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-intro",
+      "platform": "facebook",
+      "title": "GLOBAL introduction · four frames",
+      "assets": [
+        "global-facebook-01-worldwide",
+        "global-facebook-02-movements",
+        "global-facebook-03-timeframes",
+        "global-facebook-04-entry"
+      ],
+      "caption": "Your reps. Worldwide. Push-ups, pull-ups and squats across Daily, Weekly and Monthly challenges. Each competition has its own entry and leaderboard. Choose your challenge and check the current rules.\n\nhttps://pumpduel.com/global\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-push-ups-daily",
+      "platform": "facebook",
+      "title": "Push-ups · daily",
+      "assets": [
+        "global-facebook-push-ups-daily"
+      ],
+      "caption": "Push-ups · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHDAY.\n\nhttps://pumpduel.com/c/PUSHDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-push-ups-weekly",
+      "platform": "facebook",
+      "title": "Push-ups · weekly",
+      "assets": [
+        "global-facebook-push-ups-weekly"
+      ],
+      "caption": "Push-ups · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHWK.\n\nhttps://pumpduel.com/c/PUSHWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-push-ups-monthly",
+      "platform": "facebook",
+      "title": "Push-ups · monthly",
+      "assets": [
+        "global-facebook-push-ups-monthly"
+      ],
+      "caption": "Push-ups · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PUSHMO.\n\nhttps://pumpduel.com/c/PUSHMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-pull-ups-daily",
+      "platform": "facebook",
+      "title": "Pull-ups · daily",
+      "assets": [
+        "global-facebook-pull-ups-daily"
+      ],
+      "caption": "Pull-ups · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLDAY.\n\nhttps://pumpduel.com/c/PULLDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-pull-ups-weekly",
+      "platform": "facebook",
+      "title": "Pull-ups · weekly",
+      "assets": [
+        "global-facebook-pull-ups-weekly"
+      ],
+      "caption": "Pull-ups · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLWK.\n\nhttps://pumpduel.com/c/PULLWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-pull-ups-monthly",
+      "platform": "facebook",
+      "title": "Pull-ups · monthly",
+      "assets": [
+        "global-facebook-pull-ups-monthly"
+      ],
+      "caption": "Pull-ups · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: PULLMO.\n\nhttps://pumpduel.com/c/PULLMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-squats-daily",
+      "platform": "facebook",
+      "title": "Squats · daily",
+      "assets": [
+        "global-facebook-squats-daily"
+      ],
+      "caption": "Squats · Daily. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATDAY.\n\nhttps://pumpduel.com/c/SQUATDAY\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-squats-weekly",
+      "platform": "facebook",
+      "title": "Squats · weekly",
+      "assets": [
+        "global-facebook-squats-weekly"
+      ],
+      "caption": "Squats · Weekly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATWK.\n\nhttps://pumpduel.com/c/SQUATWK\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    },
+    {
+      "id": "global-facebook-squats-monthly",
+      "platform": "facebook",
+      "title": "Squats · monthly",
+      "assets": [
+        "global-facebook-squats-monthly"
+      ],
+      "caption": "Squats · Monthly. Your best accepted attempt counts. Open the current round for its rules, entry availability and attempt terms. Challenge code: SQUATMO.\n\nhttps://pumpduel.com/c/SQUATMO\n\n#PumpDuel #GlobalChallenge",
+      "status": "HOLD_FOR_WORKING_LINKS"
+    }
+  ]
+}
