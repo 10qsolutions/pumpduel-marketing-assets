@@ -21,6 +21,8 @@ Actual iPhone Photos imports, batch limits and mixed image/video behaviour must 
 
 The Instagram, Facebook and TikTok tabs include an expandable brand setup guide with direct profile, Story, Highlight-cover and first-post save controls. It explains the recommended account type, profile copy, Instagram Story-to-Highlight workflow, Facebook Page setup and TikTok cover, website, music and disclosure options. Platform help links are included in the guide; menu labels and account availability can vary. No accounts are created or changed by the guide.
 
+The [WORLDWIDE Instagram checklist](index.html#instagram-worldwide) opens the Instagram guide directly. It provides the three-frame hub-only introduction, original image downloads, copy buttons for the hub URL, sticker label and caption, and the GLOBAL cover. The fourth frame and entry-code invitations remain held until released app entry works. `npm run global-pack` also refreshes this guide from the reviewed asset manifest.
+
 ## Hosting
 
 Run `npm run build` and publish only the generated `dist` folder with an HTTPS static host. Keep the project root as the build/source folder. Do not serve the Git checkout itself.

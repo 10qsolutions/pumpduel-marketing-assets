@@ -9,7 +9,7 @@
   <title>PumpDuel · Social assets</title>
   <link rel="icon" href="instagram/profile.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="app.js?v=typography-2"></script>
+  <script type="module" src="app.js?v=worldwide-guide-1"></script>
 </head>
 <body>
   <header class="masthead">
@@ -18,7 +18,7 @@
   </header>
   <main>
     <div class="intro"><div><h1>Ready to post.</h1><p>Save your photos. Copy the caption.</p></div><button class="text-button" id="help">Saving on iPhone ↗</button></div>
-    <aside class="guide-note"><strong>GLOBAL launch pack:</strong> <a href="global.html">Open the introduction, nine challenge-code cards and posting guide →</a><p>Launch drafts: prepare now. Hold posting until the challenge links and app entry are verified.</p></aside>
+    <aside class="guide-note"><strong>GLOBAL launch pack:</strong> <a href="global.html">Open the introduction, nine challenge-code cards and posting guide →</a><p>Start with the <a href="#instagram-worldwide">WORLDWIDE Instagram checklist</a> for hub-only Stories. Hold entry invitations until the challenge links and app entry are verified.</p></aside>
     <nav id="platforms" aria-label="Social platform"></nav>
     <div class="section-heading"><div><h2 id="platform-title">Your assets</h2><p id="asset-count" class="muted">Loading your photos…</p></div><button id="select-platform" class="secondary" disabled>Select all</button></div>
     <details class="setup-guide" id="setup-guide" hidden><summary id="setup-guide-title">Brand setup guide</summary><div class="setup-guide-content" id="setup-guide-content"></div></details>
@@ -38,7 +38,51 @@
     <button id="confirm-save" class="primary" hidden>Save to Photos</button>
   </dialog>
   <template id="guide-instagram">
-    <p class="guide-lead">Use a <strong>Business professional account</strong> for PumpDuel. Build a clear introduction with your profile, six Highlights and three feed posts.</p>
+    <!-- WORLDWIDE_GUIDE_START -->
+    <section class="worldwide-guide" id="instagram-worldwide" aria-labelledby="worldwide-guide-title">
+      <p class="eyebrow">WORLDWIDE · INSTAGRAM CHECKLIST</p>
+      <h3 id="worldwide-guide-title">Post WORLDWIDE today</h3>
+      <p>One short introduction. One <strong>GLOBAL</strong> Highlight. Use the hub to explain Daily, Weekly and Monthly challenges across push-ups, pull-ups and squats—not nine separate announcements.</p>
+      <aside class="guide-note"><strong>Hub introduction only—not an “enter now” launch.</strong> Check the hub before posting. Until entry works in the released iPhone app, skip frame 04 (“One code. Your round.”) and the nine code-card invitations. If the challenge page says “Coming soon in the app”, keep that hold in place.</aside>
+
+      <h4>1. Save these three Stories, in this order</h4>
+      <p>These are the original 1080 × 1920 PNGs. On iPhone, open an image, then touch and hold it and choose the available Save to Photos option. Do not screenshot the preview.</p>
+      <ol class="worldwide-frames"><li><a href="instagram/global/01-worldwide.png?v=a107eb1b823b" target="_blank" rel="noopener"><img src="instagram/global/01-worldwide.png?v=a107eb1b823b" width="1080" height="1920" loading="lazy" alt="Story 1: Your reps. Worldwide."></a><strong>1. Your reps. Worldwide.</strong><a class="secondary" href="instagram/global/01-worldwide.png?v=a107eb1b823b" download>Download Story 1</a></li><li><a href="instagram/global/02-movements.png?v=ac721af6d059" target="_blank" rel="noopener"><img src="instagram/global/02-movements.png?v=ac721af6d059" width="1080" height="1920" loading="lazy" alt="Story 2: Three ways to show up."></a><strong>2. Three ways to show up.</strong><a class="secondary" href="instagram/global/02-movements.png?v=ac721af6d059" download>Download Story 2</a></li><li><a href="instagram/global/03-timeframes.png?v=10da03546bb8" target="_blank" rel="noopener"><img src="instagram/global/03-timeframes.png?v=10da03546bb8" width="1080" height="1920" loading="lazy" alt="Story 3: Pick your timeframe."></a><strong>3. Pick your timeframe.</strong><a class="secondary" href="instagram/global/03-timeframes.png?v=10da03546bb8" download>Download Story 3</a></li></ol>
+
+      <h4>2. Add the actual Link sticker in Instagram</h4>
+      <p>Create a public Story with frame 1, then 2, then 3. On each, choose <strong>Stickers → Link</strong>, paste the URL below and set the label to <strong>Explore challenges</strong>. Put the sticker in the blank area below the printed URL; the URL printed on the image is not tappable.</p>
+      <label for="worldwide-hub-link">Story Link sticker URL</label>
+      <input id="worldwide-hub-link" readonly value="https://pumpduel.com/global">
+      <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-hub-link">Copy WORLDWIDE link</button><a class="secondary" href="https://pumpduel.com/global" target="_blank" rel="noopener">Check the live hub ↗</a></div>
+      <label for="worldwide-sticker-label">Sticker label</label>
+      <input id="worldwide-sticker-label" readonly value="Explore challenges">
+      <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-sticker-label">Copy sticker label</button></div>
+      <p class="guide-note">If Link stickers are unavailable on your account, put this hub URL in your profile’s link field and adjust the wording to point there. Check the posted link from another account.</p>
+
+      <h4>3. Use this wording if you add accompanying copy</h4>
+      <p>The images already carry the introduction. This copy is optional—do not paste the whole caption over every Story. For a short text prompt, use <strong>“Which movement are you backing?”</strong></p>
+      <label for="worldwide-awareness-caption">WORLDWIDE introduction copy</label>
+      <textarea id="worldwide-awareness-caption" readonly>Your reps. Worldwide. 🌍
+Push-ups, pull-ups or squats. Daily, weekly or monthly.
+Meet PumpDuel’s worldwide challenges.
+Which movement are you backing?
+
+Explore the challenges using the Story link.
+
+#PumpDuel #GlobalChallenge</textarea>
+      <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-awareness-caption">Copy WORLDWIDE caption</button></div>
+
+      <h4>4. Save all three into the same GLOBAL Highlight</h4>
+      <p>Keep Story Archive enabled. After posting, add all three Stories to <strong>GLOBAL</strong>. If it already exists, use it; do not create Daily, Weekly and Monthly Highlights. Use <strong>Edit Highlight → Edit cover</strong> to set the cover below.</p>
+      <div class="worldwide-cover"><img src="instagram/highlights/global.png" width="72" height="72" alt="GLOBAL Highlight cover"><div><strong>Highlight name: GLOBAL</strong><div class="guide-actions"><button class="secondary" type="button" data-save-global-cover>Save GLOBAL cover</button></div></div></div>
+
+      <h4>5. Keep GLOBAL useful after the introduction</h4>
+      <p>After app entry is verified, follow with one relevant code card. Feature a daily challenge on 3–4 days a week, rotating movements; add weekly opening/closing reminders and monthly introduction/midpoint/final-call updates as relevant. Check the actual deadline before posting.</p>
+      <p>Mix in real attempts and results you have permission to share. Keep selected results in GLOBAL with their <strong>exact completed-round link</strong>; rolling entry codes are only for current invitations. Retire expired invitations and keep the Highlight concise.</p>
+      <p><a href="global.html#instagram">Browse the full Instagram pack →</a> · <a href="global-guide.md">Full posting guide</a></p>
+    </section>
+    <!-- WORLDWIDE_GUIDE_END -->
+    <p class="guide-lead">Use a <strong>Business professional account</strong> for PumpDuel. The core brand setup below covers your profile, six introductory Highlights and three feed posts; keep worldwide challenges together in the additional <strong>GLOBAL</strong> Highlight above.</p>
     <ol class="guide-steps">
       <li><h3>Set up the brand profile</h3>
         <p>Create the Instagram account with an email the business controls. In the profile menu, find <strong>Switch to professional account</strong> and choose <strong>Business</strong>. Pick an app or software category if offered. Keep the account public.</p>
@@ -68,7 +112,7 @@
         <p>If <strong>Pin to your profile</strong> is available in a post’s menu, pin these introductions and inspect the resulting order. Then add demonstrations, actual challenge invitations and community content over time.</p>
       </li>
     </ol>
-    <aside class="guide-note"><strong>For daily worldwide challenges:</strong> the existing “Set a score. Dare them.” cards explain friend challenges. Use a fresh worldwide challenge card and its current join link for a daily event. Check the dates and replace expired invitations in Stories and Highlights.</aside>
+    <aside class="guide-note"><strong>Friend challenges and WORLDWIDE are different:</strong> the existing “Set a score. Dare them.” cards explain friend challenges. Use the WORLDWIDE checklist above for the Daily, Weekly and Monthly hub. Keep current invitations and dated results linked to the right destinations.</aside>
   </template>
 
   <template id="guide-facebook">

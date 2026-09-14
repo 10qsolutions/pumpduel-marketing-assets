@@ -1,6 +1,6 @@
 # GLOBAL · initial launch pack
 
-**Launch drafts: prepare now, hold posting until the links work.** The nine code names are approved for this artwork. This pack does not claim that any code or competition is already live.
+**Full entry launch: hold posting until the links and released app entry work.** The nine code names are approved for this artwork. The separate three-frame hub introduction below uses an “Explore challenges” message, not an “Enter now” invitation.
 
 [Open the pack](global.html) · [Public link and asset manifest](global-pack.json)
 
@@ -16,7 +16,22 @@ Each code uses `https://pumpduel.com/c/CODE`. Use the spelling shown above. Thes
 
 ## Instagram
 
-One Highlight named **GLOBAL**, using the existing GLOBAL cover. Start with the four introduction frames in order. Follow with one relevant challenge card—not all nine. Add selected real results and permissioned participant moments later; keep the introduction short and retire expired or inaccurate invitations.
+[Open the WORLDWIDE Instagram checklist](index.html#instagram-worldwide) for the three image downloads, copyable link and sticker label, ready-to-copy wording and GLOBAL cover.
+
+For a hub-only introduction, check that the hub is available, then post **Your reps. Worldwide. → Three ways to show up. → Pick your timeframe.** in that order. Add an “Explore challenges” Link sticker to each and save all three into the same **GLOBAL** Highlight. Do not create separate timeframe Highlights. Keep Story Archive on and verify the published links from another account.
+
+Until challenge entry works in the released iPhone app, skip **One code. Your round.** and the nine code-card invitations. A web leaderboard alone does not confirm that people can enter. Keep the hold in place if the page says “Coming soon in the app”. After entry is verified, add the fourth introduction frame and one relevant code card—not all nine.
+
+Suggested introduction wording:
+
+> Your reps. Worldwide. 🌍
+> Push-ups, pull-ups or squats. Daily, weekly or monthly.
+> Meet PumpDuel’s worldwide challenges.
+> Which movement are you backing?
+>
+> Explore the challenges using the Story link.
+
+The images already carry the message; do not paste the full caption over each Story. Add selected real results and permissioned participant moments later; keep the introduction short and retire expired or inaccurate invitations. For a manageable rhythm after entry is live, feature one daily challenge on 3–4 days a week, rotate movements, add weekly opening/closing reminders and monthly introduction/midpoint/final-call updates as relevant.
 
 Add an actual Instagram Link sticker when composing each Story. Use the card's matching link and label it “View challenge”; introduction frames use “Explore challenges” and the hub. Reserve the blank area beneath the printed URL (x=180–840, y=1550–1660). A printed URL is not a tappable sticker. Verify the saved Highlight from another account.
 

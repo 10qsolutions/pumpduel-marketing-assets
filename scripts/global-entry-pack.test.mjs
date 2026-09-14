@@ -4,7 +4,7 @@ import {readFileSync,existsSync} from 'node:fs';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
-import {series,chapters,platforms,compose,caption} from './global-entry-pack.mjs';
+import {series,chapters,platforms,compose,caption,renderInstagramGuide,worldwideCaption} from './global-entry-pack.mjs';
 import {validateFiles} from './files.mjs';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
@@ -47,7 +47,37 @@ test('pack links are relative for project Pages and every downloadable file exis
   assert.match(html,/HOLD POSTING/);assert.match(html,/Names approved/);
   for(const [,href]of html.matchAll(/(?:href|src)="([^"]+)"/g)){
     if(href.startsWith('#')||href.startsWith('https://'))continue;
-    assert.ok(!href.startsWith('/'));assert.ok(existsSync(resolve(root,href.split('?')[0])),href);
+    assert.ok(!href.startsWith('/'));assert.ok(existsSync(resolve(root,href.split(/[?#]/)[0])),href);
   }
   assert.match(readFileSync(resolve(root,'index.html'),'utf8'),/href="global.html"/);
+});
+
+test('WORLDWIDE Instagram guide uses only the three hub-introduction frames in order',()=>{
+  const guide=renderInstagramGuide(manifest);
+  const index=readFileSync(resolve(root,'index.html'),'utf8');
+  assert.ok(index.includes(guide),'regenerate the guide after changing its content or assets');
+  const downloads=[...guide.matchAll(/href="([^"]+)" download/g)].map(match=>match[1]);
+  assert.deepEqual(downloads,chapters.slice(0,3).map(chapter=>{
+    const asset=manifest.assets.find(a=>a.id===`global-instagram-${chapter.key}`);
+    return `${asset.file}?v=${asset.sha256.slice(0,12)}`;
+  }));
+  assert.match(guide,/skip frame 04/);
+  assert.match(guide,/nine code-card invitations/);
+  assert.match(guide,/Coming soon in the app/);
+  assert.match(guide,/exact completed-round link/);
+  assert.match(guide,/Highlight name: GLOBAL/);
+  assert.doesNotMatch(worldwideCaption,/enter now|join now|link in bio/i);
+});
+
+test('WORLDWIDE guide has copyable fields, a cover save action and a direct link from the pack',()=>{
+  const guide=renderInstagramGuide(manifest);
+  for(const [,id]of guide.matchAll(/data-copy-guide="([^"]+)"/g))assert.ok(guide.includes(`id="${id}"`));
+  assert.match(guide,/id="worldwide-hub-link" readonly value="https:\/\/pumpduel.com\/global"/);
+  assert.match(guide,/id="worldwide-sticker-label" readonly value="Explore challenges"/);
+  assert.match(guide,/data-save-global-cover/);
+  const app=readFileSync(resolve(root,'app.js'),'utf8');
+  assert.match(app,/location.hash === '#instagram-worldwide' \? 'instagram'/);
+  assert.match(app,/\$\('#setup-guide'\)\.open = true/);
+  assert.match(app,/control.dataset.copyGuide/);
+  assert.match(readFileSync(resolve(root,'global.html'),'utf8'),/href="index.html#instagram-worldwide"/);
 });
