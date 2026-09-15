@@ -116,41 +116,34 @@ export const worldwideCaption='Your reps. Worldwide. 🌍\nPush-ups, pull-ups or
 export function renderInstagramGuide(manifest){
   const frames=chapters.slice(0,3).map(chapter=>manifest.assets.find(a=>a.id===`global-instagram-${chapter.key}`));
   if(frames.some(frame=>!frame))throw Error('WORLDWIDE guide is missing an introduction frame');
-  return `<section class="worldwide-guide" id="instagram-worldwide" aria-labelledby="worldwide-guide-title">
-      <p class="eyebrow">WORLDWIDE · INSTAGRAM CHECKLIST</p>
-      <h3 id="worldwide-guide-title">Post WORLDWIDE today</h3>
-      <p>One short introduction. One <strong>GLOBAL</strong> Highlight. Use the hub to explain Daily, Weekly and Monthly challenges across push-ups, pull-ups and squats—not nine separate announcements.</p>
-      <aside class="guide-note"><strong>Hub introduction only—not an “enter now” launch.</strong> Check the hub before posting. Until entry works in the released iPhone app, skip frame 04 (“One code. Your round.”) and the nine code-card invitations. If the challenge page says “Coming soon in the app”, keep that hold in place.</aside>
-
-      <h4>1. Save these three Stories, in this order</h4>
-      <p>These are the original 1080 × 1920 PNGs. On iPhone, open an image, then touch and hold it and choose the available Save to Photos option. Do not screenshot the preview.</p>
-      <ol class="worldwide-frames">${frames.map((frame,i)=>`<li><a href="${frame.file}?v=${frame.sha256.slice(0,12)}" target="_blank" rel="noopener"><img src="${frame.file}?v=${frame.sha256.slice(0,12)}" width="1080" height="1920" loading="lazy" alt="Story ${i+1}: ${esc(frame.title)}"></a><strong>${i+1}. ${esc(frame.title)}</strong><a class="secondary" href="${frame.file}?v=${frame.sha256.slice(0,12)}" download>Download Story ${i+1}</a></li>`).join('')}</ol>
-
-      <h4>2. Add the actual Link sticker in Instagram</h4>
-      <p>Create a public Story with frame 1, then 2, then 3. On each, choose <strong>Stickers → Link</strong>, paste the URL below and set the label to <strong>Explore challenges</strong>. Put the sticker in the blank area below the printed URL; the URL printed on the image is not tappable.</p>
-      <label for="worldwide-hub-link">Story Link sticker URL</label>
-      <input id="worldwide-hub-link" readonly value="${hub}">
-      <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-hub-link">Copy WORLDWIDE link</button><a class="secondary" href="${hub}" target="_blank" rel="noopener">Check the live hub ↗</a></div>
-      <label for="worldwide-sticker-label">Sticker label</label>
-      <input id="worldwide-sticker-label" readonly value="Explore challenges">
-      <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-sticker-label">Copy sticker label</button></div>
-      <p class="guide-note">If Link stickers are unavailable on your account, put this hub URL in your profile’s link field and adjust the wording to point there. Check the posted link from another account.</p>
-
-      <h4>3. Use this wording if you add accompanying copy</h4>
-      <p>The images already carry the introduction. This copy is optional—do not paste the whole caption over every Story. For a short text prompt, use <strong>“Which movement are you backing?”</strong></p>
-      <label for="worldwide-awareness-caption">WORLDWIDE introduction copy</label>
-      <textarea id="worldwide-awareness-caption" readonly>${esc(worldwideCaption)}</textarea>
-      <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-awareness-caption">Copy WORLDWIDE caption</button></div>
-
-      <h4>4. Save all three into the same GLOBAL Highlight</h4>
-      <p>Keep Story Archive enabled. After posting, add all three Stories to <strong>GLOBAL</strong>. If it already exists, use it; do not create Daily, Weekly and Monthly Highlights. Use <strong>Edit Highlight → Edit cover</strong> to set the cover below.</p>
-      <div class="worldwide-cover"><img src="instagram/highlights/global.png" width="72" height="72" alt="GLOBAL Highlight cover"><div><strong>Highlight name: GLOBAL</strong><div class="guide-actions"><button class="secondary" type="button" data-save-global-cover>Save GLOBAL cover</button></div></div></div>
-
-      <h4>5. Keep GLOBAL useful after the introduction</h4>
-      <p>After app entry is verified, follow with one relevant code card. Feature a daily challenge on 3–4 days a week, rotating movements; add weekly opening/closing reminders and monthly introduction/midpoint/final-call updates as relevant. Check the actual deadline before posting.</p>
-      <p>Mix in real attempts and results you have permission to share. Keep selected results in GLOBAL with their <strong>exact completed-round link</strong>; rolling entry codes are only for current invitations. Retire expired invitations and keep the Highlight concise.</p>
-      <p><a href="global.html#instagram">Browse the full Instagram pack →</a> · <a href="global-guide.md">Full posting guide</a></p>
-    </section>`;
+  const shareAssets=frames.map(({id,file,type,bytes,sha256,title,width,height})=>({id,file,type,bytes,sha256,title,width,height}));
+  return `<div class="highlight-row worldwide-row" id="instagram-worldwide" data-worldwide-row data-worldwide-assets="${esc(JSON.stringify(shareAssets))}">
+      <img src="instagram/highlights/global.png" width="48" height="48" alt="GLOBAL Highlight cover" loading="lazy">
+      <div class="highlight-description"><strong>WORLDWIDE</strong><p>Daily, Weekly and Monthly challenges. Highlight name: GLOBAL.</p></div>
+      <div class="guide-actions">
+        <button class="secondary" type="button" data-save-worldwide>Save Stories (3)</button>
+        <button class="secondary" type="button" data-save-global-cover>Save cover</button>
+        <button class="secondary" type="button" data-copy-guide="worldwide-hub-link">Copy link</button>
+        <button class="secondary" type="button" data-copy-guide="worldwide-awareness-caption">Copy caption</button>
+      </div>
+      <details class="worldwide-details">
+        <summary>Story previews &amp; posting notes</summary>
+        <ol class="worldwide-frames">${frames.map((frame,i)=>`<li><a href="${frame.file}?v=${frame.sha256.slice(0,12)}" target="_blank" rel="noopener"><img src="${frame.file}?v=${frame.sha256.slice(0,12)}" width="1080" height="1920" loading="lazy" alt="Story ${i+1}: ${esc(frame.title)}"></a><strong>${i+1}. ${esc(frame.title)}</strong><a class="secondary" href="${frame.file}?v=${frame.sha256.slice(0,12)}" download aria-label="Download Story ${i+1}">Save ${i+1}</a></li>`).join('')}</ol>
+        <p>Post <strong>1 → 2 → 3</strong> in order. Save Stories prepares all three original 1080 × 1920 PNGs; the small previews do not reduce download quality. On iPhone, use Save to Photos or open an image and touch and hold to save it.</p>
+        <p>Add a native <strong>Link sticker</strong> to each Story, labelled <strong>Explore challenges</strong>, in the blank area below the printed URL. The printed URL is not tappable.</p>
+        <label for="worldwide-hub-link">Story Link sticker URL</label>
+        <input id="worldwide-hub-link" readonly value="${hub}">
+        <label for="worldwide-sticker-label">Sticker label</label>
+        <input id="worldwide-sticker-label" readonly value="Explore challenges">
+        <div class="guide-actions"><button class="secondary" type="button" data-copy-guide="worldwide-sticker-label">Copy sticker label</button><a class="secondary" href="${hub}" target="_blank" rel="noopener">Check live hub ↗</a></div>
+        <label for="worldwide-awareness-caption">Optional introduction copy</label>
+        <textarea id="worldwide-awareness-caption" readonly>${esc(worldwideCaption)}</textarea>
+        <p>Do not paste the whole caption over every Story. Keep Story Archive enabled and add all three to one <strong>GLOBAL</strong> Highlight. Use Edit Highlight → Edit cover for the icon. Check the saved link from another account.</p>
+        <p class="guide-note">Hub introduction only: until entry works in the released iPhone app, skip frame 04 and the nine code-card invitations. If the page says “Coming soon in the app”, keep that hold in place.</p>
+        <p class="guide-note">Add selected real results later with their <strong>exact completed-round link</strong>; rolling entry codes are for current invitations. Retire expired invitations.</p>
+        <p><a href="global.html#instagram">Full Instagram pack →</a> · <a href="global-guide.md">Full posting guide</a></p>
+      </details>
+    </div>`;
 }
 
 export async function buildPack(){

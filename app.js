@@ -125,6 +125,7 @@ function renderSetupGuide() {
   }
   const highlights = content.querySelector('[data-highlight-map]');
   if (highlights) {
+    const worldwide = highlights.querySelector('[data-worldwide-row]');
     for (const [key,name,purpose] of [
       ['start','Start','Meet PumpDuel and find your people.'],
       ['crew','Crew','Explain groups and daily workouts.'],
@@ -133,12 +134,18 @@ function renderSetupGuide() {
       ['progress','Progress','Show rep totals and recent activity.'],
       ['how-to','How to','Help someone begin their first set.']
     ]) {
-      highlights.append(el('div',{className:'highlight-row'},
+      highlights.insertBefore(el('div',{className:'highlight-row'},
         el('img',{src:assetUrl(assetMap.get(`instagram-highlights-${key}`)),alt:`${name} Highlight cover`,width:48,height:48,loading:'lazy'}),
         el('div',{className:'highlight-description'},el('strong',{text:name}),el('p',{text:purpose})),
         el('div',{className:'guide-actions'},
           button('Save Stories','secondary',() => requestSave(catalog.posts.find(post => post.id === `instagram-story-${key}`).assets),`Save ${name} Highlight Stories`),
-          button('Save cover','secondary',() => requestSave([`instagram-highlights-${key}`]),`Save ${name} Highlight cover`))));
+          button('Save cover','secondary',() => requestSave([`instagram-highlights-${key}`]),`Save ${name} Highlight cover`))),worldwide);
+    }
+    if (worldwide) {
+      const assets = JSON.parse(worldwide.dataset.worldwideAssets);
+      assets.forEach(asset => assetMap.set(asset.id,asset));
+      worldwide.querySelector('img').src = assetUrl(assetMap.get('instagram-highlights-global'));
+      worldwide.querySelector('[data-save-worldwide]').addEventListener('click',() => requestSave(assets.map(asset => asset.id)));
     }
   }
   content.querySelectorAll('[data-save-post]').forEach(control => {
@@ -160,7 +167,12 @@ function renderSetupGuide() {
 function openWorldwideGuide() {
   if (location.hash !== '#instagram-worldwide') return;
   $('#setup-guide').open = true;
-  $('#instagram-worldwide')?.scrollIntoView({block:'start'});
+  // Scroll after the opened guide is laid out, not before browser load/scroll restoration.
+  const scrollToRow = () => requestAnimationFrame(() => {
+    if (location.hash === '#instagram-worldwide' && $('#setup-guide').open) $('#instagram-worldwide')?.scrollIntoView({block:'start'});
+  });
+  if (document.readyState === 'complete') scrollToRow();
+  else window.addEventListener('load',scrollToRow,{once:true});
 }
 
 function renderPlatform() {
