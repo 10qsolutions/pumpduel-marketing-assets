@@ -150,6 +150,17 @@ function renderSetupGuide() {
     control.addEventListener('click',() => copyText(post.caption));
   });
   content.querySelectorAll('[data-copy-website]').forEach(control => control.addEventListener('click',() => copyText('https://pumpduel.com')));
+  content.querySelectorAll('[data-copy-guide]').forEach(control => control.addEventListener('click',() => {
+    const field = document.getElementById(control.dataset.copyGuide);
+    if (field) copyText(field.value);
+  }));
+  content.querySelector('[data-save-global-cover]')?.addEventListener('click',() => requestSave(['instagram-highlights-global']));
+}
+
+function openWorldwideGuide() {
+  if (location.hash !== '#instagram-worldwide') return;
+  $('#setup-guide').open = true;
+  $('#instagram-worldwide')?.scrollIntoView({block:'start'});
 }
 
 function renderPlatform() {
@@ -252,8 +263,9 @@ $('#select-platform').addEventListener('click', () => {
 });
 window.addEventListener('hashchange', () => {
   if (!catalog) return;
-  const next = location.hash.slice(1);
+  const next = location.hash === '#instagram-worldwide' ? 'instagram' : location.hash.slice(1);
   if (catalog.platforms.some(item => item.id === next) && next !== platform) { platform = next; renderPlatform(); }
+  openWorldwideGuide();
 });
 try {
   const response = await fetch('catalog.json', {credentials:'omit', cache:'no-cache'});
@@ -262,8 +274,10 @@ try {
   assetMap = new Map(catalog.assets.map(asset => [asset.id,asset]));
   $('.brand img').src = assetUrl(assetMap.get('instagram-profile'));
   $('link[rel="icon"]').href = assetUrl(assetMap.get('instagram-profile'));
-  platform = catalog.platforms.some(item => item.id === location.hash.slice(1)) ? location.hash.slice(1) : catalog.platforms[0].id;
+  const initialPlatform = location.hash === '#instagram-worldwide' ? 'instagram' : location.hash.slice(1);
+  platform = catalog.platforms.some(item => item.id === initialPlatform) ? initialPlatform : catalog.platforms[0].id;
   renderPlatform();
+  openWorldwideGuide();
 } catch {
   $('#asset-count').textContent = 'The photos couldn’t load.';
   $('#gallery').replaceChildren(el('p', {className:'error-message', text:'Check your connection, then refresh this page.'}));

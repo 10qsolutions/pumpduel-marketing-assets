@@ -11,6 +11,14 @@
 @media(max-width:600px){.intro h1{font-size:44px}.intro p{max-width:none}.intro{margin-bottom:10px}.intro .text-button{margin-top:5px}.post-title-row h3{font-size:27px}main{padding-top:18px}}
 
 /* Brand account setup guide */
+.worldwide-guide{scroll-margin-top:24px;margin:18px 0 36px;padding:22px;border:1px solid var(--lime);border-radius:10px;background:var(--ink)}
+.worldwide-guide h3{margin:0 0 12px}.worldwide-guide h4{margin:24px 0 10px;font-size:18px}.worldwide-guide .guide-note{margin-left:0}
+.worldwide-frames{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:0;list-style:none;margin:16px 0}
+.worldwide-frames li{min-width:0}.worldwide-frames img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px;margin-bottom:10px}
+.worldwide-frames strong{display:block;min-height:3em;font-size:14px}.worldwide-frames .secondary{display:inline-block;font-size:14px;text-decoration:none;margin-top:8px}
+.worldwide-guide label{display:block;font-weight:650;margin:16px 0 7px}.worldwide-guide input,.worldwide-guide textarea{display:block;width:100%;min-width:0;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--paper);padding:12px;font:15px/1.6 system-ui;resize:vertical}.worldwide-guide textarea{min-height:205px}
+.worldwide-cover{display:flex;align-items:center;gap:14px}.worldwide-cover img{border-radius:50%;flex-shrink:0}
+@media(max-width:600px){.worldwide-guide{padding:16px}.worldwide-frames{grid-template-columns:1fr;gap:24px}.worldwide-frames img{max-width:280px}.worldwide-frames strong{min-height:0}}
 .setup-guide{margin:0 0 24px;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
 .setup-guide>summary{min-height:60px;padding:17px 20px;cursor:pointer;font-size:16px;font-weight:650}
 .setup-guide>summary::marker{color:var(--lime)}

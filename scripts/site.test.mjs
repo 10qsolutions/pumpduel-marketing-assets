@@ -9,10 +9,11 @@ import {root} from './build.mjs';
 test('public allowlist contains all reviewed assets and no source or private files',async () => {
   const {catalog,publicFiles} = await validateFiles(root);
   assert.equal(catalog.assets.length,44);
-  assert.equal(publicFiles.length,50);
+  assert.equal(publicFiles.length,94);
+  assert.equal(routeFile('/global.html',publicFiles),'global.html');
   assert.ok(catalog.posts.find(p=>p.id==='instagram-highlights').assets.includes('instagram-highlights-global'));
   assert.equal(routeFile('/instagram/highlights/global.png',publicFiles),'instagram/highlights/global.png');
-  for (const file of ['.git/config','.env','IMPORT-AUDIT.json','README.md','scripts/serve.mjs','sources/provenance.json','PumpDuel-Social-Brand-Kit.zip']) assert.equal(routeFile('/'+file,publicFiles),null);
+  for (const file of ['.git/config','.env','IMPORT-AUDIT.json','README.md','scripts/serve.mjs','sources/provenance.json','PumpDuel-Social-Brand-Kit.zip','campaign/global-highlight-v2/launch-status.json','campaign/global-launch-v1/GUIDE.md']) assert.equal(routeFile('/'+file,publicFiles),null);
   assert.equal(routeFile('/',publicFiles),'index.html');
   assert.equal(routeFile('/instagram/profile.png?x=1',publicFiles),'instagram/profile.png');
   for (const path of ['/../index.html','/%2e%2e/index.html','/instagram/../index.html','//index.html','/%00index.html','/%ZZ','/instagram%5cprofile.png']) assert.equal(routeFile(path,publicFiles),null,path);
