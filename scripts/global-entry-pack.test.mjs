@@ -81,3 +81,30 @@ test('WORLDWIDE guide has copyable fields, a cover save action and a direct link
   assert.match(app,/control.dataset.copyGuide/);
   assert.match(readFileSync(resolve(root,'global.html'),'utf8'),/href="index.html#instagram-worldwide"/);
 });
+
+test('WORLDWIDE is a compact Highlights row with a complete three-Story save payload',()=>{
+  const guide=renderInstagramGuide(manifest);
+  const index=readFileSync(resolve(root,'index.html'),'utf8');
+  assert.match(index,/<div class="highlight-map" data-highlight-map>\s*<!-- WORLDWIDE_GUIDE_START -->\s*<div class="highlight-row worldwide-row"/);
+  assert.doesNotMatch(index,/class="worldwide-guide"/);
+  assert.match(guide,/<details class="worldwide-details">/);
+  assert.doesNotMatch(guide,/<details[^>]+\bopen\b/);
+  const actions=guide.slice(0,guide.indexOf('<details'));
+  assert.match(actions,/data-save-worldwide/);
+  assert.match(actions,/data-save-global-cover/);
+  assert.match(actions,/data-copy-guide="worldwide-hub-link"/);
+  assert.match(actions,/data-copy-guide="worldwide-awareness-caption"/);
+  const encoded=guide.match(/data-worldwide-assets="([^"]+)"/)[1];
+  const assets=JSON.parse(encoded.replaceAll('&quot;','"').replaceAll('&lt;','<').replaceAll('&amp;','&'));
+  assert.deepEqual(assets.map(a=>a.id),chapters.slice(0,3).map(c=>`global-instagram-${c.key}`));
+  for(const asset of assets){
+    const original=manifest.assets.find(a=>a.id===asset.id);
+    for(const key of ['file','type','bytes','sha256','width','height','title'])assert.equal(asset[key],original[key]);
+  }
+  const app=readFileSync(resolve(root,'app.js'),'utf8');
+  assert.match(app,/highlights.insertBefore/);
+  assert.match(app,/requestSave\(assets.map\(asset => asset.id\)\)/);
+  const css=readFileSync(resolve(root,'styles.css'),'utf8');
+  assert.match(css,/\.worldwide-frames img\{width:54px;height:96px\}/);
+  assert.doesNotMatch(css,/worldwide-frames\{grid-template-columns:1fr/);
+});

@@ -16,7 +16,7 @@ Each code uses `https://pumpduel.com/c/CODE`. Use the spelling shown above. Thes
 
 ## Instagram
 
-[Open the WORLDWIDE Instagram checklist](index.html#instagram-worldwide) for the three image downloads, copyable link and sticker label, ready-to-copy wording and GLOBAL cover.
+[Open the WORLDWIDE row in Story Highlights](index.html#instagram-worldwide). Use **Save Stories (3)**, **Save cover**, **Copy link** and **Copy caption** directly in the row. Expand **Story previews & posting notes** for small previews, individual original downloads, the sticker label and detailed instructions.
 
 For a hub-only introduction, check that the hub is available, then post **Your reps. Worldwide. → Three ways to show up. → Pick your timeframe.** in that order. Add an “Explore challenges” Link sticker to each and save all three into the same **GLOBAL** Highlight. Do not create separate timeframe Highlights. Keep Story Archive on and verify the published links from another account.
 
